@@ -1,0 +1,6 @@
+{
+  "name": "গরম ডিল - Gorom Deal | সেরা কিচেন ও গ্যাজেটস অনলাইন শপ",
+  "description": "বাংলাদেশের নির্ভরযোগ্য অনলাইন শপিং প্ল্যাটফর্ম - সেরা গরম ডিল, অরিজিনাল পণ্য ও দ্রুত হোম ডেলিভারি।",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
