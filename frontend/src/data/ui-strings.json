@@ -1,0 +1,570 @@
+{
+ "search_placeholder": {
+  "bn": "পণ্য, ব্র্যান্ড বা ক্যাটাগরি খুঁজুন...",
+  "en": "Search products, brands or categories..."
+ },
+ "search_button": {
+  "bn": "খুঁজুন",
+  "en": "Search"
+ },
+ "search_title": {
+  "bn": "সার্চ রেজাল্ট",
+  "en": "Search results"
+ },
+ "search_results_for": {
+  "bn": "\"{q}\" এর জন্য {n}টি পণ্য",
+  "en": "{n} products for \"{q}\""
+ },
+ "search_empty": {
+  "bn": "কোনো পণ্য পাওয়া যায়নি",
+  "en": "No products found"
+ },
+ "search_hint": {
+  "bn": "অন্য শব্দ দিয়ে আবার চেষ্টা করুন।",
+  "en": "Try a different keyword."
+ },
+ "all_categories": {
+  "bn": "সব ক্যাটাগরি",
+  "en": "All Categories"
+ },
+ "all": {
+  "bn": "সব",
+  "en": "All"
+ },
+ "cart": {
+  "bn": "কার্ট",
+  "en": "Cart"
+ },
+ "my_cart": {
+  "bn": "আমার কার্ট",
+  "en": "My Cart"
+ },
+ "wishlist": {
+  "bn": "উইশলিস্ট",
+  "en": "Wishlist"
+ },
+ "wishlist_empty": {
+  "bn": "আপনার উইশলিস্ট খালি",
+  "en": "Your wishlist is empty"
+ },
+ "track_order": {
+  "bn": "অর্ডার ট্র্যাক",
+  "en": "Track Order"
+ },
+ "flash_deals": {
+  "bn": "ফ্ল্যাশ ডিল",
+  "en": "Flash Deals"
+ },
+ "flash_deals_title": {
+  "bn": "গরম ডিল",
+  "en": "Hot Deals"
+ },
+ "ends_in": {
+  "bn": "শেষ হতে বাকি",
+  "en": "Ends in"
+ },
+ "days": {
+  "bn": "দিন",
+  "en": "d"
+ },
+ "hours": {
+  "bn": "ঘণ্টা",
+  "en": "h"
+ },
+ "minutes": {
+  "bn": "মিনিট",
+  "en": "m"
+ },
+ "seconds": {
+  "bn": "সেকেন্ড",
+  "en": "s"
+ },
+ "view_all": {
+  "bn": "সব দেখুন",
+  "en": "View all"
+ },
+ "view_all_deals": {
+  "bn": "সব ডিল দেখুন",
+  "en": "View all deals"
+ },
+ "hot": {
+  "bn": "হট",
+  "en": "HOT"
+ },
+ "hotline": {
+  "bn": "হটলাইন",
+  "en": "Hotline"
+ },
+ "call_us": {
+  "bn": "কল করুন",
+  "en": "Call us"
+ },
+ "add_to_cart": {
+  "bn": "কার্টে যোগ করুন",
+  "en": "Add to Cart"
+ },
+ "added_to_cart": {
+  "bn": "কার্টে যোগ হয়েছে",
+  "en": "Added to cart"
+ },
+ "order_now": {
+  "bn": "এখনই অর্ডার করুন",
+  "en": "Order Now"
+ },
+ "view_details": {
+  "bn": "বিস্তারিত দেখুন",
+  "en": "View details"
+ },
+ "out_of_stock": {
+  "bn": "স্টক শেষ",
+  "en": "Out of stock"
+ },
+ "in_stock": {
+  "bn": "স্টকে আছে",
+  "en": "In stock"
+ },
+ "only_n_left": {
+  "bn": "মাত্র {n}টি বাকি",
+  "en": "Only {n} left"
+ },
+ "save_amount": {
+  "bn": "সাশ্রয় ৳{n}",
+  "en": "Save ৳{n}"
+ },
+ "off": {
+  "bn": "ছাড়",
+  "en": "OFF"
+ },
+ "quantity": {
+  "bn": "পরিমাণ",
+  "en": "Quantity"
+ },
+ "sku": {
+  "bn": "এসকেইউ",
+  "en": "SKU"
+ },
+ "brand": {
+  "bn": "ব্র্যান্ড",
+  "en": "Brand"
+ },
+ "category": {
+  "bn": "ক্যাটাগরি",
+  "en": "Category"
+ },
+ "description": {
+  "bn": "বিবরণ",
+  "en": "Description"
+ },
+ "specifications": {
+  "bn": "স্পেসিফিকেশন",
+  "en": "Specifications"
+ },
+ "features": {
+  "bn": "প্রধান ফিচার",
+  "en": "Key Features"
+ },
+ "reviews": {
+  "bn": "রিভিউ",
+  "en": "Reviews"
+ },
+ "reviews_count": {
+  "bn": "{n}টি রিভিউ",
+  "en": "{n} reviews"
+ },
+ "warranty": {
+  "bn": "ওয়ারেন্টি",
+  "en": "Warranty"
+ },
+ "delivery": {
+  "bn": "ডেলিভারি",
+  "en": "Delivery"
+ },
+ "delivery_inside": {
+  "bn": "ঢাকার ভিতরে",
+  "en": "Inside Dhaka"
+ },
+ "delivery_outside": {
+  "bn": "ঢাকার বাইরে",
+  "en": "Outside Dhaka"
+ },
+ "free_delivery_over": {
+  "bn": "৳{n} এর উপরে ফ্রি ডেলিভারি",
+  "en": "Free delivery over ৳{n}"
+ },
+ "need_help": {
+  "bn": "সাহায্য দরকার?",
+  "en": "Need help?"
+ },
+ "related_products": {
+  "bn": "সম্পর্কিত পণ্য",
+  "en": "Related Products"
+ },
+ "home": {
+  "bn": "হোম",
+  "en": "Home"
+ },
+ "shop": {
+  "bn": "শপ",
+  "en": "Shop"
+ },
+ "products_count": {
+  "bn": "{n}টি পণ্য",
+  "en": "{n} products"
+ },
+ "no_products": {
+  "bn": "এখানে এখনো কোনো পণ্য নেই",
+  "en": "No products here yet"
+ },
+ "no_products_hint": {
+  "bn": "শীঘ্রই নতুন পণ্য যোগ হবে। অন্য ক্যাটাগরি দেখুন।",
+  "en": "New products will be added soon. Browse another category."
+ },
+ "no_data_title": {
+  "bn": "কনটেন্ট লোড করা যায়নি",
+  "en": "Content unavailable"
+ },
+ "no_data_hint": {
+  "bn": "কিছুক্ষণ পর আবার চেষ্টা করুন।",
+  "en": "Please try again shortly."
+ },
+ "page_not_found": {
+  "bn": "পেজটি পাওয়া যায়নি",
+  "en": "Page not found"
+ },
+ "back_home": {
+  "bn": "হোমে ফিরে যান",
+  "en": "Back to home"
+ },
+ "sort_by": {
+  "bn": "সাজান",
+  "en": "Sort by"
+ },
+ "sort_latest": {
+  "bn": "নতুন আগে",
+  "en": "Newest"
+ },
+ "sort_price_asc": {
+  "bn": "দাম: কম থেকে বেশি",
+  "en": "Price: Low to High"
+ },
+ "sort_price_desc": {
+  "bn": "দাম: বেশি থেকে কম",
+  "en": "Price: High to Low"
+ },
+ "sort_discount": {
+  "bn": "সর্বোচ্চ ছাড়",
+  "en": "Biggest discount"
+ },
+ "filters": {
+  "bn": "ফিল্টার",
+  "en": "Filters"
+ },
+ "clear_filters": {
+  "bn": "ফিল্টার মুছুন",
+  "en": "Clear filters"
+ },
+ "price_range": {
+  "bn": "দামের সীমা",
+  "en": "Price range"
+ },
+ "min": {
+  "bn": "সর্বনিম্ন",
+  "en": "Min"
+ },
+ "max": {
+  "bn": "সর্বোচ্চ",
+  "en": "Max"
+ },
+ "only_in_stock": {
+  "bn": "শুধু স্টকে আছে",
+  "en": "In stock only"
+ },
+ "only_on_sale": {
+  "bn": "শুধু ছাড়ের পণ্য",
+  "en": "On sale only"
+ },
+ "only_flash": {
+  "bn": "শুধু ফ্ল্যাশ ডিল",
+  "en": "Flash deals only"
+ },
+ "only_warranty": {
+  "bn": "ওয়ারেন্টি আছে",
+  "en": "With warranty"
+ },
+ "load_more": {
+  "bn": "আরও দেখুন",
+  "en": "Load more"
+ },
+ "prev": {
+  "bn": "আগের",
+  "en": "Previous"
+ },
+ "next": {
+  "bn": "পরের",
+  "en": "Next"
+ },
+ "faq": {
+  "bn": "সচরাচর জিজ্ঞাসা",
+  "en": "Frequently Asked Questions"
+ },
+ "cart_title": {
+  "bn": "শপিং কার্ট",
+  "en": "Shopping Cart"
+ },
+ "cart_empty": {
+  "bn": "আপনার কার্ট খালি",
+  "en": "Your cart is empty"
+ },
+ "cart_empty_hint": {
+  "bn": "পছন্দের পণ্য কার্টে যোগ করুন।",
+  "en": "Add products you like to your cart."
+ },
+ "continue_shopping": {
+  "bn": "কেনাকাটা চালিয়ে যান",
+  "en": "Continue shopping"
+ },
+ "remove": {
+  "bn": "সরান",
+  "en": "Remove"
+ },
+ "subtotal": {
+  "bn": "সাবটোটাল",
+  "en": "Subtotal"
+ },
+ "shipping": {
+  "bn": "ডেলিভারি চার্জ",
+  "en": "Delivery charge"
+ },
+ "discount": {
+  "bn": "ছাড়",
+  "en": "Discount"
+ },
+ "total": {
+  "bn": "সর্বমোট",
+  "en": "Total"
+ },
+ "free": {
+  "bn": "ফ্রি",
+  "en": "Free"
+ },
+ "free_shipping_remaining": {
+  "bn": "ফ্রি ডেলিভারির জন্য আর ৳{n} কিনুন",
+  "en": "Add ৳{n} more for free delivery"
+ },
+ "shipping_estimate_note": {
+  "bn": "ডেলিভারি চার্জ চেকআউটে জেলা অনুযায়ী চূড়ান্ত হবে",
+  "en": "Delivery charge is finalised at checkout by district"
+ },
+ "proceed_checkout": {
+  "bn": "চেকআউটে যান",
+  "en": "Proceed to Checkout"
+ },
+ "checkout_title": {
+  "bn": "চেকআউট",
+  "en": "Checkout"
+ },
+ "customer_info": {
+  "bn": "আপনার তথ্য",
+  "en": "Your details"
+ },
+ "full_name": {
+  "bn": "পুরো নাম",
+  "en": "Full name"
+ },
+ "phone": {
+  "bn": "মোবাইল নম্বর",
+  "en": "Mobile number"
+ },
+ "phone_hint": {
+  "bn": "01XXXXXXXXX",
+  "en": "01XXXXXXXXX"
+ },
+ "email_optional": {
+  "bn": "ইমেইল (ঐচ্ছিক)",
+  "en": "Email (optional)"
+ },
+ "address": {
+  "bn": "সম্পূর্ণ ঠিকানা",
+  "en": "Full address"
+ },
+ "district": {
+  "bn": "জেলা",
+  "en": "District"
+ },
+ "select_district": {
+  "bn": "জেলা নির্বাচন করুন",
+  "en": "Select district"
+ },
+ "order_note": {
+  "bn": "অর্ডার নোট (ঐচ্ছিক)",
+  "en": "Order note (optional)"
+ },
+ "payment_method": {
+  "bn": "পেমেন্ট মাধ্যম",
+  "en": "Payment method"
+ },
+ "cod": {
+  "bn": "ক্যাশ অন ডেলিভারি",
+  "en": "Cash on Delivery"
+ },
+ "cod_hint": {
+  "bn": "পণ্য হাতে পেয়ে টাকা পরিশোধ করুন",
+  "en": "Pay when you receive the product"
+ },
+ "coupon_code": {
+  "bn": "কুপন কোড",
+  "en": "Coupon code"
+ },
+ "apply": {
+  "bn": "প্রয়োগ",
+  "en": "Apply"
+ },
+ "coupon_applied": {
+  "bn": "কুপন প্রয়োগ হয়েছে",
+  "en": "Coupon applied"
+ },
+ "order_summary": {
+  "bn": "অর্ডার সামারি",
+  "en": "Order summary"
+ },
+ "place_order": {
+  "bn": "অর্ডার কনফার্ম করুন",
+  "en": "Place Order"
+ },
+ "placing_order": {
+  "bn": "অর্ডার হচ্ছে...",
+  "en": "Placing order..."
+ },
+ "order_failed": {
+  "bn": "অর্ডার সম্পন্ন করা যায়নি। আবার চেষ্টা করুন।",
+  "en": "Could not place the order. Please try again."
+ },
+ "ordering_disabled": {
+  "bn": "বর্তমানে অর্ডার নেওয়া বন্ধ আছে",
+  "en": "Orders are currently disabled"
+ },
+ "order_id": {
+  "bn": "অর্ডার আইডি",
+  "en": "Order ID"
+ },
+ "track_this_order": {
+  "bn": "এই অর্ডার ট্র্যাক করুন",
+  "en": "Track this order"
+ },
+ "required_field": {
+  "bn": "এই তথ্যটি আবশ্যক",
+  "en": "This field is required"
+ },
+ "invalid_phone": {
+  "bn": "সঠিক মোবাইল নম্বর দিন (01XXXXXXXXX)",
+  "en": "Enter a valid mobile number (01XXXXXXXXX)"
+ },
+ "track_title": {
+  "bn": "অর্ডার ট্র্যাক করুন",
+  "en": "Track your order"
+ },
+ "track_hint": {
+  "bn": "অর্ডার নম্বর ও অর্ডারে ব্যবহৃত মোবাইল নম্বর দিন।",
+  "en": "Enter your order number and the phone number used for the order."
+ },
+ "order_number": {
+  "bn": "অর্ডার নম্বর",
+  "en": "Order number"
+ },
+ "track_button": {
+  "bn": "ট্র্যাক করুন",
+  "en": "Track"
+ },
+ "tracking": {
+  "bn": "খোঁজা হচ্ছে...",
+  "en": "Searching..."
+ },
+ "status_received": {
+  "bn": "অর্ডার গৃহীত",
+  "en": "Order received"
+ },
+ "status_confirmed": {
+  "bn": "কনফার্মড / প্রসেসিং",
+  "en": "Confirmed / Processing"
+ },
+ "status_delivered": {
+  "bn": "ডেলিভারি সম্পন্ন",
+  "en": "Delivered"
+ },
+ "status_cancelled": {
+  "bn": "বাতিল",
+  "en": "Cancelled"
+ },
+ "status_refunded": {
+  "bn": "রিফান্ড",
+  "en": "Refunded"
+ },
+ "order_updates": {
+  "bn": "আপডেট",
+  "en": "Updates"
+ },
+ "order_items": {
+  "bn": "পণ্যসমূহ",
+  "en": "Items"
+ },
+ "placed_on": {
+  "bn": "অর্ডারের তারিখ",
+  "en": "Placed on"
+ },
+ "contact_us": {
+  "bn": "যোগাযোগ",
+  "en": "Contact us"
+ },
+ "address_label": {
+  "bn": "ঠিকানা",
+  "en": "Address"
+ },
+ "email_label": {
+  "bn": "ইমেইল",
+  "en": "Email"
+ },
+ "hours_label": {
+  "bn": "সময়",
+  "en": "Hours"
+ },
+ "follow_us": {
+  "bn": "আমাদের ফলো করুন",
+  "en": "Follow us"
+ },
+ "trade_license": {
+  "bn": "ট্রেড লাইসেন্স",
+  "en": "Trade License"
+ },
+ "dbid": {
+  "bn": "ডিবিআইডি",
+  "en": "DBID"
+ },
+ "whatsapp": {
+  "bn": "হোয়াটসঅ্যাপ",
+  "en": "WhatsApp"
+ },
+ "language": {
+  "bn": "ভাষা",
+  "en": "Language"
+ },
+ "menu": {
+  "bn": "মেনু",
+  "en": "Menu"
+ },
+ "close": {
+  "bn": "বন্ধ করুন",
+  "en": "Close"
+ },
+ "loading": {
+  "bn": "লোড হচ্ছে...",
+  "en": "Loading..."
+ },
+ "pages": {
+  "bn": "পেজ",
+  "en": "Pages"
+ },
+ "currency_symbol": {
+  "bn": "৳",
+  "en": "৳"
+ }
+}

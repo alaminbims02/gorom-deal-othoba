@@ -1,0 +1,17 @@
+.gd-wrap .gd-help { font-size: 14px; max-width: 900px; }
+.gd-tabs { margin-bottom: 16px; }
+.gd-table > tbody > tr > th { width: 240px; }
+.gd-bi { display: flex; gap: 12px; flex-wrap: wrap; }
+.gd-bi-col { display: block; min-width: 260px; flex: 1 1 260px; }
+.gd-bi-col .gd-lang { display: block; font-size: 11px; font-weight: 600; text-transform: uppercase; color: #787c82; margin-bottom: 2px; }
+.gd-bi-col input, .gd-bi-col textarea { width: 100%; max-width: 100%; }
+.gd-rows { margin-bottom: 8px; }
+.gd-row { border: 1px solid #c3c4c7; background: #fff; margin-bottom: 8px; border-radius: 4px; }
+.gd-row-head { display: flex; justify-content: space-between; align-items: center; padding: 8px 12px; background: #f6f7f7; cursor: default; }
+.gd-row-title { cursor: pointer; min-height: 18px; }
+.gd-row-actions .button-link { margin-left: 8px; text-decoration: none; }
+.gd-row-body { display: none; padding: 4px 12px 12px; border-top: 1px solid #dcdcde; }
+.gd-row.open > .gd-row-body { display: block; }
+.gd-subtable th { width: 200px; padding: 10px 10px 10px 0; }
+.gd-image-preview { margin-bottom: 6px; }
+.gd-image-preview img { max-width: 140px; max-height: 100px; border: 1px solid #dcdcde; border-radius: 3px; display: block; }
