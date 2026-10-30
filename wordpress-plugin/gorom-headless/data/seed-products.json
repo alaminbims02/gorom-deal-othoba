@@ -1,0 +1,500 @@
+{
+  "categories": [
+    {
+      "slug": "kitchen-appliances",
+      "name_bn": "কিচেন অ্যাপ্লায়েন্স",
+      "name_en": "Kitchen Appliances",
+      "icon": "UtensilsCrossed",
+      "order": 0
+    },
+    {
+      "slug": "cookware",
+      "name_bn": "কুকওয়্যার ও প্যান",
+      "name_en": "Cookware Sets",
+      "icon": "CookingPot",
+      "order": 1
+    },
+    {
+      "slug": "gadgets",
+      "name_bn": "স্মার্ট গ্যাজেটস",
+      "name_en": "Smart Gadgets",
+      "icon": "Cpu",
+      "order": 2
+    },
+    {
+      "slug": "audio",
+      "name_bn": "অডিও ও হেডফোন",
+      "name_en": "Audio & Earbuds",
+      "icon": "Headphones",
+      "order": 3
+    },
+    {
+      "slug": "smartwatch",
+      "name_bn": "স্মার্টওয়াচ",
+      "name_en": "Smartwatches",
+      "icon": "Watch",
+      "order": 4
+    },
+    {
+      "slug": "power-charging",
+      "name_bn": "পাওয়ার ও চার্জিং",
+      "name_en": "Power & Charging",
+      "icon": "Zap",
+      "order": 5
+    }
+  ],
+  "products": [
+    {
+      "key": "gd-kitchen-01",
+      "sku": "VIS-AF-550",
+      "category": "kitchen-appliances",
+      "name_bn": "ভিশন ডিজিটাল টাচ এয়ার ফ্রায়ার ও ওভেন (৫.৫ লিটার)",
+      "name_en": "Vision Digital Touch Rapid Air Fryer & Roaster (5.5L)",
+      "brand": "Vision Electronics",
+      "price": 4950,
+      "regular_price": 7200,
+      "description_bn": "৮৫% কম তেলে মুচমুচে ও স্বাস্থ্যকর রান্নার আধুনিক সমাধান। ৩৬০ ডিগ্রি হাই-স্পিড হট এয়ার সার্কুলেশন প্রযুক্তি ও ৮টি স্মার্ট ওয়ান-টাচ প্রিসেট মেনু সম্বলিত ভিশন এয়ার ফ্রায়ার। চিকেন ফ্রাই, ফ্র্যাঞ্চ ফ্রাই, বেকিং কিংবা কাবাব তৈরি করুন মাত্র ১০-১৫ মিনিটে।",
+      "description_en": "Cook crispy, delicious meals with up to 85% less oil. Powered by 360-degree rapid heat air circulation technology, smart digital touch screen with 8 pre-programmed presets, non-stick dishwasher-safe basket, and auto shut-off memory function.",
+      "features": [
+        "৫.৫ লিটার ফ্যামিলি সাইজ বাস্কেট",
+        "৮টি অটোমেটিক টাচ প্রিসেট মেনু",
+        "৮৫% পর্যন্ত তেল সাশ্রয়ী স্বাস্থ্যকর রান্না",
+        "অটো-কাট ও ওভারহিট সেফটি প্রোটেকশন",
+        "ফুড-গ্রেড নন-স্টিক কোটিং এবং সহজ পরিষ্কার",
+        "১ বছরের সরাসরি ব্র্যান্ড রিপ্লেসমেন্ট ওয়ারেন্টি"
+      ],
+      "specifications": {
+        "মডেল": "VIS-AF-550 PRO",
+        "পাওয়ার": "১৫০০ ওয়াট (1500W)",
+        "ভোল্টেজ": "220V - 240V / 50Hz",
+        "ধারণক্ষমতা": "৫.৫ লিটার (5.5 Liters)",
+        "তাপমাত্রা নিয়ন্ত্রণ": "৮০°C থেকে ২০০°C",
+        "টাইমার": "১ থেকে ৬০ মিনিট অটো শাট-অফ",
+        "মেটেরিয়াল": "বিপিএ-ফ্রি প্রিমিয়াম হিট রেজিস্ট্যান্ট পলিমার ও স্টিল"
+      },
+      "warranty": "১ বছরের অফিসিয়াল সার্ভিস ওয়ারেন্টি",
+      "badge": "সেরা বিক্রীত",
+      "is_flash_deal": true,
+      "stock": 18,
+      "images": [
+        "product_smart_airfryer_1793335872086.jpg",
+        "promo_kitchen_home_1793335872493.jpg"
+      ],
+      "variants": [
+        {
+          "name": "কালার (Color)",
+          "options": [
+            "ম্যাট ব্ল্যাক (Matte Black)",
+            "রোজ গোল্ড একসেন্ট (Rose Gold)"
+          ]
+        },
+        {
+          "name": "ক্যাপাসিটি (Capacity)",
+          "options": [
+            "৫.৫ লিটার (স্ট্যান্ডার্ড)",
+            "৭.০ লিটার (লার্জ)"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "gd-kitchen-02",
+      "sku": "VIS-BL-1000",
+      "category": "kitchen-appliances",
+      "name_bn": "স্মার্ট হেভি-ডিউটি কপার ব্লেন্ডার ও গ্রাইন্ডার (১০০০ ওয়াট)",
+      "name_en": "Vision Smart Heavy-Duty Copper Motor Blender & Grinder (1000W)",
+      "brand": "Vision Electronics",
+      "price": 3650,
+      "regular_price": 5200,
+      "description_bn": "মসলা গুঁড়ো করা, ডাল বাটা, বাদাম পেস্ট বা ফলের স্মুদি তৈরি—সবকিছুতেই দ্রুত ও নিখুঁত ব্লেন্ডিংয়ের জন্য ১০০০ ওয়াটের পিওর কপার মোটর ব্লেন্ডার। ৩টি ফুড-গ্রেড স্টেইনলেস স্টিল জার ও সেলফ-কুলিং ভেন্টিলেশন সিস্টেম।",
+      "description_en": "Heavy duty 100% pure copper wound motor delivers relentless grinding performance for turmeric, spices, lentils, and smoothies. Includes 3 heavy-gauge stainless steel jars with flow breakers and leak-proof silicone gaskets.",
+      "features": [
+        "১০০০ ওয়াট ১০০% পিওর কপার মোটর",
+        "৩টি হেভি-গেজ স্টেইনলেস স্টিল জার",
+        "লেজার-শার্প টাইটেনিয়াম কোটিং ব্লেড",
+        "মোটর ওভারলোড অটো ট্রিপ প্রটেকশন",
+        "৩ স্পিড কন্ট্রোল প্লাস পালস ফাংশন",
+        "২ বছরের অফিসিয়াল মোটর রিপ্লেসমেন্ট ওয়ারেন্টি"
+      ],
+      "specifications": {
+        "মডেল": "VIS-BL-1000 MAX",
+        "পাওয়ার": "১০০০ ওয়াট পিওর কপার",
+        "ভোল্টেজ": "220V / 50Hz",
+        "জার সংখ্যা": "৩টি (লিকুইডাইজিং ১.৫ লিটার, ড্রাই গ্রাইন্ডিং ১ লিটার, চাটনি ৫০০ মি.লি.)",
+        "ব্লেড মেটেরিয়াল": "৩০৪ গ্রেড স্টেইনলেস স্টিল",
+        "ওভারলোড প্রটেক্টর": "রিসেটেবল পুশ বাটন টাইপ"
+      },
+      "warranty": "২ বছরের মোটর ওয়ারেন্টি",
+      "badge": "হট ডিল",
+      "is_flash_deal": true,
+      "stock": 22,
+      "images": [
+        "promo_kitchen_home_1793335872493.jpg",
+        "product_smart_airfryer_1793335872086.jpg"
+      ],
+      "variants": [
+        {
+          "name": "কালার (Color)",
+          "options": [
+            "ব্রাশড মেটালিক স্টিল (Silver)",
+            "মিডনাইট ব্ল্যাক (Black)"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "gd-cookware-01",
+      "sku": "RFL-COOK-7P",
+      "category": "cookware",
+      "name_bn": "আরএফএল প্রিমিয়াম গ্রানাইট মার্বেল নন-স্টিক কুকওয়্যার সেট (৭ পিস)",
+      "name_en": "RFL Luxury Granite Marble Coating Non-Stick Cookware Set (7 Pcs)",
+      "brand": "RFL Houseware",
+      "price": 4350,
+      "regular_price": 5900,
+      "description_bn": "আধুনিক রান্নাঘরের সৌন্দর্য ও স্বাস্থ্যকর রান্নার প্রতীক। ৫-লেয়ার স্ক্র্যাচ-প্রুফ গ্রানাইট মার্বেল কোটিং, ইনডাকশন ফ্রেন্ডলি ম্যাগনেটিক বেস এবং সফট-টাচ ব্যাকলাইট কাঠের টেক্সচার হ্যান্ডেল। একদম তেল ছাড়া রান্নার আদর্শ কুকওয়্যার সেট।",
+      "description_en": "Engineered with 5-layer ultra-durable granite marble nonstick coating free of PFOA, lead, and cadmium. Designed for induction and gas cooktops with ergonomic heat-resistant wood-grain bakelite handles.",
+      "features": [
+        "৫-লেয়ার পিএফওএ-ফ্রি মার্বেল কোটিং",
+        "ইন্ডাকশন ও গ্যাস উভয় স্টোভেই ব্যবহারযোগ্য",
+        "টেম্পারড গ্লাস লিড স্টিম ভেন্ট সহ",
+        "কুল-টাচ অ্যান্টি-স্লিপ কাঠের হ্যান্ডেল",
+        "কম তেলে পোড়া না লাগার নিশ্চয়তা",
+        "১ বছরের নন-স্টিক কোটিং ওয়ারেন্টি"
+      ],
+      "specifications": {
+        "মডেল": "RFL-MRB-7P",
+        "সেটে যা আছে": "কড়াই (২৮ সেমি), ফ্রাইপ্যান (২৪ সেমি), সসপ্যান (১৮ সেমি), মিল্ক প্যান + ৩টি গ্লাস ঢাকনা",
+        "বেস": "ইন্ডাকশন থার্মো-ডিফিউজার বটম",
+        "কোটিং": "জার্মান সার্টিফাইড মার্বেল গ্রানাইট",
+        "হ্যান্ডেল": "হিট-রেজিস্ট্যান্ট উডেন ফিনিশ ব্যাকলাইট"
+      },
+      "warranty": "১ বছরের কোটিং ওয়ারেন্টি",
+      "badge": "প্রিমিয়াম",
+      "is_flash_deal": true,
+      "stock": 15,
+      "images": [
+        "kitchen_granite_cookware_1793337110405.jpg",
+        "promo_kitchen_home_1793335872493.jpg"
+      ],
+      "variants": [
+        {
+          "name": "কালার শেড (Shade)",
+          "options": [
+            "স্যান্ড বেইজ (Beige)",
+            "গ্রানাইট গ্রে (Slate Grey)"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "gd-gadget-01",
+      "sku": "VT-SW-PRO",
+      "category": "smartwatch",
+      "name_bn": "টাইটানিয়াম অ্যামোলেড ব্লুটুথ কলিং স্মার্টওয়াচ প্রো",
+      "name_en": "Titanium AMOLED Waterproof Bluetooth Calling Fitness Smartwatch Pro",
+      "brand": "Vision Tech",
+      "price": 2850,
+      "regular_price": 4200,
+      "description_bn": "১.৯৬ ইঞ্চি আল্ট্রা-ব্রাইট অ্যামোলেড ডিসপ্লে সমৃদ্ধ ফ্ল্যাগশিপ স্মার্টওয়াচ। হাই-ফাই ব্লুটুথ ফোন কলিং, সার্বক্ষণিক হার্ট রেট ও ব্লাড অক্সিজেন (SpO2) ট্র্যাকিং, ১০০+ স্পোর্টস মোড এবং ওয়াটারপ্রুফ আইপি৬৮ সুরক্ষা। একটানা ৭ দিনের শক্তিশালী ব্যাটারি ব্যাকআপ।",
+      "description_en": "Premium titanium alloy frame with vibrant 1.96-inch Always-On AMOLED screen (60Hz refresh rate, 1000 nits brightness). Features Bluetooth calling with HD noise-cancelling microphone, 24/7 biometric tracking, IP68 waterproofing, and up to 10 days battery endurance.",
+      "features": [
+        "১.৯৬ ইঞ্চি আল্ট্রা এইচডি অ্যামোলেড ডিসপ্লে (Always-On Display)",
+        "বিল্ট-ইন স্পিকার ও মাইক দিয়ে সরাসরি ফোন কলিং",
+        "আইপি৬৮ ডাস্ট ও ওয়াটারপ্রুফ রেটিং",
+        "হার্ট রেট, SpO2 ও স্লিপ মনিটরিং সেন্সর",
+        "১০০+ কাস্টম ওয়াচ ফেস ও বাংলা নোটিফিকেশন সাপোর্ট",
+        "১ বছরের সরাসরি রিপ্লেসমেন্ট গ্যারান্টি"
+      ],
+      "specifications": {
+        "মডেল": "VT-AMOLE-PRO",
+        "ডিসপ্লে সাইজ": "১.৯৬ ইঞ্চি (410x502 পিক্সেল, ১০০০ নিটস)",
+        "বডি ফ্রেম": "অ্যালুমিনিয়াম ও টাইটানিয়াম অ্যালয়",
+        "কানেক্টিভিটি": "ব্লুটুথ ৫.৩ এলই",
+        "ব্যাটারি": "৩৮০ এমএএইচ (নরমাল ব্যবহারে ৭-১০ দিন)",
+        "চার্জিং": "ম্যাগনেটিক ফাস্ট পিন চার্জার (২ ঘণ্টায় ফুল চার্জ)",
+        "সাপোর্ট": "Android & iOS উভয় অপারেটিং সিস্টেমে"
+      },
+      "warranty": "১ বছরের অফিসিয়াল রিপ্লেসমেন্ট গ্যারান্টি",
+      "badge": "সেরা অফার",
+      "is_flash_deal": true,
+      "stock": 26,
+      "images": [
+        "gadget_smartwatch_tws_1793337109838.jpg",
+        "hero_ecommerce_showcase_1793335872034.jpg"
+      ],
+      "variants": [
+        {
+          "name": "স্ট্র্যাপ ও কালার",
+          "options": [
+            "টাইটানিয়াম সিলভার (Metallic)",
+            "ম্যাট ব্ল্যাক সিলিকন (Black)"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "gd-gadget-02",
+      "sku": "NX-PB-65W",
+      "category": "power-charging",
+      "name_bn": "৬৫ ওয়াট গ্যান আল্ট্রা-ফাস্ট চার্জিং ২০,০০০ এমএএইচ পাওয়ার ব্যাংক",
+      "name_en": "65W GaN PD Ultra-Fast Charging 20000mAh Laptop & Phone Power Bank",
+      "brand": "Nexus Tech",
+      "price": 2950,
+      "regular_price": 4100,
+      "description_bn": "৬৫ ওয়াট পাওয়ার ডেলিভারি (PD 3.0) সমৃদ্ধ শক্তিশালী ২০,০০০ এমএএইচ পাওয়ার ব্যাংক। স্মার্টফোন ও ট্যাবলেটের পাশাপাশি ম্যাকবুক কিংবা টাইপ-সি ল্যাপটপ সুপারফাস্ট চার্জ করতে সক্ষম। স্মার্ট এলইডি ডিজিটাল ডিসপ্লেতে রিয়েল-টাইম চার্জ পারসেন্টেজ দেখা যায়।",
+      "description_en": "High capacity 20,000mAh lithium-polymer power bank delivering genuine 65W GaN output to fast charge MacBooks, Windows USB-C laptops, iPhones, and Android flagships. Features smart numeric LED battery percentage display and multi-device simultaneous charging.",
+      "features": [
+        "৬৫ ওয়াট সর্বোচ্চ পাওয়ার ডেলিভারি (ল্যাপটপ চার্জিং উপযুক্ত)",
+        "২০,০০০ এমএএইচ ট্রু ক্যাপাসিটি লিথিয়াম পলিমার ব্যাটারি",
+        "স্মার্ট এলইডি নিউমেরিক ডিসপ্লে (রিয়েল টাইম %)",
+        "একসাথে ৩টি ডিভাইস ফাস্ট চার্জ করার সুবিধা",
+        "মাল্টি-লেয়ার সার্কিট ওভার-ভোল্টেজ প্রটেকশন",
+        "১ বছরের অফিশিয়াল ওয়ারেন্টি"
+      ],
+      "specifications": {
+        "মডেল": "NX-PB-65W",
+        "ব্যাটারি ক্ষমতা": "২০,০০০ এমএএইচ (74Wh)",
+        "ইনপুট": "Type-C: 65W Max",
+        "আউটপুট": "Type-C: 65W Max | USB-A: 22.5W QC 3.0",
+        "ওজন": "৩৯৫ গ্রাম",
+        "বডি মেটেরিয়াল": "অ্যালুমিনিয়াম অ্যালয় এনোডাইজড ফিনিশ"
+      },
+      "warranty": "১ বছরের ব্র্যান্ড ওয়ারেন্টি",
+      "badge": "ল্যাপটপ চার্জিং",
+      "is_flash_deal": false,
+      "stock": 34,
+      "images": [
+        "gadget_fast_powerbank_1793337111858.jpg",
+        "hero_ecommerce_showcase_1793335872034.jpg"
+      ],
+      "variants": [
+        {
+          "name": "কালার",
+          "options": [
+            "স্পেস গ্রে (Space Grey)",
+            "ম্যাট ব্ল্যাক (Black)"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "gd-gadget-03",
+      "sku": "ACT-HP-PRO",
+      "category": "audio",
+      "name_bn": "ওয়্যারলেস এক্টিভ নয়েজ ক্যানসেলিং স্টুডিও হেডফোন প্রো ম্যাক্স",
+      "name_en": "Wireless Active Noise Cancelling (ANC) Studio Over-Ear Headphones",
+      "brand": "Acoustic Sound",
+      "price": 3450,
+      "regular_price": 4900,
+      "description_bn": "হাইব্রিড এক্টিভ নয়েজ ক্যানসেলেশন (ANC) প্রযুক্তির সাহায্যে বাইরের অপ্রয়োজনীয় শব্দকে ৩৫ ডেসিবেল পর্যন্ত ফিল্টার করে বিশুদ্ধ স্টুডিও মিউজিক উপভোগ করুন। ৪০ ঘণ্টার বিশাল ব্যাটারি ব্যাকআপ, ৪০ মি.মি. টাইটানিয়াম ডায়াফ্রাম ড্রাইভার ও প্রিমিয়াম মেমোরি ফোম কুশন।",
+      "description_en": "Hybrid active noise cancellation reduces ambient noise by up to 35dB. Engineered with custom 40mm dynamic acoustic drivers delivering rich bass and crystal clear highs. Cloud-soft protein leather earcups provide all-day ergonomic comfort with 40 hours playtime.",
+      "features": [
+        "৩৫ ডেসিবেল হাইব্রিড এক্টিভ নয়েজ ক্যানসেলেশন",
+        "৪০ ঘণ্টা নিরবচ্ছিন্ন প্লে-টাইম ব্যাটারি ব্যাকআপ",
+        "৪০ মি.মি. ডিপ-বাস টাইটেনিয়াম ড্রাইভার",
+        "ক্লিয়ার ভয়েস কলিংয়ের জন্য ডুয়াল এনভায়রনমেন্টাল মাইক",
+        "টাইপ-সি কুইক চার্জিং (১০ মিনিট চার্জে ৫ ঘণ্টা প্লে)",
+        "৬ মাসের অফিসিয়াল রিপ্লেসমেন্ট গ্যারান্টি"
+      ],
+      "specifications": {
+        "মডেল": "ACT-HP-PRO ANC",
+        "ব্লুটুথ ভার্সন": "৫.৩ আল্ট্রা-লো লেটেন্সি",
+        "ড্রাইভার সাইজ": "৪০ মি.মি. ডাইনামিক নিওডিমিয়াম",
+        "ফ্রিকোয়েন্সি রেসপন্স": "20Hz - 20,000Hz",
+        "ব্যাটারি লাইফ": "৪০ ঘণ্টা (ANC বন্ধ) / ৩০ ঘণ্টা (ANC চালু)",
+        "ওজন": "২৫৫ গ্রাম"
+      },
+      "warranty": "৬ মাসের রিপ্লেসমেন্ট গ্যারান্টি",
+      "badge": "হাই-ফাই অডিও",
+      "is_flash_deal": false,
+      "stock": 30,
+      "images": [
+        "hero_ecommerce_showcase_1793335872034.jpg",
+        "gadget_smartwatch_tws_1793337109838.jpg"
+      ],
+      "variants": [
+        {
+          "name": "কালার",
+          "options": [
+            "স্পেস সিলভার (Silver)",
+            "মিডনাইট ব্ল্যাক (Black)"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "gd-kitchen-03",
+      "sku": "VIS-EK-180",
+      "category": "kitchen-appliances",
+      "name_bn": "ভিশন কর্ডলেস স্টেইনলেস স্টিল র‍্যাপিড ইলেকট্রিক কেটলি (১.৮ লিটার)",
+      "name_en": "Vision Cordless Stainless Steel Rapid Boil Electric Kettle (1.8L)",
+      "brand": "Vision Electronics",
+      "price": 1390,
+      "regular_price": 1850,
+      "description_bn": "মাত্র ২ মিনিটে পানি ফুটানোর আধুনিক ফুড-গ্রেড স্টেইনলেস স্টিল ইলেকট্রিক কেটলি। পানি ফুটে উঠলে স্বয়ংক্রিয়ভাবে বিদ্যুৎ সংযোগ বন্ধ হয়ে যাওয়ার নিরাপদ অটো-কাট সুরক্ষা প্রযুক্তি। চা, কফি বা গরম পানির দ্রুততম সমাধান।",
+      "description_en": "Boils 1.8 liters of water rapidly in under 3 minutes with 1500W heating element. Constructed with food-grade 304 seamless stainless steel inner tank, cool-touch outer body, and boil-dry auto shutoff mechanism.",
+      "features": [
+        "১.৮ লিটার দ্রুত ফুটন্ত ক্যাপাসিটি",
+        "১০০% ফুড-গ্রেড ৩০৪ স্টেইনলেস স্টিল বডি",
+        "স্বয়ংক্রিয় অটো শাট-অফ ও ড্রাইভ বয়েল সুরক্ষা",
+        "৩৬০ ডিগ্রি রোটেটিং কর্ডলেস বেস",
+        "কুল-টাচ নিরাপদ হ্যান্ডেল ও ওয়াইড স্পাউট",
+        "১ বছরের ব্র্যান্ড সার্ভিস ওয়ারেন্টি"
+      ],
+      "specifications": {
+        "মডেল": "VIS-EK-180 PRO",
+        "পাওয়ার": "১৫০০ ওয়াট (1500W)",
+        "ভোল্টেজ": "220V - 240V",
+        "ধারণক্ষমতা": "১.৮ লিটার",
+        "মেটেরিয়াল": "৩০৪ গ্রেড স্টেইনলেস স্টিল ও পিপি পলিমার",
+        "সেফটি": "থার্মোস্ট্যাট অটো কাট-অফ"
+      },
+      "warranty": "১ বছরের সার্ভিস ওয়ারেন্টি",
+      "badge": "সেরা ভ্যালু",
+      "is_flash_deal": false,
+      "stock": 40,
+      "images": [
+        "promo_kitchen_home_1793335872493.jpg",
+        "product_smart_airfryer_1793335872086.jpg"
+      ],
+      "variants": [
+        {
+          "name": "কালার",
+          "options": [
+            "ম্যাট হোয়াইট (Matte White)",
+            "সিলভার স্টেইনলেস (Silver)"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "gd-gadget-04",
+      "sku": "ACT-TWS-PRO",
+      "category": "audio",
+      "name_bn": "প্রো ট্রু ওয়্যারলেস স্টেরিও (TWS) ডিপ-বাস ইয়ারবাডস উইথ এএনসি",
+      "name_en": "Pro True Wireless Stereo (TWS) Deep Bass Earbuds with ANC Case",
+      "brand": "Acoustic Sound",
+      "price": 1950,
+      "regular_price": 2800,
+      "description_bn": "১৩ মি.মি. বায়ো-ডায়াফ্রাম ড্রাইভার ও ডিপ বাস প্রযুক্তি সম্বলিত ট্রু ওয়্যারলেস ইয়ারবাডস। এনভায়রনমেন্টাল নয়েজ ক্যানসেলেশন (ENC) মাইক্রোফোনে ক্রিস্টাল ক্লিয়ার কলিং এবং গেমিংয়ের জন্য ৬০ মি.সে. আল্ট্রা-লো লেটেন্সি মোড। সর্বমোট ৩০ ঘণ্টার ব্যাটারি ব্যাকআপ।",
+      "description_en": "Engineered with 13mm bio-cellulose drivers tuned for punchy deep bass and pristine highs. Quad-mic ENC isolates your voice on calls even in noisy surroundings. Delivers 6 hours playback per charge and 30 hours total with pocket-friendly charging case.",
+      "features": [
+        "১৩ মি.মি. বায়ো-ডায়াফ্রাম হাই-রেজ অডিও ড্রাইভার",
+        "কোয়াড-মাইক এনভায়রনমেন্টাল নয়েজ ক্যানসেলেশন (ENC)",
+        "গেমিংয়ের জন্য ৬০ মি.সে. লো লেটেন্সি মোড",
+        "সর্বমোট ৩০ ঘণ্টার ব্যাটারি ব্যাকআপ কেস সহ",
+        "স্মার্ট টাচ কন্ট্রোল (ভলিউম, কল ও গান পরিবর্তন)",
+        "৬ মাসের রিপ্লেসমেন্ট গ্যারান্টি"
+      ],
+      "specifications": {
+        "মডেল": "ACT-TWS-PRO",
+        "ব্লুটুথ": "ভার্সন ৫.৩ ফাস্ট পেয়ারিং",
+        "ওয়াটারপ্রুফ রেটিং": "আইপিএক্স৫ সোয়েটপ্রুফ",
+        "প্লে-টাইম": "৬ ঘণ্টা (ইয়ারবাড) + ২৪ ঘণ্টা (কেস)",
+        "চার্জিং পোর্ট": "টাইপ-সি ফাস্ট চার্জিং"
+      },
+      "warranty": "৬ মাসের ব্র্যান্ড রিপ্লেসমেন্ট ওয়ারেন্টি",
+      "badge": "টপ রেটেড",
+      "is_flash_deal": true,
+      "stock": 45,
+      "images": [
+        "gadget_smartwatch_tws_1793337109838.jpg",
+        "hero_ecommerce_showcase_1793335872034.jpg"
+      ],
+      "variants": [
+        {
+          "name": "কালার",
+          "options": [
+            "ম্যাট ব্ল্যাক (Matte Black)",
+            "ক্লাসিক হোয়াইট (White)"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "gd-kitchen-04",
+      "sku": "VIS-IND-2200",
+      "category": "kitchen-appliances",
+      "name_bn": "স্মার্ট ডিজিটাল ইনডাকশন কুকার (২২০০ ওয়াট)",
+      "name_en": "Vision Smart Touch Digital Induction Cooker (2200W)",
+      "brand": "Vision Electronics",
+      "price": 3450,
+      "regular_price": 4600,
+      "description_bn": "গ্যাসের ঝামেলা ছাড়াই বিদ্যুৎ সাশ্রয়ী দ্রুত রান্নার আধুনিক ২২০০ ওয়াটের স্মার্ট টাচ ইনডাকশন কুকার। ৮টি রান্নার প্রিসেট মোড, নিখুঁত তাপমাত্রা নিয়ন্ত্রণ এবং প্রিমিয়াম ক্রিস্টাল গ্লাস টপ প্লেট।",
+      "description_en": "High efficiency 2200W electromagnetic induction cooker. Heats iron and induction cookware directly with 90% thermal efficiency, saving up to 40% energy compared to LPG gas stoves.",
+      "features": [
+        "২২০০ ওয়াট সুপার ফাস্ট হিটিং টেকনোলজি",
+        "প্রিমিয়াম এ-গ্রেড স্ক্র্যাচ রেজিস্ট্যান্ট ক্রিস্টাল গ্লাস প্লেট",
+        "৮টি স্বয়ংক্রিয় বাংলাদেশি রান্নার মোড (ভাত, ভাজি, তরকারি, দুধ)",
+        "ডিজিটাল টাইমার ও চাইল্ড লক সেফটি সিস্টেম",
+        "১ বছরের সরাসরি সার্ভিস ওয়ারেন্টি"
+      ],
+      "specifications": {
+        "মডেল": "VIS-IND-2200",
+        "পাওয়ার": "২২০০ ওয়াট এডজাস্টেবল (200W - 2200W)",
+        "ভোল্টেজ": "220V - 50Hz",
+        "প্লেট সাইজ": "২৮০ x ৩৫০ মি.মি. মাইক্রোক্রিস্টালিন গ্লাস",
+        "ডিসপ্লে": "৪ ডিজিট এলইডি ডিসপ্লে"
+      },
+      "warranty": "১ বছরের অফিসিয়াল সার্ভিস ওয়ারেন্টি",
+      "badge": "বিদ্যুৎ সাশ্রয়ী",
+      "is_flash_deal": false,
+      "stock": 19,
+      "images": [
+        "promo_kitchen_home_1793335872493.jpg",
+        "product_smart_airfryer_1793335872086.jpg"
+      ],
+      "variants": [
+        {
+          "name": "কালার",
+          "options": [
+            "ব্ল্যাক ক্রিস্টাল (Black)"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "gd-cookware-02",
+      "sku": "RFL-VAC-1000",
+      "category": "cookware",
+      "name_bn": "আরএফএল ডাবল-ওয়াল ভ্যাকুয়াম ইনসুলেটেড থার্মাস ফ্লাস্ক (১ লিটার)",
+      "name_en": "RFL Double Wall Vacuum Insulated Stainless Steel Thermos (1L)",
+      "brand": "RFL Houseware",
+      "price": 950,
+      "regular_price": 1350,
+      "description_bn": "২৪ ঘণ্টা চা বা গরম পানি ফুটন্ত গরম এবং শরবত বা বরফপানি ঠান্ডা রাখার বিশেষ ডাবল-ওয়াল ভ্যাকুয়াম ইনসুলেশন টেকনোলজি। ভ্রমণ, অফিস কিংবা শিশুদের গরম পানির জন্য ১০০% লিক-প্রুফ সেরা ফ্লাস্ক।",
+      "description_en": "Double-wall stainless steel vacuum insulation preserves temperature for up to 24 hours. Features one-touch push-button pouring stopper and food-grade insulated cup cap.",
+      "features": [
+        "২৪ ঘণ্টা তাপমাত্রা সুরক্ষা (হট ও কোল্ড)",
+        "ফুড-গ্রেড ৩০৪ স্টেইনলেস স্টিল লাইনার",
+        "১০০% লিক-প্রুফ পুশ বাটন ও ক্যাপ-কাপ",
+        "সহজে বহনযোগ্য হ্যান্ডি স্ট্র্যাপ",
+        "৬ মাসের ভ্যাকুয়াম ইনসুলেশন গ্যারান্টি"
+      ],
+      "specifications": {
+        "মডেল": "RFL-VAC-1000",
+        "ধারণক্ষমতা": "১ লিটার (1000ml)",
+        "মেটেরিয়াল": "ডাবল ওয়াল ৩০৪ স্টেইনলেস স্টিল",
+        "ইনসুলেশন পারফরম্যান্স": "২৪ ঘণ্টা ≥৬০°C"
+      },
+      "warranty": "৬ মাসের ভ্যাকুয়াম গ্যারান্টি",
+      "badge": "২৪ ঘণ্টা গরম/ঠান্ডা",
+      "is_flash_deal": false,
+      "stock": 38,
+      "images": [
+        "kitchen_granite_cookware_1793337110405.jpg",
+        "promo_kitchen_home_1793335872493.jpg"
+      ],
+      "variants": [
+        {
+          "name": "কালার",
+          "options": [
+            "মেটালিক ব্ল্যাক (Black)",
+            "রয়্যাল সিলভার (Silver)",
+            "নেভি ব্লু (Blue)"
+          ]
+        }
+      ]
+    }
+  ]
+}

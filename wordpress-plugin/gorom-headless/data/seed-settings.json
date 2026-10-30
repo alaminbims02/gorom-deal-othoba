@@ -1,0 +1,716 @@
+{
+ "_images": {
+  "hero": "hero_ecommerce_showcase_1793335872034.jpg",
+  "promo": "promo_kitchen_home_1793335872493.jpg",
+  "cookware": "kitchen_granite_cookware_1793337110405.jpg",
+  "watch": "gadget_smartwatch_tws_1793337109838.jpg"
+ },
+ "general": {
+  "site_name": {
+   "bn": "গরম ডিল",
+   "en": "Gorom Deal"
+  },
+  "tagline": {
+   "bn": "কিচেন ও গ্যাজেটসের সেরা হাট · Gorom Deal",
+   "en": "Kitchen & Gadgets · Gorom Deal"
+  },
+  "logo_main": {
+   "bn": "গরম",
+   "en": "Gorom"
+  },
+  "logo_accent": {
+   "bn": "ডিল",
+   "en": "Deal"
+  },
+  "default_lang": "bn",
+  "lang_toggle": 1,
+  "color_brand": "#F36B0B",
+  "color_accent": "#E93825",
+  "color_ink": "#252525",
+  "color_cream": "#FFF8F1",
+  "color_mist": "#F3F3F3"
+ },
+ "topbar": {
+  "enabled": 1,
+  "left_text": {
+   "bn": "১০০% আসল পণ্যের গ্যারান্টি",
+   "en": "100% Authentic Products"
+  },
+  "show_phone": 1,
+  "show_track": 1,
+  "ticker_enabled": 0,
+  "ticker_speed": 30,
+  "ticker": []
+ },
+ "hero": {
+  "autoplay": 6,
+  "slides": [
+   {
+    "enabled": 1,
+    "tag": {
+     "bn": "গরম ডিল ধামাকা অফার",
+     "en": "Hot Flash Deals Sale"
+    },
+    "title": {
+     "bn": "সেরা কিচেন অ্যাপ্লায়েন্স ও হাই-টেক গ্যাজেটস",
+     "en": "Premium Kitchen Appliances & High-Tech Gadgets"
+    },
+    "subtitle": {
+     "bn": "ভিশন এয়ার ফ্রায়ার, পাওয়ার ব্লেন্ডার, অ্যামোলেড স্মার্টওয়াচ ও নয়েজ ক্যানসেলিং হেডফোনে ৫০% পর্যন্ত বিশেষ ছাড়!",
+     "en": "Exclusive discounts on smart air fryers, 1000W blenders, ANC audio and smartwatches with official brand warranty."
+    },
+    "cta_text": {
+     "bn": "অফারগুলো দেখুন",
+     "en": "Explore Deals"
+    },
+    "cta_link": "/category/kitchen-appliances",
+    "badge": {
+     "bn": "৫০% পর্যন্ত ছাড়",
+     "en": "Up to 50% OFF"
+    },
+    "image": "hero"
+   },
+   {
+    "enabled": 1,
+    "tag": {
+     "bn": "স্মার্ট কিচেন ও কুকওয়্যার",
+     "en": "Smart Kitchen Living"
+    },
+    "title": {
+     "bn": "আধুনিক রান্নাঘরের জন্য নন-স্টিক মার্বেল কুকওয়্যার",
+     "en": "Granite Non-Stick Cookware Sets & Blenders"
+    },
+    "subtitle": {
+     "bn": "৫-লেয়ার স্ক্র্যাচ-প্রুফ মার্বেল কোটিং, ইনডাকশন ফ্রেন্ডলি বেস ও হেভি ডিউটি কিচেন গ্যাজেটস।",
+     "en": "PFOA-free granite cookware and rapid kettles designed for everyday culinary excellence."
+    },
+    "cta_text": {
+     "bn": "কিচেন কালেকশন",
+     "en": "Shop Kitchen"
+    },
+    "cta_link": "/category/cookware",
+    "badge": {
+     "bn": "নতুন স্টক",
+     "en": "New Arrivals"
+    },
+    "image": "cookware"
+   },
+   {
+    "enabled": 1,
+    "tag": {
+     "bn": "ফ্ল্যাগশিপ গ্যাজেটস কালেকশন",
+     "en": "Flagship Smart Gadgets"
+    },
+    "title": {
+     "bn": "টাইটানিয়াম স্মার্টওয়াচ ও ৬৫ ওয়াট গ্যান ফাস্ট চার্জার",
+     "en": "Titanium Smartwatches & 65W GaN Fast Power"
+    },
+    "subtitle": {
+     "bn": "এমোলেড ডিসপ্লে, ব্লুটুথ কলিং ও ল্যাপটপ চার্জিং উপযোগী হাই-ক্যাপাসিটি পাওয়ার ব্যাংক।",
+     "en": "Ultra-bright AMOLED displays, true bass wireless earbuds, and 20000mAh laptop power banks."
+    },
+    "cta_text": {
+     "bn": "গ্যাজেটস দেখুন",
+     "en": "Shop Gadgets"
+    },
+    "cta_link": "/category/smartwatch",
+    "badge": {
+     "bn": "১০০% অরিজিনাল",
+     "en": "100% Genuine"
+    },
+    "image": "watch"
+   }
+  ],
+  "points": [
+   {
+    "icon": "ShieldCheck",
+    "text": {
+     "bn": "অফিশিয়াল ব্র্যান্ড ওয়ারেন্টি",
+     "en": "Official brand warranty"
+    }
+   },
+   {
+    "icon": "Truck",
+    "text": {
+     "bn": "সারা দেশে ক্যাশ অন ডেলিভারি",
+     "en": "Nationwide cash on delivery"
+    }
+   }
+  ]
+ },
+ "promo": {
+  "banners": [
+   {
+    "enabled": 1,
+    "pill": {
+     "bn": "এক্সক্লুসিভ কিচেন ও গ্যাজেট ফেস্টিভ্যাল",
+     "en": "Exclusive Kitchen & Tech Festival"
+    },
+    "pill2": {
+     "bn": "অরিজিনাল ব্র্যান্ড ওয়ারেন্টি",
+     "en": "Official Warranty"
+    },
+    "title": {
+     "bn": "স্মার্ট কিচেন অ্যাপ্লায়েন্স ও হাই-টেক গ্যাজেটসে মেগা অফার",
+     "en": "Mega Offers on Smart Kitchen Appliances & High-Tech Gadgets"
+    },
+    "subtitle": {
+     "bn": "ভিশন এয়ার ফ্রায়ার, পাওয়ারফুল ব্লেন্ডার, অ্যামোলেড স্মার্টওয়াচ ও এএনসি হেডফোনে পাচ্ছেন ৫০% পর্যন্ত বিশেষ ক্যাশব্যাক!",
+     "en": "Enjoy massive discounts on air fryers, marble cookware sets, AMOLED smartwatches & high-capacity 65W power banks."
+    },
+    "cta_text": {
+     "bn": "কালেকশন দেখুন",
+     "en": "Explore Collection"
+    },
+    "cta_link": "/category/kitchen-appliances",
+    "image": "promo",
+    "caption": {
+     "bn": "৫০% পর্যন্ত ক্যাশব্যাক",
+     "en": "Up to 50% Cashback"
+    }
+   }
+  ]
+ },
+ "home": {
+  "sections": [
+   {
+    "enabled": 1,
+    "type": "hero",
+    "title": {
+     "bn": "",
+     "en": ""
+    },
+    "category": "",
+    "limit": 8,
+    "banner_index": 1,
+    "view_all": ""
+   },
+   {
+    "enabled": 1,
+    "type": "categories",
+    "title": {
+     "bn": "",
+     "en": ""
+    },
+    "category": "",
+    "limit": 12,
+    "banner_index": 1,
+    "view_all": ""
+   },
+   {
+    "enabled": 1,
+    "type": "flash_deals",
+    "title": {
+     "bn": "গরম ডিল - কিচেন ও গ্যাজেটস",
+     "en": "Hot Deals - Kitchen & Gadgets"
+    },
+    "category": "",
+    "limit": 4,
+    "banner_index": 1,
+    "view_all": ""
+   },
+   {
+    "enabled": 1,
+    "type": "promo",
+    "title": {
+     "bn": "",
+     "en": ""
+    },
+    "category": "",
+    "limit": 8,
+    "banner_index": 1,
+    "view_all": ""
+   },
+   {
+    "enabled": 1,
+    "type": "featured",
+    "title": {
+     "bn": "টপ ট্রেন্ডিং কিচেন ও গ্যাজেটস",
+     "en": "Top Trending Kitchen & Gadgets"
+    },
+    "category": "",
+    "limit": 8,
+    "banner_index": 1,
+    "view_all": ""
+   },
+   {
+    "enabled": 1,
+    "type": "trust",
+    "title": {
+     "bn": "",
+     "en": ""
+    },
+    "category": "",
+    "limit": 8,
+    "banner_index": 1,
+    "view_all": ""
+   }
+  ],
+  "featured_tabs": [
+   {
+    "label": {
+     "bn": "সব",
+     "en": "All"
+    },
+    "categories": ""
+   },
+   {
+    "label": {
+     "bn": "কিচেন অ্যাপ্লায়েন্স ও কুকওয়্যার",
+     "en": "Kitchen & Cookware"
+    },
+    "categories": "kitchen-appliances,cookware"
+   },
+   {
+    "label": {
+     "bn": "স্মার্ট গ্যাজেটস ও অডিও",
+     "en": "Smart Gadgets & Audio"
+    },
+    "categories": "smartwatch,power-charging,audio,gadgets"
+   }
+  ]
+ },
+ "trust": {
+  "features": [
+   {
+    "icon": "Truck",
+    "title": {
+     "bn": "দ্রুত হোম ডেলিভারি",
+     "en": "Fast Home Delivery"
+    },
+    "desc": {
+     "bn": "ঢাকা সহ ৬৪ জেলায় দ্রুত ও নিরাপদ ডেলিভারি",
+     "en": "Fast and safe delivery across all 64 districts"
+    }
+   },
+   {
+    "icon": "ShieldCheck",
+    "title": {
+     "bn": "১০০% আসল পণ্যের গ্যারান্টি",
+     "en": "100% Genuine Products"
+    },
+    "desc": {
+     "bn": "প্রাণ-আরএফএল ও অফিশিয়াল ব্র্যান্ড ওয়ারেন্টি",
+     "en": "Pran-RFL and official brand warranty"
+    }
+   },
+   {
+    "icon": "Headphones",
+    "title": {
+     "bn": "২৪/৭ কাস্টমার সাপোর্ট",
+     "en": "24/7 Customer Support"
+    },
+    "desc": {
+     "bn": "যেকোনো তথ্যে কল করুন: ০৯৬১৩-৭৩৭৭২৬",
+     "en": "Call us for any query: 09613-737726"
+    }
+   },
+   {
+    "icon": "RotateCcw",
+    "title": {
+     "bn": "সহজ ৭ দিনের রিটার্ন",
+     "en": "Easy 7-Day Returns"
+    },
+    "desc": {
+     "bn": "পণ্য অপছন্দ বা সমস্যা হলে ঝামেলামুক্ত রিটার্ন",
+     "en": "Hassle-free returns if you dislike the product or find an issue"
+    }
+   }
+  ]
+ },
+ "contact": {
+  "address": {
+   "bn": "প্রাণ-আরএফএল সেন্টার, ১০৫ প্রগতি সরণি, মধ্য বাড্ডা, ঢাকা-১২১২",
+   "en": "Pran-RFL Center, 105 Pragati Sarani, Middle Badda, Dhaka-1212"
+  },
+  "hotline": "09613-737726",
+  "phone": "",
+  "hours": {
+   "bn": "সকাল ৯টা - রাত ১০টা",
+   "en": "9am - 10pm"
+  },
+  "email": "support@goromdeal.com",
+  "whatsapp": "",
+  "map_url": ""
+ },
+ "footer": {
+  "about": {
+   "bn": "বাংলাদেশের নির্ভরযোগ্য কিচেন অ্যাপ্লায়েন্স ও হাই-টেক গ্যাজেটস স্টোর। ভিশন, আরএফএল এবং শীর্ষ ব্র্যান্ডের আসল পণ্য সরাসরি ব্র্যান্ড ওয়ারেন্টি সহ পৌঁছে দিচ্ছি আপনার ঠিকানায়।",
+   "en": "Bangladesh's premier destination for genuine kitchen appliances, cookware and smart gadgets with official warranty and nationwide cash on delivery."
+  },
+  "col1_title": {
+   "bn": "কিচেন আইটেমস",
+   "en": "Kitchen Items"
+  },
+  "col2_title": {
+   "bn": "স্মার্ট গ্যাজেটস",
+   "en": "Smart Gadgets"
+  },
+  "col3_title": {
+   "bn": "পেমেন্ট মাধ্যম",
+   "en": "Accepted Payments"
+  },
+  "payments": [
+   {
+    "label": "Cash on Delivery",
+    "color": "#444444"
+   }
+  ],
+  "facebook": "",
+  "instagram": "",
+  "youtube": "",
+  "tiktok": "",
+  "x": "",
+  "trade_license": "",
+  "dbid": "",
+  "copyright": {
+   "bn": "গরম ডিল - Gorom Deal | কিচেন ও গ্যাজেটসের নির্ভরযোগ্য অনলাইন শপ।",
+   "en": "Gorom Deal - your trusted kitchen & gadgets store."
+  }
+ },
+ "pages": {
+  "cat_banner_tag": {
+   "bn": "গরম ডিল ইলেকট্রনিক্স ও কিচেন হাব",
+   "en": "Gorom Deal Electronics & Kitchen Hub"
+  },
+  "cat_banner_desc": {
+   "bn": "ভিশন, আরএফএল ও প্রিমিয়াম গ্যাজেট ব্র্যান্ডের ১০০% আসল কিচেন অ্যাপ্লায়েন্স, এয়ার ফ্রায়ার, ব্লেন্ডার, স্মার্টওয়াচ ও অডিও ডিভাইস। অফিসিয়াল ওয়ারেন্টি ও সারা দেশে ক্যাশ অন ডেলিভারি।",
+   "en": "Explore 100% genuine kitchen appliances, air fryers, heavy duty blenders, smartwatches, and audio gadgets with official manufacturer warranty and nationwide cash on delivery."
+  },
+  "cat_points": [
+   {
+    "icon": "ShieldCheck",
+    "text": {
+     "bn": "১০০% অথেনটিক পণ্য",
+     "en": "100% authentic products"
+    }
+   },
+   {
+    "icon": "Truck",
+    "text": {
+     "bn": "সারা দেশে ক্যাশ অন ডেলিভারি",
+     "en": "Nationwide cash on delivery"
+    }
+   },
+   {
+    "icon": "RotateCcw",
+    "text": {
+     "bn": "৭ দিনের সহজ রিটার্ন",
+     "en": "Easy 7-day returns"
+    }
+   }
+  ],
+  "cat_article_title": {
+   "bn": "বাংলাদেশে কিচেন অ্যাপ্লায়েন্স ও ইলেকট্রনিক্স গ্যাজেটস অনলাইন শপিং - Gorom Deal",
+   "en": "Buy Kitchen Appliances & Electronics Online in Bangladesh at Gorom Deal"
+  },
+  "cat_article_text": {
+   "bn": "রান্নাঘরকে আধুনিক ও সময়সাশ্রয়ী করতে মানসম্মত কিচেন অ্যাপ্লায়েন্সের কোনো বিকল্প নেই। আমাদের কালেকশনে পাবেন ভিশন (Vision) ডিজিটাল এয়ার ফ্রায়ার, ১০০০ ওয়াট পিওর কপার মোটর ব্লেন্ডার ও গ্রাইন্ডার, আরএফএল ৭-পিস মার্বেল কোটিং নন-স্টিক কুকওয়্যার সেট, দ্রুত ফুটন্ত কর্ডলেস ইলেকট্রিক কেটলি এবং ২২০০ ওয়াটের বিদ্যুৎ সাশ্রয়ী ডিজিটাল ইনডাকশন কুকার। এছাড়া তরুণ প্রজন্মের জন্য রয়েছে টাইটানিয়াম অ্যামোলেড কলিং স্মার্টওয়াচ, ৬৫ ওয়াট ফাস্ট ল্যাপটপ পাওয়ার ব্যাংক ও অ্যাক্টিভ নয়েজ ক্যানসেলিং (ANC) স্টুডিও অডিও হেডফোন। সকল পণ্যে রয়েছে অফিশিয়াল ব্র্যান্ড ওয়ারেন্টি এবং সারা দেশে ক্যাশ অন ডেলিভারি সুবিধা।",
+   "en": "Shopping for authentic kitchen appliances and tech gadgets in Bangladesh is now seamless. Discover energy efficient air fryers, 1000W commercial blenders, granite cookware sets, AMOLED calling smartwatches, and fast GaN powerbanks with official warranty and reliable doorstep cash on delivery."
+  },
+  "cat_value_props": [
+   {
+    "title": {
+     "bn": "কেন গরম ডিলে কিচেন ও গ্যাজেটস কিনবেন?",
+     "en": "Why buy kitchen & gadgets from Gorom Deal?"
+    },
+    "items": {
+     "bn": "১০০% আসল ব্র্যান্ড পণ্য: সরাসরি প্রাণ-আরএফএল ও অনুমোদিত অফিশিয়াল ডিস্ট্রিবিউটর থেকে সংগৃহীত।\nক্যাশ অন ডেলিভারি (COD): পণ্য হাতে পেয়ে চেক করে ডেলিভারি ম্যানের কাছে মূল্য পরিশোধের সুবিধা।\nদ্রুততম ডেলিভারি: ঢাকা সিটির ভিতরে ২৪-৪৮ ঘণ্টা এবং জেলা সদরে ২-৩ দিনের মধ্যে হোম ডেলিভারি।\nসহজ ওয়ারেন্টি সাপোর্ট: যে কোনো সমস্যায় আমাদের হটলাইনে যোগাযোগ করে ঝামেলামুক্ত সার্ভিস।",
+     "en": ""
+    }
+   },
+   {
+    "title": {
+     "bn": "কিচেন আইটেম ও গ্যাজেট কেনার আগে যা খেয়াল রাখবেন",
+     "en": "What to check before buying kitchen items & gadgets"
+    },
+    "items": {
+     "bn": "মোটরের পাওয়ার ও উপাদান: ব্লেন্ডার কেনার সময় ১০০% পিওর কপার ওয়াইন্ডিং মোটর ও ওয়াটেজ যাচাই করুন।\nনন-স্টিক মেটেরিয়াল: কুকওয়্যারের কোটিং যেন PFOA ও ক্যাডমিয়াম মুক্ত এবং ফুড-গ্রেড মার্বেল কোটিং হয়।\nঅটো কাট-অফ সেফটি: কেটলি ও ইনডাকশন কুকারে ওভারহিট প্রোটেকশন ফিচার নিশ্চিত করুন।",
+     "en": ""
+    }
+   }
+  ],
+  "faq": [
+   {
+    "q": {
+     "bn": "পণ্য হাতে পেয়ে কি দেখে নেওয়া যাবে?",
+     "en": "Can I check the product on delivery?"
+    },
+    "a": {
+     "bn": "হ্যাঁ, আমাদের ক্যাশ অন ডেলিভারি সার্ভিসে ডেলিভারি পার্সনের সামনে পার্সেলটি খুলে মূল পণ্য সঠিক আছে কিনা যাচাই করে নিতে পারবেন।",
+     "en": ""
+    }
+   },
+   {
+    "q": {
+     "bn": "ডেলিভারি চার্জ কত এবং কতদিন সময় লাগে?",
+     "en": "What are the delivery charges and timeline?"
+    },
+    "a": {
+     "bn": "ঢাকা সিটির ভেতরে ডেলিভারি চার্জ মাত্র ৬০ টাকা (২৪-৪৮ ঘণ্টা)। ঢাকার বাইরে সারা বাংলাদেশে ডেলিভারি চার্জ ১২০ টাকা (২-৩ কার্যদিবস)।",
+     "en": "Delivery inside Dhaka is ৳60 (24-48 hours). Outside Dhaka it is ৳120 (2-3 working days)."
+    }
+   },
+   {
+    "q": {
+     "bn": "ওয়ারেন্টি দাবি করতে হলে কি করতে হবে?",
+     "en": "How do I claim warranty?"
+    },
+    "a": {
+     "bn": "পণ্যের সাথে থাকা অফিশিয়াল ওয়ারেন্টি কার্ড এবং চালানের কপি সংরক্ষণ করুন। প্রয়োজনে আমাদের হটলাইন (09613-737726) এ কল দিলে প্রতিনিধি সমাধান করে দেবেন।",
+     "en": "Keep the official warranty card and invoice. Call our hotline (09613-737726) and a representative will help."
+    }
+   },
+   {
+    "q": {
+     "bn": "পণ্য ত্রুটিপূর্ণ হলে পরিবর্তন (Replacement) করার নিয়ম কি?",
+     "en": "What is the replacement policy for defective products?"
+    },
+    "a": {
+     "bn": "পণ্য পাওয়ার পর কোনো প্রকার টেকনিক্যাল বা ম্যানুফ্যাকচারিং ত্রুটি থাকলে ৭ দিনের মধ্যে আমাদের জানালে সম্পূর্ণ ফ্রিতে পরিবর্তন করে দেওয়া হবে।",
+     "en": ""
+    }
+   }
+  ],
+  "pdp_price_note": {
+   "bn": "✓ ভ্যাট অন্তর্ভুক্ত · ক্যাশ অন ডেলিভারি প্রযোজ্য",
+   "en": "✓ VAT included · Cash on Delivery available"
+  },
+  "pdp_ship_note": {
+   "bn": "আজ অর্ডার করলে আগামীকালের মধ্যে শিপিং",
+   "en": "Ships within 24 hours"
+  },
+  "pdp_delivery_info": {
+   "bn": "",
+   "en": ""
+  },
+  "pdp_guarantee": {
+   "bn": "পণ্য হাতে পেয়ে চেক করে নেওয়ার সুবিধা।",
+   "en": "Check the parcel at your doorstep upon delivery."
+  },
+  "pdp_badges": [
+   {
+    "icon": "ShieldCheck",
+    "text": {
+     "bn": "১০০% অরিজিনাল",
+     "en": "100% Genuine"
+    }
+   },
+   {
+    "icon": "Truck",
+    "text": {
+     "bn": "ক্যাশ অন ডেলিভারি",
+     "en": "Cash on Delivery"
+    }
+   },
+   {
+    "icon": "RotateCcw",
+    "text": {
+     "bn": "৭ দিনের রিটার্ন",
+     "en": "7-day returns"
+    }
+   }
+  ]
+ },
+ "seo": {
+  "title_template": "%s | গরম ডিল",
+  "default_title": {
+   "bn": "গরম ডিল - Gorom Deal | সেরা কিচেন অ্যাপ্লায়েন্স ও স্মার্ট গ্যাজেটস অনলাইন শপ",
+   "en": "Gorom Deal | Best Kitchen Appliances & Smart Gadgets Online Shop"
+  },
+  "default_desc": {
+   "bn": "বাংলাদেশের সেরা কিচেন অ্যাপ্লায়েন্স, নন-স্টিক কুকওয়্যার ও হাই-টেক গ্যাজেটসের নির্ভরযোগ্য অনলাইন শপ। দ্রুত হোম ডেলিভারি ও ১০০% আসল পণ্যের গ্যারান্টি।",
+   "en": "Bangladesh's trusted online shop for kitchen appliances, non-stick cookware and high-tech gadgets. Fast home delivery and 100% genuine products."
+  },
+  "keywords": "kitchen appliances bd, smart gadgets bangladesh, air fryer price bd, blender price in bd, smartwatch bd, gorom deal",
+  "twitter_handle": "",
+  "noindex": 0,
+  "robots_disallow": [
+   "/api/",
+   "/checkout",
+   "/cart"
+  ]
+ },
+ "delivery": {
+  "mode": "custom",
+  "inside_charge": 60,
+  "outside_charge": 120,
+  "free_enabled": 1,
+  "free_threshold": 2500,
+  "inside_eta": {
+   "bn": "২৪-৪৮ ঘণ্টা",
+   "en": "24-48 hrs"
+  },
+  "outside_eta": {
+   "bn": "২-৩ দিন",
+   "en": "2-3 days"
+  }
+ },
+ "checkout": {
+  "cod_enabled": 1,
+  "show_email": 0,
+  "show_note": 1,
+  "min_order": 0,
+  "confirm_title": {
+   "bn": "ধন্যবাদ! আপনার অর্ডারটি নিশ্চিত হয়েছে",
+   "en": "Thank You! Your Order is Confirmed"
+  },
+  "confirm_text": {
+   "bn": "আমাদের কাস্টমার কেয়ার প্রতিনিধি শীঘ্রই আপনার নাম্বারে কল করে অর্ডারটি নিশ্চিত করবেন।",
+   "en": "Our customer representative will call shortly to verify your order."
+  },
+  "order_prefix": "GD-",
+  "order_status": "processing",
+  "rate_phone": 5,
+  "rate_ip": 20,
+  "dup_window": 10,
+  "districts": [
+   {
+    "name_en": "Dhaka",
+    "name_bn": "ঢাকা",
+    "zone": "inside"
+   },
+   {
+    "name_en": "Chattogram",
+    "name_bn": "চট্টগ্রাম",
+    "zone": "outside"
+   },
+   {
+    "name_en": "Rajshahi",
+    "name_bn": "রাজশাহী",
+    "zone": "outside"
+   },
+   {
+    "name_en": "Khulna",
+    "name_bn": "খুলনা",
+    "zone": "outside"
+   },
+   {
+    "name_en": "Sylhet",
+    "name_bn": "সিলেট",
+    "zone": "outside"
+   },
+   {
+    "name_en": "Barishal",
+    "name_bn": "বরিশাল",
+    "zone": "outside"
+   },
+   {
+    "name_en": "Rangpur",
+    "name_bn": "রংপুর",
+    "zone": "outside"
+   },
+   {
+    "name_en": "Mymensingh",
+    "name_bn": "ময়মনসিংহ",
+    "zone": "outside"
+   },
+   {
+    "name_en": "Cumilla",
+    "name_bn": "কুমিল্লা",
+    "zone": "outside"
+   },
+   {
+    "name_en": "Bogura",
+    "name_bn": "বগুড়া",
+    "zone": "outside"
+   },
+   {
+    "name_en": "Gazipur",
+    "name_bn": "গাজীপুর",
+    "zone": "outside"
+   },
+   {
+    "name_en": "Narayanganj",
+    "name_bn": "নারায়ণগঞ্জ",
+    "zone": "outside"
+   }
+  ]
+ },
+ "_menus": {
+  "gd_header": [
+   {
+    "title": "সব ক্যাটাগরি | All Categories",
+    "url": "/category/all"
+   },
+   {
+    "title": "কিচেন অ্যাপ্লায়েন্স | Kitchen Appliances",
+    "cat": "kitchen-appliances"
+   },
+   {
+    "title": "কুকওয়্যার | Cookware",
+    "cat": "cookware"
+   },
+   {
+    "title": "অডিও | Audio",
+    "cat": "audio"
+   },
+   {
+    "title": "স্মার্টওয়াচ | Smartwatch",
+    "cat": "smartwatch"
+   },
+   {
+    "title": "পাওয়ার ও চার্জিং | Power & Charging",
+    "cat": "power-charging"
+   }
+  ],
+  "gd_footer_col1": [
+   {
+    "title": "কিচেন অ্যাপ্লায়েন্স | Kitchen Appliances",
+    "cat": "kitchen-appliances"
+   },
+   {
+    "title": "কুকওয়্যার | Cookware",
+    "cat": "cookware"
+   }
+  ],
+  "gd_footer_col2": [
+   {
+    "title": "অডিও | Audio",
+    "cat": "audio"
+   },
+   {
+    "title": "স্মার্টওয়াচ | Smartwatch",
+    "cat": "smartwatch"
+   },
+   {
+    "title": "পাওয়ার ও চার্জিং | Power & Charging",
+    "cat": "power-charging"
+   }
+  ],
+  "gd_footer_policy": [
+   {
+    "title": "প্রাইভেসি পলিসি | Privacy Policy",
+    "page": "privacy-policy"
+   },
+   {
+    "title": "রিটার্ন ও রিফান্ড | Return & Refund",
+    "page": "return-refund-policy"
+   }
+  ]
+ },
+ "_pages": [
+  {
+   "slug": "privacy-policy",
+   "title_bn": "প্রাইভেসি পলিসি",
+   "title_en": "Privacy Policy"
+  },
+  {
+   "slug": "return-refund-policy",
+   "title_bn": "রিটার্ন ও রিফান্ড",
+   "title_en": "Return & Refund Policy"
+  }
+ ],
+ "_coupons": [
+  {
+   "code": "GOROM10",
+   "type": "percent",
+   "amount": 10
+  },
+  {
+   "code": "GOROMDEAL",
+   "type": "fixed_cart",
+   "amount": 200
+  }
+ ]
+}
