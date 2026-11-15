@@ -1,165 +1,264 @@
-import React, { useState, useEffect } from 'react';
-import { ArrowRight, Flame, ShieldCheck, Sparkles } from 'lucide-react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
+import { useSite } from '../context/SiteContext';
+import { ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
 
 interface HeroBannerProps {
   onShopNow: () => void;
-  lang: 'bn' | 'en';
+  onSelectCategory?: (catId: string) => void;
 }
 
-const SLIDES = [
-  {
-    id: 1,
-    tagBn: 'গরম ডিল ধামাকা অফার',
-    tagEn: 'Hot Flash Deals Sale',
-    titleBn: 'সেরা কিচেন অ্যাপ্লায়েন্স ও হাই-টেক গ্যাজেটস',
-    titleEn: 'Premium Kitchen Appliances & High-Tech Gadgets',
-    subtitleBn: 'ভিশন এয়ার ফ্রায়ার, পাওয়ার ব্লেন্ডার, অ্যামোলেড স্মার্টওয়াচ ও নয়েজ ক্যানসেলিং হেডফোনে ৫০% পর্যন্ত বিশেষ ছাড়!',
-    subtitleEn: 'Exclusive discounts on smart air fryers, 1000W blenders, ANC audio and smartwatches with official brand warranty.',
-    ctaBn: 'অফারগুলো দেখুন',
-    ctaEn: 'Explore Deals',
-    badgeBn: '৫০% পর্যন্ত ছাড়',
-    badgeEn: 'Up to 50% OFF',
-    image: '/src/assets/images/hero_ecommerce_showcase_1793335872034.jpg',
-  },
-  {
-    id: 2,
-    tagBn: 'স্মার্ট কিচেন ও কুকওয়্যার',
-    tagEn: 'Smart Kitchen Living',
-    titleBn: 'আধুনিক রান্নাঘরের জন্য নন-স্টিক মার্বেল কুকওয়্যার',
-    titleEn: 'Granite Non-Stick Cookware Sets & Blenders',
-    subtitleBn: '৫-লেয়ার স্ক্র্যাচ-প্রুফ মার্বেল কোটিং, ইনডাকশন ফ্রেন্ডলি বেস ও হেভি ডিউটি কিচেন গ্যাজেটস।',
-    subtitleEn: 'PFOA-free granite cookware and rapid kettles designed for everyday culinary excellence.',
-    ctaBn: 'কিচেন কালেকশন',
-    ctaEn: 'Shop Kitchen',
-    badgeBn: 'নতুন স্টক',
-    badgeEn: 'New Arrivals',
-    image: '/src/assets/images/kitchen_granite_cookware_1793337110405.jpg',
-  },
-  {
-    id: 3,
-    tagBn: 'ফ্ল্যাগশিপ গ্যাজেটস কালেকশন',
-    tagEn: 'Flagship Smart Gadgets',
-    titleBn: 'টাইটানিয়াম স্মার্টওয়াচ ও ৬৫ ওয়াট গ্যান ফাস্ট চার্জার',
-    titleEn: 'Titanium Smartwatches & 65W GaN Fast Power',
-    subtitleBn: 'এমোলেড ডিসপ্লে, ব্লুটুথ কলিং ও ল্যাপটপ চার্জিং উপযোগী হাই-ক্যাপাসিটি পাওয়ার ব্যাংক।',
-    subtitleEn: 'Ultra-bright AMOLED displays, true bass wireless earbuds, and 20000mAh laptop power banks.',
-    ctaBn: 'গ্যাজেটস দেখুন',
-    ctaEn: 'Shop Gadgets',
-    badgeBn: '১০০% অরিজিনাল',
-    badgeEn: '100% Genuine',
-    image: '/src/assets/images/gadget_smartwatch_tws_1793337109838.jpg',
-  },
-];
+import type { HeroSlide as SlideItem } from '../types';
 
-export const HeroBanner: React.FC<HeroBannerProps> = ({ onShopNow, lang }) => {
+const SLIDE_DURATION_MS = 5500;
+
+export const HeroBanner: React.FC<HeroBannerProps> = ({
+  onShopNow,
+  onSelectCategory,
+}) => {
+  const { t, tx, slides: SLIDES } = useSite();
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [isPaused, setIsPaused] = useState(false);
+  const touchStartX = useRef<number | null>(null);
+  const touchDeltaX = useRef<number>(0);
 
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % SLIDES.length);
-    }, 6000);
-    return () => clearInterval(timer);
+  const nextSlide = useCallback(() => {
+    setCurrentSlide((prev) => (prev + 1) % SLIDES.length);
   }, []);
 
-  const slide = SLIDES[currentSlide];
+  const prevSlide = useCallback(() => {
+    setCurrentSlide((prev) => (prev - 1 + SLIDES.length) % SLIDES.length);
+  }, []);
+
+  useEffect(() => {
+    if (isPaused) return;
+    const timer = setInterval(nextSlide, SLIDE_DURATION_MS);
+    return () => clearInterval(timer);
+  }, [isPaused, nextSlide, currentSlide]);
+
+  if (SLIDES.length === 0) return null;
+
+  const handleTouchStart = (e: React.TouchEvent) => {
+    touchStartX.current = e.touches[0].clientX;
+    touchDeltaX.current = 0;
+    setIsPaused(true);
+  };
+
+  const handleTouchMove = (e: React.TouchEvent) => {
+    if (touchStartX.current === null) return;
+    touchDeltaX.current = e.touches[0].clientX - touchStartX.current;
+  };
+
+  const handleTouchEnd = () => {
+    if (Math.abs(touchDeltaX.current) > 45) {
+      if (touchDeltaX.current < 0) {
+        nextSlide();
+      } else {
+        prevSlide();
+      }
+    }
+    touchStartX.current = null;
+    touchDeltaX.current = 0;
+    setIsPaused(false);
+  };
+
+  const handleSlideAction = (slide: SlideItem) => {
+    if (slide.target && onSelectCategory) {
+      onSelectCategory(slide.target);
+    } else {
+      onShopNow();
+    }
+  };
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 pt-4 pb-2">
-      <div className="relative overflow-hidden rounded-2xl sm:rounded-3xl bg-[#FFF8F1] border border-orange-100 shadow-sm transition-all">
-        {/* Background Ambient Shapes */}
-        <div className="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-gradient-to-br from-orange-200/40 to-transparent blur-2xl pointer-events-none" />
-        <div className="absolute -bottom-20 left-1/3 w-80 h-80 rounded-full bg-[#F36B0B]/10 blur-3xl pointer-events-none" />
-        
-        <div className="grid grid-cols-1 lg:grid-cols-12 items-stretch gap-6 sm:gap-8 p-6 sm:p-10 lg:p-12 relative z-10">
-          
-          {/* Left Text Column */}
-          <div className="lg:col-span-7 flex flex-col justify-center space-y-4 sm:space-y-6">
-            
-            {/* Tag Badge */}
-            <div className="flex items-center gap-2">
-              <span className="inline-flex items-center gap-1.5 px-3.5 py-1 bg-[#E93825] text-white text-xs sm:text-sm font-semibold rounded-full shadow-xs tracking-wide">
-                <Flame className="w-3.5 h-3.5 fill-white text-white" />
-                {lang === 'bn' ? slide.tagBn : slide.tagEn}
-              </span>
-              <span className="inline-flex items-center gap-1 text-xs text-stone-600 font-medium bg-white/80 px-2.5 py-1 rounded-full border border-stone-200">
-                <ShieldCheck className="w-3.5 h-3.5 text-emerald-600" />
-                {lang === 'bn' ? '১০০% অরিজিনাল গ্যারান্টি' : '100% Authentic'}
-              </span>
-            </div>
-
-            {/* Main Headline */}
-            <h1 className="text-2xl sm:text-4xl lg:text-5xl font-bold text-[#252525] tracking-tight leading-[1.15]">
-              {lang === 'bn' ? slide.titleBn : slide.titleEn}
-            </h1>
-
-            {/* Subtitle */}
-            <p className="text-sm sm:text-base text-stone-600 max-w-xl leading-relaxed">
-              {lang === 'bn' ? slide.subtitleBn : slide.subtitleEn}
-            </p>
-
-            {/* CTA and Dots Row */}
-            <div className="flex flex-wrap items-center gap-4 sm:gap-6 pt-2">
-              <button
-                onClick={onShopNow}
-                className="inline-flex items-center gap-2 px-6 sm:px-8 py-3.5 bg-[#F36B0B] hover:bg-[#de5f07] text-white font-semibold text-sm sm:text-base rounded-xl shadow-lg shadow-orange-500/25 transition-all transform hover:-translate-y-0.5 cursor-pointer whitespace-nowrap"
+    <section
+      aria-label={t('heroBanner.featured_deals_carousel')}
+      className="max-w-7xl mx-auto px-3 sm:px-6 pt-3 sm:pt-4 pb-2"
+    >
+      <div
+        onMouseEnter={() => setIsPaused(true)}
+        onMouseLeave={() => setIsPaused(false)}
+        onTouchStart={handleTouchStart}
+        onTouchMove={handleTouchMove}
+        onTouchEnd={handleTouchEnd}
+        className="relative overflow-hidden rounded-xl sm:rounded-2xl bg-[#161616] shadow-md group select-none"
+      >
+        {/* Horizontal Sliding Track */}
+        <div
+          className="flex h-[340px] sm:h-[410px] lg:h-[460px] transition-transform duration-600 ease-[cubic-bezier(0.22,1,0.36,1)] will-change-transform"
+          style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+        >
+          {SLIDES.map((slide, index) => {
+            const isActive = currentSlide === index;
+            return (
+              <div
+                key={slide.id}
+                className="relative w-full h-full shrink-0 overflow-hidden"
+                aria-hidden={!isActive}
               >
-                <span>{lang === 'bn' ? slide.ctaBn : slide.ctaEn}</span>
-                <ArrowRight className="w-4 h-4" />
-              </button>
+                {/* Full-Bleed Product Photography */}
+                <img
+                  src={slide.image}
+                  alt={tx(slide.title)}
+                  referrerPolicy="no-referrer"
+                  className={`w-full h-full object-cover object-center transition-transform duration-700 ease-out ${
+                    isActive ? 'scale-100' : 'scale-105'
+                  }`}
+                />
 
-              {/* Slider Dots */}
-              <div className="flex items-center gap-2">
-                {SLIDES.map((_, idx) => (
+                {/* Measured High-Contrast Gradient Scrim */}
+                <div
+                  className="absolute inset-0 bg-gradient-to-t from-black/92 via-black/55 to-black/15 sm:bg-gradient-to-r sm:from-black/88 sm:via-black/52 sm:to-black/10"
+                  aria-hidden="true"
+                />
+
+                {/* Slide Content Overlay */}
+                <div className="relative z-10 h-full flex flex-col justify-end sm:justify-center px-4 pb-12 pt-6 sm:px-14 lg:px-16 sm:pb-16 max-w-2xl">
+                  <div className="space-y-2.5 sm:space-y-4">
+                    {/* Clean Editorial Kicker */}
+                    <p className="text-[11px] sm:text-xs font-bold tracking-wider uppercase text-[#FF9248]">
+                      {tx(slide.kicker)}
+                    </p>
+
+                    {/* Balanced Display Headline */}
+                    <h1 className="text-xl sm:text-3xl lg:text-[40px] font-bold text-white leading-[1.2] tracking-tight text-balance">
+                      {tx(slide.title)}
+                    </h1>
+
+                    {/* Subtitle */}
+                    <p className="text-xs sm:text-sm lg:text-base text-stone-200/95 leading-relaxed line-clamp-2 max-w-lg">
+                      {tx(slide.subtitle)}
+                    </p>
+
+                    {/* Primary Action Row */}
+                    <div className="pt-1 sm:pt-2 flex flex-wrap items-center gap-3 sm:gap-5">
+                      <button
+                        onClick={() => handleSlideAction(slide)}
+                        className="inline-flex items-center gap-2 px-5 sm:px-6 py-2.5 sm:py-3 bg-[#F36B0B] hover:bg-[#e05f05] active:scale-[0.98] text-white font-semibold text-xs sm:text-sm rounded-xl shadow-lg shadow-black/25 transition-all cursor-pointer whitespace-nowrap shrink-0"
+                      >
+                        <span>{tx(slide.cta)}</span>
+                        <ArrowRight className="w-4 h-4" />
+                      </button>
+
+                      <button
+                        onClick={onShopNow}
+                        className="hidden sm:inline-flex items-center text-xs sm:text-sm font-medium text-white/90 hover:text-white underline underline-offset-4 transition-colors cursor-pointer whitespace-nowrap shrink-0"
+                      >
+                        {t('heroBanner.view_hot_deals')}
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+
+        {/* Mobile Compact Top-Right Prev/Next Controls */}
+        <div className="sm:hidden absolute top-3 right-3 z-20 flex items-center gap-1.5">
+          <button
+            onClick={prevSlide}
+            aria-label={t('heroBanner.previous_slide')}
+            className="w-8 h-8 rounded-full bg-black/50 hover:bg-[#F36B0B] text-white backdrop-blur-xs border border-white/20 flex items-center justify-center transition-colors cursor-pointer"
+          >
+            <ChevronLeft className="w-4 h-4" />
+          </button>
+          <button
+            onClick={nextSlide}
+            aria-label={t('heroBanner.next_slide')}
+            className="w-8 h-8 rounded-full bg-black/50 hover:bg-[#F36B0B] text-white backdrop-blur-xs border border-white/20 flex items-center justify-center transition-colors cursor-pointer"
+          >
+            <ChevronRight className="w-4 h-4" />
+          </button>
+        </div>
+
+        {/* Desktop Edge Arrow Controls */}
+        <button
+          onClick={prevSlide}
+          aria-label={t('heroBanner.previous_slide')}
+          className="hidden sm:flex absolute left-3 lg:left-4 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-black/45 hover:bg-[#F36B0B] text-white backdrop-blur-xs border border-white/20 items-center justify-center transition-all opacity-0 group-hover:opacity-100 focus-visible:opacity-100 cursor-pointer"
+        >
+          <ChevronLeft className="w-5 h-5" />
+        </button>
+
+        <button
+          onClick={nextSlide}
+          aria-label={t('heroBanner.next_slide')}
+          className="hidden sm:flex absolute right-3 lg:right-4 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-black/45 hover:bg-[#F36B0B] text-white backdrop-blur-xs border border-white/20 items-center justify-center transition-all opacity-0 group-hover:opacity-100 focus-visible:opacity-100 cursor-pointer"
+        >
+          <ChevronRight className="w-5 h-5" />
+        </button>
+
+        {/* Bottom Interactive Slide Progress Strip */}
+        <div className="absolute bottom-0 inset-x-0 z-20 bg-gradient-to-t from-black/85 via-black/45 to-transparent px-4 sm:px-14 lg:px-16 pb-3 sm:pb-4 pt-6">
+          {/* Desktop Labeled Progress Tabs */}
+          <div className="hidden sm:grid gap-3 lg:gap-4" style={{ gridTemplateColumns: `repeat(${SLIDES.length}, minmax(0, 1fr))` }}>
+            {SLIDES.map((slide, idx) => {
+              const isActive = currentSlide === idx;
+              return (
+                <button
+                  key={slide.id}
+                  onClick={() => setCurrentSlide(idx)}
+                  aria-label={`Slide ${idx + 1}: ${tx(slide.tab)}`}
+                  className="text-left group/tab cursor-pointer focus:outline-none py-1"
+                >
+                  <div className="h-[3px] w-full bg-white/25 rounded-full overflow-hidden mb-1.5">
+                    {isActive ? (
+                      <div
+                        key={`${currentSlide}-${isPaused ? 'paused' : 'play'}`}
+                        className={`h-full bg-[#F36B0B] rounded-full ${
+                          isPaused ? 'w-full' : 'w-full animate-hero-progress'
+                        }`}
+                      />
+                    ) : (
+                      <div className="h-full w-0 bg-white/60 group-hover/tab:w-full transition-all duration-300" />
+                    )}
+                  </div>
+                  <span
+                    className={`block text-xs truncate transition-colors ${
+                      isActive
+                        ? 'text-white font-semibold'
+                        : 'text-white/65 group-hover/tab:text-white/95 font-medium'
+                    }`}
+                  >
+                    {tx(slide.tab)}
+                  </span>
+                </button>
+              );
+            })}
+          </div>
+
+          {/* Mobile Compact Progress Bars + Counter */}
+          <div className="flex sm:hidden items-center justify-between gap-3">
+            <div className="flex-1 grid gap-1.5" style={{ gridTemplateColumns: `repeat(${SLIDES.length}, minmax(0, 1fr))` }}>
+              {SLIDES.map((slide, idx) => {
+                const isActive = currentSlide === idx;
+                return (
                   <button
-                    key={idx}
+                    key={slide.id}
                     onClick={() => setCurrentSlide(idx)}
                     aria-label={`Slide ${idx + 1}`}
-                    className={`h-2.5 rounded-full transition-all cursor-pointer ${
-                      currentSlide === idx 
-                        ? 'w-7 bg-[#F36B0B]' 
-                        : 'w-2.5 bg-stone-300 hover:bg-stone-400'
-                    }`}
-                  />
-                ))}
-              </div>
+                    className="py-1.5 cursor-pointer focus:outline-none"
+                  >
+                    <div className="h-1 w-full bg-white/25 rounded-full overflow-hidden">
+                      {isActive && (
+                        <div
+                          key={`mob-${currentSlide}-${isPaused ? 'paused' : 'play'}`}
+                          className={`h-full bg-[#F36B0B] rounded-full ${
+                            isPaused ? 'w-full' : 'w-full animate-hero-progress'
+                          }`}
+                        />
+                      )}
+                    </div>
+                  </button>
+                );
+              })}
             </div>
-
-            {/* Quick Micro Value Proposition */}
-            <div className="pt-2 sm:pt-4 border-t border-orange-100/80 flex items-center gap-4 sm:gap-6 text-xs text-stone-600">
-              <span className="flex items-center gap-1">
-                <Sparkles className="w-3.5 h-3.5 text-[#F36B0B]" />
-                {lang === 'bn' ? 'অফিসিয়াল ব্র্যান্ড ওয়ারেন্টি' : 'Official Warranty'}
-              </span>
-              <span className="hidden sm:inline">·</span>
-              <span className="flex items-center gap-1">
-                <span className="font-bold text-[#F36B0B]">৳</span>
-                {lang === 'bn' ? 'সারাদেশে ক্যাশ অন ডেলিভারি' : 'Cash on Delivery'}
-              </span>
-              <span className="hidden sm:inline">·</span>
-              <span>{lang === 'bn' ? '৭ দিনের রিপ্লেসমেন্ট গ্যারান্টি' : '7-Day Easy Returns'}</span>
-            </div>
+            <span className="text-[11px] font-mono tabular-nums text-white/85 shrink-0">
+              {currentSlide + 1} / {SLIDES.length}
+            </span>
           </div>
-
-          {/* Right Image Showcase Column */}
-          <div className="lg:col-span-5 relative flex items-center justify-center">
-            <div className="relative w-full aspect-[4/3] sm:aspect-[16/10] lg:aspect-square max-h-[380px] rounded-2xl overflow-hidden bg-white/60 p-2 border border-orange-100 shadow-md">
-              <img
-                src={slide.image}
-                alt={slide.titleEn}
-                referrerPolicy="no-referrer"
-                className="w-full h-full object-cover rounded-xl transition-all duration-700 hover:scale-105"
-              />
-
-              {/* Floating Discount Tag */}
-              <div className="absolute top-4 right-4 bg-gradient-to-r from-[#E93825] to-[#F36B0B] text-white px-3.5 py-1.5 rounded-full font-bold text-xs sm:text-sm shadow-md flex items-center gap-1">
-                <Flame className="w-3.5 h-3.5 fill-white text-white" />
-                <span>{lang === 'bn' ? slide.badgeBn : slide.badgeEn}</span>
-              </div>
-            </div>
-          </div>
-
         </div>
       </div>
-    </div>
+    </section>
   );
 };

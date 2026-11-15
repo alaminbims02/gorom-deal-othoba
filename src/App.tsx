@@ -15,25 +15,30 @@ import { CategoryPage } from './components/CategoryPage';
 import { TrustFeaturesBar } from './components/TrustFeaturesBar';
 import { Footer } from './components/Footer';
 import { CartDrawer } from './components/CartDrawer';
-import { CheckoutModal } from './components/CheckoutModal';
+import { CheckoutPage } from './components/CheckoutPage';
 import { WishlistDrawer } from './components/WishlistDrawer';
 import { OrderTrackModal } from './components/OrderTrackModal';
 import { UserAccountModal } from './components/UserAccountModal';
-import { WordPressAdminModal } from './components/WordPressAdminModal';
 import { ProductCard } from './components/ProductCard';
-import { Product, CartItem, Order } from './types';
-import { 
-  getStoredWpSettings, 
-  saveWpSettings, 
-  getHeadlessProducts, 
-  saveHeadlessProducts,
-  WordPressSettings 
-} from './services/wordpress';
-import { Search, X, CheckCircle, Home, ShoppingCart, Heart, User as UserIcon, Flame, Server } from 'lucide-react';
+import { Product, CartItem, Order, DeliveryArea } from './types';
+import { useSite } from './context/SiteContext';
+import { usePersistentState } from './hooks/usePersistentState';
+import { Search, X, CheckCircle, Home, ShoppingCart, Heart, User as UserIcon, Flame } from 'lucide-react';
 
-export default function App() {
+interface StoredCartLine {
+  productId: string;
+  quantity: number;
+  variant?: string;
+}
+
+interface AppProps {
+  onToggleLang: () => void;
+}
+
+export default function App({ onToggleLang }: AppProps) {
+  const { lang, t, tx, settings, products: productsList, categories, vouchers } = useSite();
+
   // App state
-  const [lang, setLang] = useState<'bn' | 'en'>('bn');
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('all');
 
@@ -42,33 +47,45 @@ export default function App() {
   const [activeProductId, setActiveProductId] = useState<string | null>(null);
   const [activeCategoryView, setActiveCategoryView] = useState<string | null>(null);
 
-  // WordPress Headless backend state & products
-  const [wpSettings, setWpSettings] = useState<WordPressSettings>(() => getStoredWpSettings());
-  const [productsList, setProductsList] = useState<Product[]>(() => getHeadlessProducts());
+  // Cart / wishlist / vouchers / orders persist in the browser; product data always
+  // comes fresh from WordPress so prices & stock are never stale.
+  const [cartLines, setCartLines] = usePersistentState<StoredCartLine[]>('goromdeal_cart', []);
+  const [wishlistIds, setWishlistIds] = usePersistentState<string[]>('goromdeal_wishlist', []);
+  const [collectedVouchers, setCollectedVouchers] = usePersistentState<string[]>('goromdeal_vouchers', []);
+  const [orders, setOrders] = usePersistentState<Order[]>('goromdeal_orders', []);
 
-  // Cart and wishlist state
-  const [cart, setCart] = useState<CartItem[]>([
-    {
-      product: productsList[0],
-      quantity: 1,
-      selectedVariant: 'কালার (Color): ম্যাট ব্ল্যাক (Matte Black)',
-    },
-  ]);
+  const cart: CartItem[] = useMemo(
+    () =>
+      cartLines
+        .map((l) => {
+          const product = productsList.find((p) => p.id === l.productId);
+          return product ? { product, quantity: l.quantity, selectedVariant: l.variant || undefined } : null;
+        })
+        .filter(Boolean) as CartItem[],
+    [cartLines, productsList],
+  );
+  const setCart = (updater: (prev: CartItem[]) => CartItem[]) => {
+    setCartLines((prevLines) => {
+      const prev = prevLines
+        .map((l) => {
+          const product = productsList.find((p) => p.id === l.productId);
+          return product ? { product, quantity: l.quantity, selectedVariant: l.variant || undefined } : null;
+        })
+        .filter(Boolean) as CartItem[];
+      return updater(prev).map((i) => ({ productId: i.product.id, quantity: i.quantity, variant: i.selectedVariant }));
+    });
+  };
 
-  const [wishlistIds, setWishlistIds] = useState<string[]>(['gd-gadget-01']);
-  
-  // Slide-over Drawers & Full Modals
+  // Slide-over Drawers & Modals
   const [isCartOpen, setIsCartOpen] = useState(false);
   const [isWishlistOpen, setIsWishlistOpen] = useState(false);
-  const [isCheckoutOpen, setIsCheckoutOpen] = useState(false);
+  const [isCheckoutPage, setIsCheckoutPage] = useState(false);
   const [isTrackOrderOpen, setIsTrackOrderOpen] = useState(false);
   const [isAccountOpen, setIsAccountOpen] = useState(false);
-  const [isWpAdminOpen, setIsWpAdminOpen] = useState(false);
 
   // Checkout context
-  const [checkoutDeliveryArea, setCheckoutDeliveryArea] = useState<'inside-dhaka' | 'outside-dhaka'>('inside-dhaka');
-  const [checkoutDiscount, setCheckoutDiscount] = useState(0);
-  const [orders, setOrders] = useState<Order[]>([]);
+  const [checkoutDeliveryArea, setCheckoutDeliveryArea] = useState<DeliveryArea>('inside-dhaka');
+  const [checkoutCouponCode, setCheckoutCouponCode] = useState('');
 
   // Toast notifications
   const [toastMessage, setToastMessage] = useState<string | null>(null);
@@ -86,43 +103,33 @@ export default function App() {
     return productsList.find((p) => p.id === activeProductId) || null;
   }, [activeProductId, productsList]);
 
-  // Dynamic Browser Title & Meta Updates for SEO & Conversion
+  // Dynamic Browser Title & Meta (templates managed in WordPress > Gorom Deal > Settings > SEO)
   useEffect(() => {
     const metaDesc = document.querySelector('meta[name="description"]');
+    let title = tx(settings.seo.homeTitle);
+    let desc = tx(settings.seo.homeDescription);
     if (activeProduct) {
-      document.title = `${activeProduct.name} - ৳${activeProduct.price.toLocaleString()} | গরম ডিল`;
-      if (metaDesc) {
-        metaDesc.setAttribute(
-          'content',
-          `${activeProduct.name} সেরা অফার মূল্যে ৳${activeProduct.price}। ${activeProduct.warranty} ও ক্যাশ অন ডেলিভারি সুবিধা।`
-        );
-      }
+      const vars = {
+        name: lang === 'bn' ? activeProduct.name : activeProduct.nameEn,
+        price: activeProduct.price.toLocaleString(),
+        warranty: (lang === 'en' && activeProduct.warrantyEn) || activeProduct.warranty,
+        brand: activeProduct.brand,
+      };
+      title = tx(settings.seo.productTitle, vars);
+      desc = tx(settings.seo.productDescription, vars);
     } else if (activeCategoryView) {
-      const categoryTitle = 
-        activeCategoryView === 'electronics-store' ? 'ইলেকট্রনিক্স ও গ্যাজেট স্টোর' :
-        activeCategoryView === 'kitchen-appliances' ? 'কিচেন অ্যাপ্লায়েন্স' :
-        activeCategoryView === 'cookware' ? 'কুকওয়্যার ও প্যান' :
-        activeCategoryView === 'smartwatch' ? 'স্মার্টওয়াচ' :
-        activeCategoryView === 'audio' ? 'অডিও ও সাউন্ড' :
-        activeCategoryView === 'power-charging' ? 'পাওয়ার ও চার্জিং' : 'ক্যাটালগ';
-
-      document.title = `${categoryTitle} - Electronics Store Online in Bangladesh | গরম ডিল`;
-      if (metaDesc) {
-        metaDesc.setAttribute(
-          'content',
-          `বাংলাদেশে সেরা মূল্যে ${categoryTitle} কিনুন। ভিশন, আরএফএল এবং অথেনটিক গ্যাজেট ব্র্যান্ডের আসল পণ্য, অফিসিয়াল ওয়ারেন্টি ও সারা দেশে ক্যাশ অন ডেলিভারি।`
-        );
-      }
-    } else {
-      document.title = 'গরম ডিল - Gorom Deal | সেরা কিচেন অ্যাপ্লায়েন্স ও স্মার্ট গ্যাজেটস অনলাইন শপ';
-      if (metaDesc) {
-        metaDesc.setAttribute(
-          'content',
-          'বাংলাদেশের সেরা কিচেন অ্যাপ্লায়েন্স, নন-স্টিক কুকওয়্যার ও হাই-টেক গ্যাজেটসের বিশ্বস্ত অনলাইন শপ। দ্রুত হোম ডেলিভারি ও ১০০% আসল পণ্যের গ্যারান্টি।'
-        );
-      }
+      const cat = categories.find((c) => c.id === activeCategoryView);
+      const category = cat
+        ? lang === 'bn' ? cat.name : cat.nameEn
+        : activeCategoryView === 'all'
+          ? tx(settings.catalog.allCategoryLabel)
+          : tx(settings.catalog.storeCategoryLabel);
+      title = tx(settings.seo.categoryTitle, { category });
+      desc = tx(settings.seo.categoryDescription, { category });
     }
-  }, [activeProduct, activeCategoryView]);
+    document.title = title;
+    if (metaDesc) metaDesc.setAttribute('content', desc);
+  }, [activeProduct, activeCategoryView, lang, settings, categories, tx]);
 
   // Cart calculations
   const cartCount = useMemo(() => cart.reduce((total, item) => total + item.quantity, 0), [cart]);
@@ -130,40 +137,6 @@ export default function App() {
 
   // Wishlist products
   const wishlistProducts = useMemo(() => productsList.filter((p) => wishlistIds.includes(p.id)), [wishlistIds, productsList]);
-
-  // Headless WordPress Product Mutations
-  const handleSaveWpSettings = (settings: WordPressSettings) => {
-    setWpSettings(settings);
-    saveWpSettings(settings);
-    showToast('WordPress সেটিংস সফলভাবে আপডেট হয়েছে!');
-  };
-
-  const handleAddWpProduct = (newProduct: Product) => {
-    const updated = [newProduct, ...productsList];
-    setProductsList(updated);
-    saveHeadlessProducts(updated);
-    showToast(`"${newProduct.name}" সফলভাবে যুক্ত হয়েছে!`);
-  };
-
-  const handleUpdateWpProduct = (updatedProduct: Product) => {
-    const updated = productsList.map((p) => (p.id === updatedProduct.id ? updatedProduct : p));
-    setProductsList(updated);
-    saveHeadlessProducts(updated);
-    showToast('পণ্য সফলভাবে আপডেট হয়েছে!');
-  };
-
-  const handleDeleteWpProduct = (productId: string) => {
-    const updated = productsList.filter((p) => p.id !== productId);
-    setProductsList(updated);
-    saveHeadlessProducts(updated);
-    showToast('পণ্যটি সফলভাবে অপসারণ করা হয়েছে');
-  };
-
-  const handleBulkSync = (syncedProducts: Product[]) => {
-    setProductsList(syncedProducts);
-    saveHeadlessProducts(syncedProducts);
-    showToast(`WordPress থেকে ${syncedProducts.length}টি পণ্য সিনক্রোনাইজ হয়েছে!`);
-  };
 
   // Cart handlers
   const handleAddToCart = (product: Product, quantity = 1, variant?: string) => {
@@ -178,7 +151,7 @@ export default function App() {
       }
       return [...prev, { product, quantity, selectedVariant: variant }];
     });
-    showToast(lang === 'bn' ? `"${product.name}" কার্টে যুক্ত হয়েছে!` : `Added to your cart!`);
+    showToast(t('app.added_to_your_cart', [product.name]));
   };
 
   const handleUpdateQuantity = (productId: string, delta: number) => {
@@ -197,36 +170,54 @@ export default function App() {
 
   const handleRemoveFromCart = (productId: string) => {
     setCart((prev) => prev.filter((item) => item.product.id !== productId));
-    showToast(lang === 'bn' ? 'পণ্যটি কার্ট থেকে সরানো হয়েছে' : 'Item removed from cart');
+    showToast(t('app.item_removed_from_cart'));
   };
 
   // Wishlist handlers
   const handleToggleWishlist = (product: Product) => {
     setWishlistIds((prev) => {
       if (prev.includes(product.id)) {
-        showToast(lang === 'bn' ? 'উইশলিস্ট থেকে সরানো হয়েছে' : 'Removed from wishlist');
+        showToast(t('app.removed_from_wishlist'));
         return prev.filter((id) => id !== product.id);
       } else {
-        showToast(lang === 'bn' ? 'পছন্দের তালিকায় যুক্ত হয়েছে!' : 'Added to your wishlist!');
+        showToast(t('app.added_to_your_wishlist'));
         return [...prev, product.id];
       }
     });
   };
 
-  // Direct Buy Now / Order Now handler
+  // Voucher collection handlers
+  const handleCollectVoucher = (code: string) => {
+    if (!collectedVouchers.includes(code)) {
+      setCollectedVouchers((prev) => [...prev, code]);
+      showToast(t('app.voucher_collected', [code]));
+    }
+  };
+
+  const handleCollectAllVouchers = () => {
+    const allCodes = vouchers.map((v) => v.code);
+    setCollectedVouchers(allCodes);
+    showToast(t('app.all_discount_vouchers_collected'));
+  };
+
+  // Direct Buy Now / Order Now handler (adds product & goes straight to dedicated CheckoutPage)
   const handleBuyNow = (product: Product, quantity = 1, variant?: string) => {
     handleAddToCart(product, quantity, variant);
-    setIsCartOpen(true);
+    setIsCartOpen(false);
+    setIsCheckoutPage(true);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   // Navigation handlers
   const handleSelectProduct = (product: Product) => {
+    setIsCheckoutPage(false);
     setActiveProductId(product.id);
     setActiveCategoryView(null);
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   const handleSelectCategoryPage = (catId: string) => {
+    setIsCheckoutPage(false);
     setSelectedCategory(catId);
     setActiveCategoryView(catId);
     setActiveProductId(null);
@@ -235,6 +226,7 @@ export default function App() {
   };
 
   const handleGoHome = () => {
+    setIsCheckoutPage(false);
     setActiveProductId(null);
     setActiveCategoryView(null);
     setSelectedCategory('all');
@@ -243,16 +235,22 @@ export default function App() {
   };
 
   // Checkout flow trigger
-  const handleProceedToCheckout = (deliveryArea: 'inside-dhaka' | 'outside-dhaka', discount: number) => {
+  const handleProceedToCheckout = (
+    deliveryArea: 'inside-dhaka' | 'outside-dhaka',
+    _discount: number,
+    appliedCouponCode = ''
+  ) => {
     setCheckoutDeliveryArea(deliveryArea);
-    setCheckoutDiscount(discount);
+    setCheckoutCouponCode(appliedCouponCode);
     setIsCartOpen(false);
-    setIsCheckoutOpen(true);
+    setIsCheckoutPage(true);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   const handleOrderSuccess = (newOrder: Order) => {
     setOrders((prev) => [newOrder, ...prev]);
-    setCart([]);
+    setCartLines([]);
+    setCheckoutCouponCode('');
   };
 
   // Filtered Products for Search or Custom Category View
@@ -275,7 +273,7 @@ export default function App() {
   const isSearchActive = searchQuery.trim().length > 0;
 
   return (
-    <div className="min-h-screen flex flex-col bg-[#FFFFFF] text-[#252525]">
+    <div className="min-h-screen flex flex-col bg-[#FFFFFF] text-[#252525] overflow-x-hidden">
       
       {/* Toast Notification */}
       {toastMessage && (
@@ -294,11 +292,11 @@ export default function App() {
         onOpenWishlist={() => setIsWishlistOpen(true)}
         onOpenAccount={() => setIsAccountOpen(true)}
         onOpenTrackOrder={() => setIsTrackOrderOpen(true)}
-        onOpenWordPressAdmin={() => setIsWpAdminOpen(true)}
         searchQuery={searchQuery}
         onSearchChange={(q) => {
           setSearchQuery(q);
           if (q.trim().length > 0) {
+            setIsCheckoutPage(false);
             setActiveProductId(null);
             setActiveCategoryView(null);
           }
@@ -306,14 +304,26 @@ export default function App() {
         selectedCategory={selectedCategory}
         onSelectCategory={handleSelectCategoryPage}
         onGoHome={handleGoHome}
-        lang={lang}
-        onToggleLang={() => setLang((l) => (l === 'bn' ? 'en' : 'bn'))}
+        onToggleLang={onToggleLang}
       />
 
       <main className="flex-1">
         
-        {/* VIEW 1: Single Product Detail Page (NO POPUP, FULL DEDICATED PAGE) */}
-        {activeProduct ? (
+        {/* VIEW 0: Dedicated Checkout Page (No Popup) */}
+        {isCheckoutPage ? (
+          <CheckoutPage
+            items={cart}
+            initialDeliveryArea={checkoutDeliveryArea}
+            initialCouponCode={checkoutCouponCode}
+            collectedVouchers={collectedVouchers}
+            onUpdateQuantity={handleUpdateQuantity}
+            onRemoveItem={handleRemoveFromCart}
+            onOrderSuccess={handleOrderSuccess}
+            onBack={() => setIsCheckoutPage(false)}
+            onContinueShopping={handleGoHome}
+            onOpenTrackOrder={() => setIsTrackOrderOpen(true)}
+          />
+        ) : activeProduct ? (
           <ProductDetailPage
             product={activeProduct}
             allProducts={productsList}
@@ -329,7 +339,9 @@ export default function App() {
             onToggleWishlist={handleToggleWishlist}
             onAddToCart={handleAddToCart}
             onBuyNow={handleBuyNow}
-            lang={lang}
+            collectedVouchers={collectedVouchers}
+            onCollectVoucher={handleCollectVoucher}
+            onCollectAllVouchers={handleCollectAllVouchers}
           />
         ) : activeCategoryView ? (
           /* VIEW 2: Dedicated Category Catalog Page with Brand & Price Filters */
@@ -341,43 +353,42 @@ export default function App() {
             onToggleWishlist={handleToggleWishlist}
             onSelectCategory={handleSelectCategoryPage}
             onGoHome={handleGoHome}
-            lang={lang}
           />
         ) : isSearchActive ? (
           /* VIEW 3: Active Search View */
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 py-8">
-            <div className="flex items-center justify-between pb-4 border-b border-stone-200 mb-6">
-              <div className="flex items-center gap-2">
-                <Search className="w-5 h-5 text-[#F36B0B]" />
-                <h2 className="text-xl font-bold text-[#252525]">
-                  {lang === 'bn' ? 'অনুসন্ধানের ফলাফল:' : 'Search Results for:'}{' '}
+          <div className="max-w-7xl mx-auto px-3 sm:px-6 py-6 sm:py-8">
+            <div className="flex flex-wrap items-center justify-between gap-2 pb-4 border-b border-stone-200 mb-5 sm:mb-6">
+              <div className="flex items-center gap-2 min-w-0">
+                <Search className="w-5 h-5 text-[#F36B0B] shrink-0" />
+                <h2 className="text-base sm:text-xl font-bold text-[#252525] truncate">
+                  {t('app.search_results_for')}{' '}
                   <span className="text-[#F36B0B]">"{searchQuery}"</span>
                 </h2>
-                <span className="text-xs text-stone-400 font-mono">({filteredCatalog.length})</span>
+                <span className="text-xs text-stone-400 shrink-0">({filteredCatalog.length})</span>
               </div>
               <button
                 onClick={() => setSearchQuery('')}
-                className="text-xs text-stone-500 hover:text-[#E93825] flex items-center gap-1 cursor-pointer"
+                className="text-xs text-stone-500 hover:text-[#E93825] flex items-center gap-1 cursor-pointer shrink-0"
               >
                 <X className="w-3.5 h-3.5" />
-                <span>{lang === 'bn' ? 'অনুসন্ধান মুছুন' : 'Clear search'}</span>
+                <span>{t('app.clear_search')}</span>
               </button>
             </div>
 
             {filteredCatalog.length === 0 ? (
               <div className="py-16 text-center space-y-3">
                 <p className="text-base text-stone-600 font-medium">
-                  {lang === 'bn' ? 'দুঃখিত, কোনো কিচেন আইটেম বা গ্যাজেট পাওয়া যায়নি।' : 'No kitchen or gadget items found.'}
+                  {t('app.no_kitchen_or_gadget_items_found')}
                 </p>
                 <button
                   onClick={() => { setSearchQuery(''); setSelectedCategory('all'); }}
                   className="px-5 py-2 bg-[#F36B0B] text-white text-xs font-semibold rounded-xl cursor-pointer"
                 >
-                  {lang === 'bn' ? 'সকল পণ্য দেখুন' : 'View all items'}
+                  {t('app.view_all_items')}
                 </button>
               </div>
             ) : (
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-2.5 sm:gap-6">
                 {filteredCatalog.map((product) => (
                   <ProductCard
                     key={product.id}
@@ -385,7 +396,6 @@ export default function App() {
                     isWishlisted={wishlistIds.includes(product.id)}
                     onSelectProduct={handleSelectProduct}
                     onToggleWishlist={handleToggleWishlist}
-                    lang={lang}
                   />
                 ))}
               </div>
@@ -400,14 +410,13 @@ export default function App() {
                 const el = document.getElementById('flash-deals');
                 el?.scrollIntoView({ behavior: 'smooth' });
               }}
-              lang={lang}
+              onSelectCategory={handleSelectCategoryPage}
             />
 
             {/* 2. Circular Categories Bar Slider (Clicking opens Category Page) */}
             <CategoryNav
               selectedCategory={selectedCategory}
               onSelectCategory={handleSelectCategoryPage}
-              lang={lang}
             />
 
             {/* 3. Hot Deals / "গরম ডিল" Section */}
@@ -418,15 +427,15 @@ export default function App() {
                 onSelectProduct={handleSelectProduct}
                 onToggleWishlist={handleToggleWishlist}
                 onViewAll={() => handleSelectCategoryPage('all')}
-                lang={lang}
               />
             </div>
 
             {/* 4. Promotional Banner */}
-            <PromoBanner
-              onExplore={() => handleSelectCategoryPage('kitchen-appliances')}
-              lang={lang}
-            />
+            {settings.promoBanner.enabled && (
+              <PromoBanner
+                onExplore={() => handleSelectCategoryPage(settings.promoBanner.target || 'all')}
+              />
+            )}
 
             {/* 5. Featured Kitchen & Gadgets Grid */}
             <div id="featured-section">
@@ -435,86 +444,83 @@ export default function App() {
                 wishlistIds={wishlistIds}
                 onSelectProduct={handleSelectProduct}
                 onToggleWishlist={handleToggleWishlist}
-                lang={lang}
               />
             </div>
 
             {/* 6. Trust / 4 Value Propositions Bar */}
-            <TrustFeaturesBar lang={lang} />
+            <TrustFeaturesBar />
           </>
         )}
       </main>
 
       {/* 7. Charcoal Black Footer */}
       <Footer
-        onSelectCategory={(id) => {
-          setSelectedCategory(id);
-          setActiveProductId(null);
-          window.scrollTo({ top: 350, behavior: 'smooth' });
-        }}
-        lang={lang}
+        onSelectCategory={handleSelectCategoryPage}
       />
 
-      {/* Mobile Sticky Bottom Navigation Bar for touch UX */}
-      <div className="sm:hidden fixed bottom-0 inset-x-0 z-30 bg-white border-t border-stone-200 px-4 py-2 flex items-center justify-around shadow-lg">
-        <button
-          onClick={handleGoHome}
-          className={`flex flex-col items-center gap-0.5 cursor-pointer ${
-            !activeProductId ? 'text-[#F36B0B]' : 'text-stone-600 hover:text-[#F36B0B]'
-          }`}
-        >
-          <Home className="w-5 h-5" />
-          <span className="text-[10px] font-medium">{lang === 'bn' ? 'হোম' : 'Home'}</span>
-        </button>
+      {/* Mobile Sticky Bottom Navigation Bar (hidden on PDP and CheckoutPage) */}
+      {!activeProduct && !isCheckoutPage && (
+        <div className="sm:hidden fixed bottom-0 inset-x-0 z-30 bg-white border-t border-stone-200 px-2 pt-2 pb-[max(0.5rem,env(safe-area-inset-bottom))] flex items-center justify-around shadow-lg">
+          <button
+            onClick={handleGoHome}
+            className={`flex-1 min-w-0 flex flex-col items-center gap-0.5 cursor-pointer py-0.5 ${
+              !activeProductId && !activeCategoryView ? 'text-[#F36B0B]' : 'text-stone-600 hover:text-[#F36B0B]'
+            }`}
+          >
+            <Home className="w-5 h-5" />
+            <span className="text-[10px] font-medium truncate">{t('app.home')}</span>
+          </button>
 
-        <button
-          onClick={() => {
-            setActiveProductId(null);
-            setTimeout(() => {
-              const el = document.getElementById('flash-deals');
-              el?.scrollIntoView({ behavior: 'smooth' });
-            }, 50);
-          }}
-          className="flex flex-col items-center gap-0.5 text-[#F36B0B] cursor-pointer"
-        >
-          <Flame className="w-5 h-5 fill-[#F36B0B]" />
-          <span className="text-[10px] font-bold">{lang === 'bn' ? 'গরম ডিল' : 'Deals'}</span>
-        </button>
+          <button
+            onClick={() => {
+              setActiveProductId(null);
+              setActiveCategoryView(null);
+              setTimeout(() => {
+                const el = document.getElementById('flash-deals');
+                el?.scrollIntoView({ behavior: 'smooth' });
+              }, 50);
+            }}
+            className="flex-1 min-w-0 flex flex-col items-center gap-0.5 text-[#F36B0B] cursor-pointer py-0.5"
+          >
+            <Flame className="w-5 h-5 fill-[#F36B0B]" />
+            <span className="text-[10px] font-bold truncate">{t('app.deals')}</span>
+          </button>
 
-        <button
-          onClick={() => setIsWishlistOpen(true)}
-          className="relative flex flex-col items-center gap-0.5 text-stone-600 hover:text-[#E93825] cursor-pointer"
-        >
-          <Heart className="w-5 h-5" />
-          <span className="text-[10px] font-medium">{lang === 'bn' ? 'উইশলিস্ট' : 'Wishlist'}</span>
-          {wishlistIds.length > 0 && (
-            <span className="absolute -top-1 right-2 bg-[#E93825] text-white text-[9px] font-bold w-4 h-4 rounded-full flex items-center justify-center">
-              {wishlistIds.length}
-            </span>
-          )}
-        </button>
+          <button
+            onClick={() => setIsWishlistOpen(true)}
+            className="flex-1 min-w-0 relative flex flex-col items-center gap-0.5 text-stone-600 hover:text-[#E93825] cursor-pointer py-0.5"
+          >
+            <Heart className="w-5 h-5" />
+            <span className="text-[10px] font-medium truncate">{t('app.wishlist')}</span>
+            {wishlistIds.length > 0 && (
+              <span className="absolute -top-0.5 right-3 bg-[#E93825] text-white text-[9px] font-bold w-4 h-4 rounded-full flex items-center justify-center">
+                {wishlistIds.length}
+              </span>
+            )}
+          </button>
 
-        <button
-          onClick={() => setIsCartOpen(true)}
-          className="relative flex flex-col items-center gap-0.5 text-stone-600 hover:text-[#F36B0B] cursor-pointer"
-        >
-          <ShoppingCart className="w-5 h-5" />
-          <span className="text-[10px] font-medium">{lang === 'bn' ? 'কার্ট' : 'Cart'}</span>
-          {cartCount > 0 && (
-            <span className="absolute -top-1 right-1 bg-[#F36B0B] text-white text-[9px] font-bold w-4 h-4 rounded-full flex items-center justify-center">
-              {cartCount}
-            </span>
-          )}
-        </button>
+          <button
+            onClick={() => setIsCartOpen(true)}
+            className="flex-1 min-w-0 relative flex flex-col items-center gap-0.5 text-stone-600 hover:text-[#F36B0B] cursor-pointer py-0.5"
+          >
+            <ShoppingCart className="w-5 h-5" />
+            <span className="text-[10px] font-medium truncate">{t('app.cart')}</span>
+            {cartCount > 0 && (
+              <span className="absolute -top-0.5 right-3 bg-[#F36B0B] text-white text-[9px] font-bold w-4 h-4 rounded-full flex items-center justify-center">
+                {cartCount}
+              </span>
+            )}
+          </button>
 
-        <button
-          onClick={() => setIsAccountOpen(true)}
-          className="flex flex-col items-center gap-0.5 text-stone-600 hover:text-[#F36B0B] cursor-pointer"
-        >
-          <UserIcon className="w-5 h-5" />
-          <span className="text-[10px] font-medium">{lang === 'bn' ? 'একাউন্ট' : 'Account'}</span>
-        </button>
-      </div>
+          <button
+            onClick={() => setIsAccountOpen(true)}
+            className="flex-1 min-w-0 flex flex-col items-center gap-0.5 text-stone-600 hover:text-[#F36B0B] cursor-pointer py-0.5"
+          >
+            <UserIcon className="w-5 h-5" />
+            <span className="text-[10px] font-medium truncate">{t('app.account')}</span>
+          </button>
+        </div>
+      )}
 
       {/* Slide-over Cart Drawer */}
       <CartDrawer
@@ -524,18 +530,7 @@ export default function App() {
         onUpdateQuantity={handleUpdateQuantity}
         onRemoveItem={handleRemoveFromCart}
         onProceedToCheckout={handleProceedToCheckout}
-        lang={lang}
-      />
-
-      {/* Checkout Modal */}
-      <CheckoutModal
-        isOpen={isCheckoutOpen}
-        onClose={() => setIsCheckoutOpen(false)}
-        items={cart}
-        deliveryArea={checkoutDeliveryArea}
-        discount={checkoutDiscount}
-        onOrderSuccess={handleOrderSuccess}
-        lang={lang}
+        collectedVouchers={collectedVouchers}
       />
 
       {/* Wishlist Drawer */}
@@ -545,7 +540,6 @@ export default function App() {
         wishlistProducts={wishlistProducts}
         onRemoveFromWishlist={handleToggleWishlist}
         onAddToCart={handleAddToCart}
-        lang={lang}
       />
 
       {/* Order Tracking Modal */}
@@ -553,7 +547,6 @@ export default function App() {
         isOpen={isTrackOrderOpen}
         onClose={() => setIsTrackOrderOpen(false)}
         recentOrders={orders}
-        lang={lang}
       />
 
       {/* User Account / Login Modal */}
@@ -562,22 +555,8 @@ export default function App() {
         onClose={() => setIsAccountOpen(false)}
         orders={orders}
         onOpenTrackOrder={() => setIsTrackOrderOpen(true)}
-        lang={lang}
       />
 
-      {/* Headless WordPress & WooCommerce Admin Modal */}
-      <WordPressAdminModal
-        isOpen={isWpAdminOpen}
-        onClose={() => setIsWpAdminOpen(false)}
-        settings={wpSettings}
-        onSaveSettings={handleSaveWpSettings}
-        products={productsList}
-        onAddProduct={handleAddWpProduct}
-        onUpdateProduct={handleUpdateWpProduct}
-        onDeleteProduct={handleDeleteWpProduct}
-        onBulkSync={handleBulkSync}
-        lang={lang}
-      />
 
     </div>
   );

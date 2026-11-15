@@ -7,12 +7,13 @@
     --charcoal: #252525;
     --sec-bg: #FFF8F1;
     --light-gray: #F3F3F3;
-    font-family: 'Hind Siliguri', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    font-family: 'Google Sans', sans-serif;
   }
 
   body {
     background-color: #FFFFFF;
     color: #252525;
+    font-family: 'Google Sans', sans-serif;
   }
 }
 
@@ -38,4 +39,57 @@
 }
 .custom-scrollbar::-webkit-scrollbar-thumb:hover {
   background: #F36B0B;
+}
+
+@keyframes buyShimmer {
+  0% {
+    transform: translateX(-120%) skewX(-20deg);
+  }
+  100% {
+    transform: translateX(220%) skewX(-20deg);
+  }
+}
+
+@keyframes buyGlowBurst {
+  0% {
+    box-shadow: 0 0 0 0 rgba(243, 107, 11, 0.75), 0 0 20px rgba(243, 107, 11, 0.55);
+    transform: scale(0.96);
+  }
+  45% {
+    box-shadow: 0 0 0 12px rgba(243, 107, 11, 0), 0 0 36px rgba(233, 56, 37, 0.75);
+    transform: scale(1.03);
+  }
+  100% {
+    box-shadow: 0 0 0 18px rgba(243, 107, 11, 0), 0 8px 26px rgba(243, 107, 11, 0.45);
+    transform: scale(1);
+  }
+}
+
+.animate-buy-shimmer {
+  animation: buyShimmer 2.8s infinite ease-in-out;
+}
+
+.animate-buy-glow-burst {
+  animation: buyGlowBurst 0.55s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+@keyframes heroSlideProgress {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+.animate-hero-progress {
+  transform-origin: left center;
+  animation: heroSlideProgress 5500ms linear forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-hero-progress {
+    animation: none;
+    transform: scaleX(1);
+  }
 }

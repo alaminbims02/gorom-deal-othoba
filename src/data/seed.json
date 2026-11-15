@@ -1,0 +1,3148 @@
+{
+  "version": 1,
+  "settings": {
+    "general": {
+      "siteName": {
+        "bn": "গরম ডিল",
+        "en": "Gorom Deal"
+      },
+      "logo": "gorom_deal_logo.png",
+      "logoAlt": {
+        "bn": "গরম ডিল - Gorom Deal",
+        "en": "Gorom Deal"
+      },
+      "currencySymbol": "৳"
+    },
+    "seo": {
+      "homeTitle": {
+        "bn": "গরম ডিল - Gorom Deal | সেরা কিচেন অ্যাপ্লায়েন্স ও স্মার্ট গ্যাজেটস অনলাইন শপ",
+        "en": "Gorom Deal | Best Kitchen Appliances & Smart Gadgets Online Shop"
+      },
+      "homeDescription": {
+        "bn": "বাংলাদেশের সেরা কিচেন অ্যাপ্লায়েন্স, নন-স্টিক কুকওয়্যার ও হাই-টেক গ্যাজেটসের বিশ্বস্ত অনলাইন শপ। দ্রুত হোম ডেলিভারি ও ১০০% আসল পণ্যের গ্যারান্টি।",
+        "en": "Bangladesh's trusted online shop for kitchen appliances, non-stick cookware and smart gadgets. Fast home delivery and 100% genuine products."
+      },
+      "productTitle": {
+        "bn": "{name} - ৳{price} | গরম ডিল",
+        "en": "{name} - ৳{price} | Gorom Deal"
+      },
+      "productDescription": {
+        "bn": "{name} সেরা অফার মূল্যে ৳{price}। {warranty} ও ক্যাশ অন ডেলিভারি সুবিধা।",
+        "en": "{name} at the best offer price ৳{price}. {warranty} with cash on delivery."
+      },
+      "categoryTitle": {
+        "bn": "{category} - Electronics Store Online in Bangladesh | গরম ডিল",
+        "en": "{category} - Electronics Store Online in Bangladesh | Gorom Deal"
+      },
+      "categoryDescription": {
+        "bn": "বাংলাদেশে সেরা মূল্যে {category} কিনুন। ভিশন, আরএফএল এবং অথেনটিক গ্যাজেট ব্র্যান্ডের আসল পণ্য, অফিসিয়াল ওয়ারেন্টি ও সারা দেশে ক্যাশ অন ডেলিভারি।",
+        "en": "Buy {category} at the best price in Bangladesh. Genuine Vision, RFL and gadget brands with official warranty and nationwide cash on delivery."
+      }
+    },
+    "contact": {
+      "phone": "09613737726",
+      "phoneDisplay": {
+        "bn": "০৯৬১৩-৭৩৭৭২৬",
+        "en": "09613-737726"
+      },
+      "hours": {
+        "bn": "সকাল ৯টা - রাত ১০টা",
+        "en": "9 AM - 10 PM"
+      },
+      "email": "support@goromdeal.com",
+      "address": {
+        "bn": "প্রাণ-আরএফএল সেন্টার, ১০৫ প্রগতি সরণি, মধ্য বাড্ডা, ঢাকা-১২১২",
+        "en": "PRAN-RFL Center, 105 Progoti Sarani, Middle Badda, Dhaka-1212"
+      }
+    },
+    "delivery": {
+      "insideDhaka": {
+        "name": {
+          "bn": "ঢাকা সিটি",
+          "en": "Inside Dhaka"
+        },
+        "time": {
+          "bn": "২৪–৪৮ ঘণ্টা",
+          "en": "24-48 hrs"
+        },
+        "charge": 60
+      },
+      "outsideDhaka": {
+        "name": {
+          "bn": "ঢাকার বাইরে",
+          "en": "Outside Dhaka"
+        },
+        "time": {
+          "bn": "২–৩ দিন",
+          "en": "2-3 days"
+        },
+        "charge": 120
+      },
+      "freeThreshold": 2500,
+      "defaultDistrict": "ঢাকা",
+      "districts": [
+        "ঢাকা",
+        "চট্টগ্রাম",
+        "গাজীপুর",
+        "নারায়ণগঞ্জ",
+        "কুমিল্লা",
+        "সিলেট",
+        "রাজশাহী",
+        "খুলনা",
+        "বগুড়া",
+        "ময়মনসিংহ",
+        "বরিশাল",
+        "রংপুর",
+        "যশোর",
+        "নরসিংদী",
+        "টাঙ্গাইল"
+      ],
+      "insideDhakaDistricts": [
+        "ঢাকা"
+      ]
+    },
+    "payments": [
+      {
+        "id": "cod",
+        "enabled": true,
+        "title": {
+          "bn": "ক্যাশ অন ডেলিভারি",
+          "en": "Cash on Delivery"
+        },
+        "description": {
+          "bn": "পণ্য হাতে পেয়ে যাচাই করে টাকা দিন",
+          "en": "Inspect product & pay on receipt"
+        },
+        "color": "#F36B0B",
+        "accountNumber": ""
+      },
+      {
+        "id": "bkash",
+        "enabled": true,
+        "title": {
+          "bn": "বিকাশ",
+          "en": "bKash"
+        },
+        "description": {
+          "bn": "দ্রুত ও সুরক্ষিত মোবাইল পেমেন্ট",
+          "en": "Fast mobile wallet checkout"
+        },
+        "color": "#E2136E",
+        "accountNumber": ""
+      },
+      {
+        "id": "nagad",
+        "enabled": true,
+        "title": {
+          "bn": "নগদ",
+          "en": "Nagad"
+        },
+        "description": {
+          "bn": "সহজ ও ঝামেলামুক্ত পেমেন্ট",
+          "en": "Instant Nagad wallet payment"
+        },
+        "color": "#F7941D",
+        "accountNumber": ""
+      }
+    ],
+    "header": {
+      "navLinks": [
+        {
+          "label": {
+            "bn": "ইলেকট্রনিক্স স্টোর",
+            "en": "Electronics Store"
+          },
+          "target": "electronics-store",
+          "badge": "HOT",
+          "style": "primary"
+        },
+        {
+          "label": {
+            "bn": "কিচেন অ্যাপ্লায়েন্স",
+            "en": "Kitchen Appliances"
+          },
+          "target": "kitchen-appliances",
+          "badge": "",
+          "style": "normal"
+        },
+        {
+          "label": {
+            "bn": "কুকওয়্যার ও প্যান",
+            "en": "Cookware"
+          },
+          "target": "cookware",
+          "badge": "",
+          "style": "normal"
+        },
+        {
+          "label": {
+            "bn": "স্মার্টওয়াচ",
+            "en": "Smartwatches"
+          },
+          "target": "smartwatch",
+          "badge": "",
+          "style": "normal"
+        },
+        {
+          "label": {
+            "bn": "অডিও ও সাউন্ড",
+            "en": "Audio & Earbuds"
+          },
+          "target": "audio",
+          "badge": "",
+          "style": "normal"
+        },
+        {
+          "label": {
+            "bn": "পাওয়ার ও চার্জিং",
+            "en": "Power & Charging"
+          },
+          "target": "power-charging",
+          "badge": "",
+          "style": "normal"
+        },
+        {
+          "label": {
+            "bn": "হট ডিল",
+            "en": "Flash Deals"
+          },
+          "target": "all",
+          "badge": "",
+          "style": "deal"
+        }
+      ]
+    },
+    "flashDeals": {
+      "title": {
+        "bn": "গরম ডিল - কিচেন ও গ্যাজেটস",
+        "en": "Flash Deals - Kitchen & Gadgets"
+      },
+      "endsAt": "",
+      "cycleHours": 12,
+      "limit": 4
+    },
+    "promoBanner": {
+      "enabled": true,
+      "kicker": {
+        "bn": "কিচেন ও গ্যাজেট কালেকশন",
+        "en": "Kitchen & Tech Selection"
+      },
+      "title": {
+        "bn": "স্মার্ট কিচেন অ্যাপ্লায়েন্স ও গ্যাজেটসে বিশেষ মূল্যছাড়",
+        "en": "Special Discounts on Kitchen Appliances & Smart Gadgets"
+      },
+      "text": {
+        "bn": "ভিশন এয়ার ফ্রায়ার, ১০০০ ওয়াট কপার মোটর ব্লেন্ডার, মার্বেল কুকওয়্যার সেট ও অ্যামোলেড স্মার্টওয়াচে সরাসরি ব্র্যান্ড ওয়ারেন্টিসহ দ্রুত হোম ডেলিভারি।",
+        "en": "Authentic air fryers, granite cookware sets, AMOLED smartwatches & 65W power banks with official warranty and doorstep cash on delivery."
+      },
+      "cta": {
+        "bn": "কালেকশন দেখুন",
+        "en": "Explore Collection"
+      },
+      "image": "promo_kitchen_home_1793335872493.jpg",
+      "target": "kitchen-appliances"
+    },
+    "featured": {
+      "title": {
+        "bn": "টপ ট্রেন্ডিং কিচেন ও গ্যাজেটস",
+        "en": "Top Trending Kitchen & Gadgets"
+      },
+      "limit": 8,
+      "tabs": [
+        {
+          "label": {
+            "bn": "সকল আইটেম",
+            "en": "All Items"
+          },
+          "categories": []
+        },
+        {
+          "label": {
+            "bn": "কিচেন অ্যাপ্লায়েন্স ও কুকওয়্যার",
+            "en": "Kitchen & Cookware"
+          },
+          "categories": [
+            "kitchen-appliances",
+            "cookware"
+          ]
+        },
+        {
+          "label": {
+            "bn": "স্মার্ট গ্যাজেটস ও অডিও",
+            "en": "Smart Gadgets & Tech"
+          },
+          "categories": [
+            "gadgets",
+            "audio",
+            "smartwatch",
+            "power-charging"
+          ]
+        }
+      ]
+    },
+    "trustFeatures": [
+      {
+        "icon": "Truck",
+        "title": {
+          "bn": "দ্রুত হোম ডেলিভারি",
+          "en": "Fast Island-Wide Shipping"
+        },
+        "text": {
+          "bn": "ঢাকা সহ ৬৪ জেলায় দ্রুত ও নিরাপদ ডেলিভারি",
+          "en": "Reliable delivery across all 64 districts"
+        }
+      },
+      {
+        "icon": "ShieldCheck",
+        "title": {
+          "bn": "১০০% আসল পণ্যের গ্যারান্টি",
+          "en": "100% Authentic Products"
+        },
+        "text": {
+          "bn": "প্রাণ-আরএফএল ও অফিশিয়াল ব্র্যান্ড ওয়ারেন্টি",
+          "en": "Direct from manufacturer with official warranty"
+        }
+      },
+      {
+        "icon": "Headphones",
+        "title": {
+          "bn": "২৪/৭ কাস্টমার সাপোর্ট",
+          "en": "Dedicated Support"
+        },
+        "text": {
+          "bn": "যেকোনো তথ্যে কল করুন: ০৯৬১৩-৭৩৭৭২৬",
+          "en": "Call anytime at 09613-737726"
+        }
+      },
+      {
+        "icon": "RotateCcw",
+        "title": {
+          "bn": "সহজ ৭ দিনের রিটার্ন",
+          "en": "7-Day Easy Returns"
+        },
+        "text": {
+          "bn": "পণ্য অপছন্দ বা সমস্যা হলে ঝামেলামুক্ত রিটার্ন",
+          "en": "Hassle-free replacement policy"
+        }
+      }
+    ],
+    "footer": {
+      "about": {
+        "bn": "বাংলাদেশের নির্ভরযোগ্য কিচেন অ্যাপ্লায়েন্স ও হাই-টেক গ্যাজেটস স্টোর। ভিশন, আরএফএল এবং শীর্ষ ব্র্যান্ডের আসল পণ্য সরাসরি ব্র্যান্ড ওয়ারেন্টি সহ পৌঁছে দিচ্ছি আপনার ঠিকানায়।",
+        "en": "Bangladesh’s premier destination for genuine kitchen appliances, cookware and smart gadgets with official warranty and nationwide cash on delivery."
+      },
+      "columns": [
+        {
+          "title": {
+            "bn": "কিচেন আইটেমস",
+            "en": "Kitchen Items"
+          },
+          "links": [
+            {
+              "label": {
+                "bn": "ডিজিটাল এয়ার ফ্রায়ার",
+                "en": "Digital Air Fryers"
+              },
+              "target": "kitchen-appliances"
+            },
+            {
+              "label": {
+                "bn": "হেভি ডিউটি ব্লেন্ডার ও মিক্সার",
+                "en": "Blenders & Grinders"
+              },
+              "target": "kitchen-appliances"
+            },
+            {
+              "label": {
+                "bn": "গ্রানাইট মার্বেল কুকওয়্যার",
+                "en": "Marble Cookware Sets"
+              },
+              "target": "cookware"
+            },
+            {
+              "label": {
+                "bn": "স্টেইনলেস স্টিল কেটলি",
+                "en": "Electric Kettles"
+              },
+              "target": "kitchen-appliances"
+            },
+            {
+              "label": {
+                "bn": "থার্মাস ফ্লাস্ক ও বোতল",
+                "en": "Thermos & Flasks"
+              },
+              "target": "cookware"
+            }
+          ]
+        },
+        {
+          "title": {
+            "bn": "স্মার্ট গ্যাজেটস",
+            "en": "Smart Gadgets"
+          },
+          "links": [
+            {
+              "label": {
+                "bn": "এমোলেড ব্লুটুথ স্মার্টওয়াচ",
+                "en": "AMOLED Smartwatches"
+              },
+              "target": "smartwatch"
+            },
+            {
+              "label": {
+                "bn": "এএনসি ওয়্যারলেস হেডফোন",
+                "en": "ANC Headphones"
+              },
+              "target": "audio"
+            },
+            {
+              "label": {
+                "bn": "টিডব্লিউএস ব্লুটুথ ইয়ারবাডস",
+                "en": "TWS Wireless Earbuds"
+              },
+              "target": "audio"
+            },
+            {
+              "label": {
+                "bn": "৬৫ ওয়াট ল্যাপটপ পাওয়ার ব্যাংক",
+                "en": "65W Fast Power Banks"
+              },
+              "target": "power-charging"
+            }
+          ]
+        }
+      ],
+      "newsletterTitle": {
+        "bn": "নিউজলেটার ও অফার",
+        "en": "Offers & Vouchers"
+      },
+      "newsletterText": {
+        "bn": "নতুন কিচেন ও গ্যাজেটসের এক্সক্লুসিভ ভাউচার পেতে ইমেইল সাবস্ক্রাইব করুন।",
+        "en": "Subscribe to receive secret voucher codes and flash deal alerts."
+      },
+      "copyright": {
+        "bn": "গরম ডিল - Gorom Deal | কিচেন ও গ্যাজেটসের নির্ভরযোগ্য অনলাইন শপ।",
+        "en": "Gorom Deal | Your trusted kitchen & gadgets online shop."
+      },
+      "bottomLinks": [
+        {
+          "label": {
+            "bn": "প্রাইভেসি পলিসি",
+            "en": "Privacy Policy"
+          },
+          "url": "#"
+        },
+        {
+          "label": {
+            "bn": "রিটার্ন ও রিফান্ড",
+            "en": "Returns & Refunds"
+          },
+          "url": "#"
+        },
+        {
+          "label": {
+            "bn": "সাইটম্যাপ",
+            "en": "Sitemap"
+          },
+          "url": "#"
+        }
+      ]
+    },
+    "product": {
+      "trustBadges": [
+        {
+          "icon": "ShieldCheck",
+          "title": {
+            "bn": "১০০% অরিজিনাল",
+            "en": "100% Genuine"
+          },
+          "subtitle": {
+            "bn": "{brand}",
+            "en": "{brand}"
+          }
+        },
+        {
+          "icon": "Truck",
+          "title": {
+            "bn": "দ্রুত ডেলিভারি",
+            "en": "Fast Delivery"
+          },
+          "subtitle": {
+            "bn": "২৪-৪৮ ঘণ্টা",
+            "en": "24-48 Hours"
+          }
+        },
+        {
+          "icon": "RotateCcw",
+          "title": {
+            "bn": "৭ দিনের রিটার্ন",
+            "en": "Easy Returns"
+          },
+          "subtitle": {
+            "bn": "রিপ্লেসমেন্ট",
+            "en": "Replacement"
+          }
+        }
+      ],
+      "warrantyPolicy": {
+        "bn": "আমাদের প্রতিটি গ্যাজেট ও কিচেন আইটেমে রয়েছে অফিসিয়াল ব্র্যান্ডের সরাসরি সার্ভিস কিংবা রিপ্লেসমেন্ট সুবিধা। কোনো ত্রুটি পরিলক্ষিত হলে ৭ দিনের মধ্যে ফ্রি রিপ্লেসমেন্ট প্রদান করা হয়।",
+        "en": "Each kitchen appliance and gadget comes with official manufacturer replacement warranty."
+      },
+      "returnTerms": [
+        {
+          "bn": "পণ্যটি অব্যবহৃত এবং মূল বক্স ও অ্যাক্সেসরিজ সহ ফেরত দিতে হবে।",
+          "en": "The product must be returned unused, with the original box and accessories."
+        },
+        {
+          "bn": "ডেলিভারি ম্যানের উপস্থিতিতে পণ্য যাচাই করে রিসিভ করার সুবিধা রয়েছে।",
+          "en": "You can inspect the product in front of the delivery rider before accepting it."
+        },
+        {
+          "bn": "যেকোনো অভিযোগের জন্য ডেলিভারির ২৪ ঘণ্টার মধ্যে কাস্টমার কেয়ারে কল করুন।",
+          "en": "For any complaint, call customer care within 24 hours of delivery."
+        }
+      ],
+      "defaultSoldPercent": 78,
+      "relatedLimit": 4,
+      "allowReviews": true
+    },
+    "catalog": {
+      "kicker": {
+        "bn": "গরম ডিল ক্যাটালগ",
+        "en": "Gorom Deal Catalog"
+      },
+      "storeTitle": {
+        "bn": "ইলেকট্রনিক্স ও স্মার্ট কিচেন স্টোর",
+        "en": "Electronics & Smart Kitchen Store"
+      },
+      "storeDescription": {
+        "bn": "ভিশন, আরএফএল ও প্রিমিয়াম গ্যাজেট ব্র্যান্ডের ১০০% আসল কিচেন অ্যাপ্লায়েন্স, এয়ার ফ্রায়ার, ব্লেন্ডার, স্মার্টওয়াচ ও অডিও ডিভাইস। অফিসিয়াল ওয়ারেন্টি ও সারা দেশে ক্যাশ অন ডেলিভারি।",
+        "en": "Explore 100% genuine kitchen appliances, air fryers, heavy duty blenders, smartwatches, and audio gadgets with official manufacturer warranty and nationwide cash on delivery."
+      },
+      "heroBadges": [
+        {
+          "icon": "ShieldCheck",
+          "label": {
+            "bn": "১০০% আসল পণ্য",
+            "en": "100% Genuine"
+          }
+        },
+        {
+          "icon": "Truck",
+          "label": {
+            "bn": "ক্যাশ অন ডেলিভারি",
+            "en": "Cash on Delivery"
+          }
+        },
+        {
+          "icon": "RotateCcw",
+          "label": {
+            "bn": "৭ দিনে সহজ রিটার্ন",
+            "en": "7-Day Return"
+          }
+        }
+      ],
+      "allCategoryLabel": {
+        "bn": "সব পণ্য",
+        "en": "All Products"
+      },
+      "allCategoryStripLabel": {
+        "bn": "সকল পণ্য",
+        "en": "All Items"
+      },
+      "allCategoryImage": "hero_ecommerce_showcase_1793335872034.jpg",
+      "storeCategoryLabel": {
+        "bn": "ইলেকট্রনিক্স ও গ্যাজেট স্টোর",
+        "en": "Electronics & Gadget Store"
+      },
+      "priceMin": 500,
+      "priceMax": 10000,
+      "discountOptions": [
+        30,
+        25,
+        20
+      ],
+      "perPageOptions": [
+        8,
+        12,
+        16
+      ],
+      "seoTitle": {
+        "bn": "বাংলাদেশে কিচেন অ্যাপ্লায়েন্স ও ইলেকট্রনিক্স গ্যাজেটস অনলাইন শপিং - Gorom Deal",
+        "en": "Buy Kitchen Appliances & Electronics Online in Bangladesh at Gorom Deal"
+      },
+      "seoText": {
+        "bn": "রান্নাঘরকে আধুনিক ও সময়সাশ্রয়ী করতে মানসম্মত কিচেন অ্যাপ্লায়েন্সের কোনো বিকল্প নেই। আমাদের কালেকশনে পাবেন ভিশন (Vision) ডিজিটাল এয়ার ফ্রায়ার, ১০০০ ওয়াট পিওর কপার মোটর ব্লেন্ডার ও গ্রাইন্ডার, আরএফএল ৭-পিস মার্বেল কোটিং নন-স্টিক কুকওয়্যার সেট, দ্রুত ফুটন্ত কর্ডলেস ইলেকট্রিক কেটলি এবং ২২০০ ওয়াটের বিদ্যুৎ সাশ্রয়ী ডিজিটাল ইনডাকশন কুকার। এছাড়া তরুণ প্রজন্মের জন্য রয়েছে টাইটানিয়াম অ্যামোলেড কলিং স্মার্টওয়াচ, ৬৫ ওয়াট ফাস্ট ল্যাপটপ পাওয়ার ব্যাংক ও অ্যাক্টিভ নয়েজ ক্যানসেলিং (ANC) স্টুডিও অডিও হেডফোন। সকল পণ্যে রয়েছে অফিশিয়াল ব্র্যান্ড ওয়ারেন্টি এবং সারা দেশে ক্যাশ অন ডেলিভারি সুবিধা।",
+        "en": "Shopping for authentic kitchen appliances and tech gadgets in Bangladesh is now seamless. Discover energy efficient air fryers, 1000W commercial blenders, granite cookware sets, AMOLED calling smartwatches, and fast GaN powerbanks with official warranty and reliable doorstep cash on delivery."
+      },
+      "showPriceTable": true,
+      "priceTableTitle": {
+        "bn": "ইলেকট্রনিক্স ও কিচেন গ্যাজেটসের বর্তমান বাজারদর (২০২৬)",
+        "en": "Current Prices of Electronics & Kitchen Gadgets (2026)"
+      },
+      "whyBuyTitle": {
+        "bn": "কেন গরম ডিলে কিচেন ও গ্যাজেটস কিনবেন?",
+        "en": "Why buy kitchen items & gadgets from Gorom Deal?"
+      },
+      "whyBuy": [
+        {
+          "title": {
+            "bn": "১০০% আসল ব্র্যান্ড পণ্য:",
+            "en": "100% genuine brand products:"
+          },
+          "text": {
+            "bn": "সরাসরি প্রাণ-আরএফএল ও অনুমোদিত অফিশিয়াল ডিস্ট্রিবিউটর থেকে সংগৃহীত।",
+            "en": "Sourced directly from PRAN-RFL and authorised official distributors."
+          }
+        },
+        {
+          "title": {
+            "bn": "ক্যাশ অন ডেলিভারি (COD):",
+            "en": "Cash on Delivery (COD):"
+          },
+          "text": {
+            "bn": "পণ্য হাতে পেয়ে চেক করে ডেলিভারি ম্যানের কাছে মূল্য পরিশোধের সুবিধা।",
+            "en": "Check the product on arrival and pay the delivery rider."
+          }
+        },
+        {
+          "title": {
+            "bn": "দ্রুততম ডেলিভারি:",
+            "en": "Fastest delivery:"
+          },
+          "text": {
+            "bn": "ঢাকা সিটির ভিতরে ২৪-৪৮ ঘণ্টা এবং জেলা সদরে ২-৩ দিনের মধ্যে হোম ডেলিভারি।",
+            "en": "24-48 hours inside Dhaka and 2-3 days to district towns."
+          }
+        },
+        {
+          "title": {
+            "bn": "সহজ ওয়ারেন্টি সাপোর্ট:",
+            "en": "Easy warranty support:"
+          },
+          "text": {
+            "bn": "যে কোনো সমস্যায় আমাদের হটলাইনে যোগাযোগ করে ঝামেলামুক্ত সার্ভিস।",
+            "en": "Hassle-free service through our hotline for any issue."
+          }
+        }
+      ],
+      "guideTitle": {
+        "bn": "কিচেন আইটেম ও গ্যাজেট কেনার আগে যা খেয়াল রাখবেন",
+        "en": "What to check before buying kitchen items & gadgets"
+      },
+      "guide": [
+        {
+          "title": {
+            "bn": "মোটরের পাওয়ার ও উপাদান:",
+            "en": "Motor power & material:"
+          },
+          "text": {
+            "bn": "ব্লেন্ডার কেনার সময় ১০০% পিওর কপার ওয়াইন্ডিং মোটর ও ওয়াটেজ যাচাই করুন।",
+            "en": "When buying a blender, check for a 100% pure copper motor and the wattage."
+          }
+        },
+        {
+          "title": {
+            "bn": "নন-স্টিক মেটেরিয়াল:",
+            "en": "Non-stick material:"
+          },
+          "text": {
+            "bn": "কুকওয়্যারের কোটিং যেন PFOA ও ক্যাডমিয়াম মুক্ত এবং ফুড-গ্রেড মার্বেল কোটিং হয়।",
+            "en": "Make sure cookware coating is PFOA and cadmium free, food-grade marble coating."
+          }
+        },
+        {
+          "title": {
+            "bn": "অটো কাট-অফ সেফটি:",
+            "en": "Auto cut-off safety:"
+          },
+          "text": {
+            "bn": "কেটলি ও ইনডাকশন কুকারে ওভারহিট প্রোটেকশন ফিচার নিশ্চিত করুন।",
+            "en": "Ensure kettles and induction cookers have overheat protection."
+          }
+        }
+      ],
+      "faqTitle": {
+        "bn": "সাধারণ জিজ্ঞাসা (FAQ)",
+        "en": "Frequently Asked Questions"
+      }
+    },
+    "tracking": {
+      "courier": {
+        "bn": "গরম ডিল এক্সপ্রেস",
+        "en": "Gorom Deal Express"
+      },
+      "steps": [
+        {
+          "status": "confirmed",
+          "icon": "CheckCircle2",
+          "title": {
+            "bn": "অর্ডার গৃহীত হয়েছে",
+            "en": "Order Placed"
+          }
+        },
+        {
+          "status": "processing",
+          "icon": "PackageCheck",
+          "title": {
+            "bn": "ওয়্যারহাউজে প্যাকিং সম্পন্ন",
+            "en": "Packed & Verified"
+          }
+        },
+        {
+          "status": "shipped",
+          "icon": "Truck",
+          "title": {
+            "bn": "ডেলিভারি রাইডারের কাছে হস্তান্তর",
+            "en": "Out for Delivery"
+          }
+        },
+        {
+          "status": "delivered",
+          "icon": "MapPin",
+          "title": {
+            "bn": "হোম ডেলিভারি সম্পন্ন",
+            "en": "Delivered"
+          }
+        }
+      ],
+      "statusLabels": {
+        "pending": {
+          "bn": "পেমেন্টের অপেক্ষায়",
+          "en": "Awaiting Payment"
+        },
+        "confirmed": {
+          "bn": "কনফার্মড",
+          "en": "Confirmed"
+        },
+        "processing": {
+          "bn": "প্রসেসিং",
+          "en": "Processing"
+        },
+        "shipped": {
+          "bn": "ডেলিভারির পথে",
+          "en": "In Transit"
+        },
+        "delivered": {
+          "bn": "ডেলিভারি সম্পন্ন",
+          "en": "Delivered"
+        },
+        "cancelled": {
+          "bn": "বাতিল",
+          "en": "Cancelled"
+        }
+      }
+    }
+  },
+  "labels": {
+    "app.account": {
+      "bn": "একাউন্ট",
+      "en": "Account",
+      "group": "App"
+    },
+    "app.added_to_your_cart": {
+      "bn": "\"{0}\" কার্টে যুক্ত হয়েছে!",
+      "en": "Added to your cart!",
+      "group": "App"
+    },
+    "app.added_to_your_wishlist": {
+      "bn": "পছন্দের তালিকায় যুক্ত হয়েছে!",
+      "en": "Added to your wishlist!",
+      "group": "App"
+    },
+    "app.all_discount_vouchers_collected": {
+      "bn": "সবগুলো ডিসকাউন্ট ভাউচার সংগ্রহ করা হয়েছে!",
+      "en": "All discount vouchers collected!",
+      "group": "App"
+    },
+    "app.cart": {
+      "bn": "কার্ট",
+      "en": "Cart",
+      "group": "App"
+    },
+    "app.clear_search": {
+      "bn": "অনুসন্ধান মুছুন",
+      "en": "Clear search",
+      "group": "App"
+    },
+    "app.deals": {
+      "bn": "গরম ডিল",
+      "en": "Deals",
+      "group": "App"
+    },
+    "app.home": {
+      "bn": "হোম",
+      "en": "Home",
+      "group": "App"
+    },
+    "app.item_removed_from_cart": {
+      "bn": "পণ্যটি কার্ট থেকে সরানো হয়েছে",
+      "en": "Item removed from cart",
+      "group": "App"
+    },
+    "app.no_kitchen_or_gadget_items_found": {
+      "bn": "দুঃখিত, কোনো কিচেন আইটেম বা গ্যাজেট পাওয়া যায়নি।",
+      "en": "No kitchen or gadget items found.",
+      "group": "App"
+    },
+    "app.removed_from_wishlist": {
+      "bn": "উইশলিস্ট থেকে সরানো হয়েছে",
+      "en": "Removed from wishlist",
+      "group": "App"
+    },
+    "app.search_results_for": {
+      "bn": "অনুসন্ধানের ফলাফল:",
+      "en": "Search Results for:",
+      "group": "App"
+    },
+    "app.view_all_items": {
+      "bn": "সকল পণ্য দেখুন",
+      "en": "View all items",
+      "group": "App"
+    },
+    "app.voucher_collected": {
+      "bn": "ভাউচার ({0}) সফলভাবে সংগ্রহ করা হয়েছে!",
+      "en": "Voucher ({0}) collected!",
+      "group": "App"
+    },
+    "app.wishlist": {
+      "bn": "উইশলিস্ট",
+      "en": "Wishlist",
+      "group": "App"
+    },
+    "cartDrawer.add_more_for_free_delivery": {
+      "bn": "ফ্রি ডেলিভারি পেতে আরও যোগ করুন:",
+      "en": "Add more for FREE delivery:",
+      "group": "CartDrawer"
+    },
+    "cartDrawer.apply": {
+      "bn": "প্রয়োগ",
+      "en": "Apply",
+      "group": "CartDrawer"
+    },
+    "cartDrawer.collected": {
+      "bn": "সংগৃহীত ভাউচার:",
+      "en": "Collected:",
+      "group": "CartDrawer"
+    },
+    "cartDrawer.coupon_applied": {
+      "bn": "কুপন ({0}) সফলভাবে যুক্ত হয়েছে!",
+      "en": "Coupon ({0}) applied!",
+      "group": "CartDrawer"
+    },
+    "cartDrawer.delivery_charge": {
+      "bn": "ডেলিভারি চার্জ",
+      "en": "Delivery Charge",
+      "group": "CartDrawer"
+    },
+    "cartDrawer.discount": {
+      "bn": "ডিসকাউন্ট",
+      "en": "Discount",
+      "group": "CartDrawer"
+    },
+    "cartDrawer.explore_hot_deals_and_add_items": {
+      "bn": "পছন্দের পণ্যগুলো বেছে নিন এবং গরম ডিলে অর্ডার করুন।",
+      "en": "Explore hot deals and add items to your cart.",
+      "group": "CartDrawer"
+    },
+    "cartDrawer.free_delivery_unlocked_for_your_order": {
+      "bn": "অভিনন্দন! আপনার অর্ডারে ফ্রি ডেলিভারি আনলক হয়েছে",
+      "en": "Free delivery unlocked for your order",
+      "group": "CartDrawer"
+    },
+    "cartDrawer.invalid_code_try_gorom10_goromdeal_or": {
+      "bn": "অকার্যকর কুপন কোড!",
+      "en": "Invalid voucher code!",
+      "group": "CartDrawer"
+    },
+    "cartDrawer.proceed_to_checkout": {
+      "bn": "অর্ডার সম্পন্ন করুন",
+      "en": "Proceed to Checkout",
+      "group": "CartDrawer"
+    },
+    "cartDrawer.promo_code_gorom10": {
+      "bn": "কুপন কোড",
+      "en": "Promo Code",
+      "group": "CartDrawer"
+    },
+    "cartDrawer.shopping_cart": {
+      "bn": "আপনার শপিং ব্যাগ",
+      "en": "Shopping Cart",
+      "group": "CartDrawer"
+    },
+    "cartDrawer.start_shopping": {
+      "bn": "শপিং শুরু করুন",
+      "en": "Start Shopping",
+      "group": "CartDrawer"
+    },
+    "cartDrawer.subtotal": {
+      "bn": "সাবটোটাল",
+      "en": "Subtotal",
+      "group": "CartDrawer"
+    },
+    "cartDrawer.total": {
+      "bn": "সর্বমোট",
+      "en": "Total",
+      "group": "CartDrawer"
+    },
+    "cartDrawer.your_cart_is_empty": {
+      "bn": "আপনার কার্ট খালি!",
+      "en": "Your cart is empty!",
+      "group": "CartDrawer"
+    },
+    "categoryPage.active": {
+      "bn": "সক্রিয় ফিল্টার:",
+      "en": "Active:",
+      "group": "CategoryPage"
+    },
+    "categoryPage.and_up": {
+      "bn": "ও তার বেশি",
+      "en": "& Up",
+      "group": "CategoryPage"
+    },
+    "categoryPage.best_discount": {
+      "bn": "সর্বোচ্চ ছাড়",
+      "en": "Best Discount",
+      "group": "CategoryPage"
+    },
+    "categoryPage.brand": {
+      "bn": "ব্র্যান্ড",
+      "en": "Brand",
+      "group": "CategoryPage"
+    },
+    "categoryPage.brands": {
+      "bn": "ব্র্যান্ড",
+      "en": "Brands",
+      "group": "CategoryPage"
+    },
+    "categoryPage.browse_categories": {
+      "bn": "ক্যাটাগরি বাছাই করুন",
+      "en": "Browse Categories",
+      "group": "CategoryPage"
+    },
+    "categoryPage.budget": {
+      "bn": "বাজেট রেঞ্জ",
+      "en": "Budget",
+      "group": "CategoryPage"
+    },
+    "categoryPage.catalog": {
+      "bn": "ক্যাটালগ",
+      "en": "Catalog",
+      "group": "CategoryPage"
+    },
+    "categoryPage.categories": {
+      "bn": "ক্যাটাগরি",
+      "en": "Categories",
+      "group": "CategoryPage"
+    },
+    "categoryPage.chip_discount": {
+      "bn": "{0}%+ ছাড়",
+      "en": "{0}%+ off",
+      "group": "CategoryPage"
+    },
+    "categoryPage.chip_flash": {
+      "bn": "গরম ডিল",
+      "en": "Flash Deals",
+      "group": "CategoryPage"
+    },
+    "categoryPage.chip_in_stock": {
+      "bn": "ইন স্টক",
+      "en": "In Stock",
+      "group": "CategoryPage"
+    },
+    "categoryPage.chip_warranty": {
+      "bn": "অফিসিয়াল ওয়ারেন্টি",
+      "en": "Official Warranty",
+      "group": "CategoryPage"
+    },
+    "categoryPage.clear_all": {
+      "bn": "সব মুছুন",
+      "en": "Clear all",
+      "group": "CategoryPage"
+    },
+    "categoryPage.details": {
+      "bn": "বিস্তারিত",
+      "en": "Details",
+      "group": "CategoryPage"
+    },
+    "categoryPage.discount": {
+      "bn": "মূল্যছাড়",
+      "en": "Discount",
+      "group": "CategoryPage"
+    },
+    "categoryPage.filters": {
+      "bn": "ফিল্টার (Filters)",
+      "en": "Filters",
+      "group": "CategoryPage"
+    },
+    "categoryPage.filters_2": {
+      "bn": "ফিল্টার",
+      "en": "Filters",
+      "group": "CategoryPage"
+    },
+    "categoryPage.filters_3": {
+      "bn": "ফিল্টার ও বাছাই",
+      "en": "Filters",
+      "group": "CategoryPage"
+    },
+    "categoryPage.flash_deals": {
+      "bn": "গরম ডিল",
+      "en": "Flash Deals",
+      "group": "CategoryPage"
+    },
+    "categoryPage.flash_deals_only": {
+      "bn": "গরম ডিল (Flash Deals)",
+      "en": "Flash Deals Only",
+      "group": "CategoryPage"
+    },
+    "categoryPage.in_stock": {
+      "bn": "স্টকে আছে",
+      "en": "In Stock",
+      "group": "CategoryPage"
+    },
+    "categoryPage.in_stock_2": {
+      "bn": "ইন স্টক",
+      "en": "In Stock",
+      "group": "CategoryPage"
+    },
+    "categoryPage.in_stock_only": {
+      "bn": "স্টকে বিদ্যমান (In Stock)",
+      "en": "In Stock Only",
+      "group": "CategoryPage"
+    },
+    "categoryPage.in_stock_only_2": {
+      "bn": "স্টকে বিদ্যমান",
+      "en": "In Stock Only",
+      "group": "CategoryPage"
+    },
+    "categoryPage.items": {
+      "bn": "টি পণ্য",
+      "en": "items",
+      "group": "CategoryPage"
+    },
+    "categoryPage.next": {
+      "bn": "পরের",
+      "en": "Next",
+      "group": "CategoryPage"
+    },
+    "categoryPage.no_products_matched_your_filters": {
+      "bn": "এই ফিল্টারে কোনো পণ্য মেলেনি",
+      "en": "No products matched your filters",
+      "group": "CategoryPage"
+    },
+    "categoryPage.of": {
+      "bn": " / মোট ",
+      "en": " of ",
+      "group": "CategoryPage"
+    },
+    "categoryPage.official_warranty": {
+      "bn": "অফিসিয়াল ওয়ারেন্টি সহ",
+      "en": "Official Warranty",
+      "group": "CategoryPage"
+    },
+    "categoryPage.or_more_off": {
+      "bn": "{0}% বা তার বেশি ছাড়",
+      "en": "{0}% or more off",
+      "group": "CategoryPage"
+    },
+    "categoryPage.page_of": {
+      "bn": "পৃষ্ঠা {0} / {1}",
+      "en": "Page {0} of {1}",
+      "group": "CategoryPage"
+    },
+    "categoryPage.prev": {
+      "bn": "আগের",
+      "en": "Prev",
+      "group": "CategoryPage"
+    },
+    "categoryPage.price_high_to_low": {
+      "bn": "দাম: বেশি থেকে কম",
+      "en": "Price: High to Low",
+      "group": "CategoryPage"
+    },
+    "categoryPage.price_low_to_high": {
+      "bn": "দাম: কম থেকে বেশি",
+      "en": "Price: Low to High",
+      "group": "CategoryPage"
+    },
+    "categoryPage.price_range": {
+      "bn": "বাজেট রেঞ্জ",
+      "en": "Price Range",
+      "group": "CategoryPage"
+    },
+    "categoryPage.price_table_brand": {
+      "bn": "ব্র্যান্ড",
+      "en": "Brand",
+      "group": "CategoryPage"
+    },
+    "categoryPage.price_table_category": {
+      "bn": "ক্যাটাগরি",
+      "en": "Category",
+      "group": "CategoryPage"
+    },
+    "categoryPage.price_table_name": {
+      "bn": "পণ্যের নাম (Product Name)",
+      "en": "Product Name",
+      "group": "CategoryPage"
+    },
+    "categoryPage.price_table_price": {
+      "bn": "অফার মূল্য",
+      "en": "Offer Price",
+      "group": "CategoryPage"
+    },
+    "categoryPage.price_table_warranty": {
+      "bn": "ওয়ারেন্টি",
+      "en": "Warranty",
+      "group": "CategoryPage"
+    },
+    "categoryPage.products": {
+      "bn": " টি পণ্য",
+      "en": " products",
+      "group": "CategoryPage"
+    },
+    "categoryPage.rating": {
+      "bn": "কাস্টমার রেটিং",
+      "en": "Rating",
+      "group": "CategoryPage"
+    },
+    "categoryPage.rating_2": {
+      "bn": "রেটিং",
+      "en": "Rating",
+      "group": "CategoryPage"
+    },
+    "categoryPage.reset": {
+      "bn": "ফিল্টার মুছুন",
+      "en": "Reset",
+      "group": "CategoryPage"
+    },
+    "categoryPage.reset_2": {
+      "bn": "সব মুছুন",
+      "en": "Reset",
+      "group": "CategoryPage"
+    },
+    "categoryPage.reset_all": {
+      "bn": "সব মুছুন",
+      "en": "Reset All",
+      "group": "CategoryPage"
+    },
+    "categoryPage.reset_filters": {
+      "bn": "ফিল্টার রিসেট করুন",
+      "en": "Reset Filters",
+      "group": "CategoryPage"
+    },
+    "categoryPage.search_brands": {
+      "bn": "ব্র্যান্ড খুঁজুন...",
+      "en": "Search brands...",
+      "group": "CategoryPage"
+    },
+    "categoryPage.show": {
+      "bn": "দেখান:",
+      "en": "Show:",
+      "group": "CategoryPage"
+    },
+    "categoryPage.show_products": {
+      "bn": "ফিল্টার প্রয়োগ করুন ({0} টি পণ্য)",
+      "en": "Show {0} Products",
+      "group": "CategoryPage"
+    },
+    "categoryPage.showing": {
+      "bn": "দেখানো হচ্ছে ",
+      "en": "Showing ",
+      "group": "CategoryPage"
+    },
+    "categoryPage.sort_featured": {
+      "bn": "সাজান: জনপ্রিয়",
+      "en": "Sort: Featured",
+      "group": "CategoryPage"
+    },
+    "categoryPage.sort_products": {
+      "bn": "সাজানোর ধরন",
+      "en": "Sort products",
+      "group": "CategoryPage"
+    },
+    "categoryPage.top_rated": {
+      "bn": "সেরা রেটিং",
+      "en": "Top Rated",
+      "group": "CategoryPage"
+    },
+    "categoryPage.try_resetting_your_filters_to_explore": {
+      "bn": "অনুগ্রহ করে বাজেট বাড়িয়ে ফিল্টার রিসেট করে দেখুন।",
+      "en": "Try resetting your filters to explore all items.",
+      "group": "CategoryPage"
+    },
+    "categoryPage.warranty": {
+      "bn": "অফিসিয়াল ওয়ারেন্টি",
+      "en": "Warranty",
+      "group": "CategoryPage"
+    },
+    "checkoutPage.7_day_free_replacement_official_brand": {
+      "bn": "যেকোনো ত্রুটিতে ৭ দিনের ফ্রি রিপ্লেসমেন্ট ও ব্র্যান্ড ওয়ারেন্টি",
+      "en": "7-day free replacement & official brand warranty",
+      "group": "CheckoutPage"
+    },
+    "checkoutPage.add_more_for_free_delivery": {
+      "bn": "ফ্রি ডেলিভারি পেতে আর বাকি:",
+      "en": "Add more for Free Delivery:",
+      "group": "CheckoutPage"
+    },
+    "checkoutPage.add_your_favorite_kitchen_appliances_or": {
+      "bn": "পছন্দের কিচেন অ্যাপ্লায়েন্স বা স্মার্ট গ্যাজেট কার্টে যোগ করে অর্ডার সম্পন্ন করুন।",
+      "en": "Add your favorite kitchen appliances or smart gadgets to proceed to checkout.",
+      "group": "CheckoutPage"
+    },
+    "checkoutPage.apply": {
+      "bn": "প্রয়োগ করুন",
+      "en": "Apply",
+      "group": "CheckoutPage"
+    },
+    "checkoutPage.apply_discount_voucher": {
+      "bn": "অতিরিক্ত ভাউচার ও ডিসকাউন্ট কোড",
+      "en": "Apply Discount Voucher",
+      "group": "CheckoutPage"
+    },
+    "checkoutPage.back": {
+      "bn": "ফিরে যান",
+      "en": "Back",
+      "group": "CheckoutPage"
+    },
+    "checkoutPage.browse_products": {
+      "bn": "পণ্য দেখুন",
+      "en": "Browse Products",
+      "group": "CheckoutPage"
+    },
+    "checkoutPage.complete_your_order": {
+      "bn": "অর্ডার সম্পন্ন করুন",
+      "en": "Complete Your Order",
+      "group": "CheckoutPage"
+    },
+    "checkoutPage.confirm_place_order": {
+      "bn": "অর্ডার কনফার্ম করুন",
+      "en": "Confirm & Place Order",
+      "group": "CheckoutPage"
+    },
+    "checkoutPage.confirming_order": {
+      "bn": "অর্ডার কনফার্ম হচ্ছে...",
+      "en": "Confirming Order...",
+      "group": "CheckoutPage"
+    },
+    "checkoutPage.continue_shopping": {
+      "bn": "শপিং চালিয়ে যান",
+      "en": "Continue Shopping",
+      "group": "CheckoutPage"
+    },
+    "checkoutPage.customer": {
+      "bn": "গ্রাহকের তথ্য",
+      "en": "Customer",
+      "group": "CheckoutPage"
+    },
+    "checkoutPage.delivery_address": {
+      "bn": "ডেলিভারি ঠিকানা",
+      "en": "Delivery Address",
+      "group": "CheckoutPage"
+    },
+    "checkoutPage.delivery_address_contact": {
+      "bn": "ডেলিভারি ঠিকানা ও যোগাযোগ",
+      "en": "Delivery Address & Contact",
+      "group": "CheckoutPage"
+    },
+    "checkoutPage.delivery_note_optional": {
+      "bn": "অতিরিক্ত নির্দেশনা (ঐচ্ছিক)",
+      "en": "Delivery Note (Optional)",
+      "group": "CheckoutPage"
+    },
+    "checkoutPage.district": {
+      "bn": "জেলা *",
+      "en": "District *",
+      "group": "CheckoutPage"
+    },
+    "checkoutPage.e_g_call_before_delivery": {
+      "bn": "যেমন: বিকাল ৪টার পর কল দিয়ে ডেলিভারি দেবেন",
+      "en": "e.g. Call before delivery",
+      "group": "CheckoutPage"
+    },
+    "checkoutPage.e_g_tanvir_ahmed": {
+      "bn": "যেমন: তানভীর আহমেদ",
+      "en": "e.g. Tanvir Ahmed",
+      "group": "CheckoutPage"
+    },
+    "checkoutPage.enter_voucher_code": {
+      "bn": "কুপন কোড লিখুন",
+      "en": "Enter voucher code",
+      "group": "CheckoutPage"
+    },
+    "checkoutPage.free": {
+      "bn": "ফ্রি",
+      "en": "Free",
+      "group": "CheckoutPage"
+    },
+    "checkoutPage.free_2": {
+      "bn": "ফ্রি",
+      "en": "FREE",
+      "group": "CheckoutPage"
+    },
+    "checkoutPage.free_delivery": {
+      "bn": "ফ্রি ডেলিভারি সাশ্রয়:",
+      "en": "Free Delivery:",
+      "group": "CheckoutPage"
+    },
+    "checkoutPage.free_home_delivery_unlocked_saved": {
+      "bn": "ফ্রি হোম ডেলিভারি আনলক হয়েছে (বাঁচছে ৳{0})",
+      "en": "Free Home Delivery Unlocked (Saved ৳{0})",
+      "group": "CheckoutPage"
+    },
+    "checkoutPage.full_name": {
+      "bn": "আপনার পুরো নাম *",
+      "en": "Full Name *",
+      "group": "CheckoutPage"
+    },
+    "checkoutPage.full_street_address": {
+      "bn": "বিস্তারিত ঠিকানা (বাসা, রোড, এলাকা) *",
+      "en": "Full Street Address *",
+      "group": "CheckoutPage"
+    },
+    "checkoutPage.great_deal_you_are_saving": {
+      "bn": "দারুণ! এই অর্ডারে আপনার সরাসরি লাভ হচ্ছে ",
+      "en": "Great deal! You are saving ",
+      "group": "CheckoutPage"
+    },
+    "checkoutPage.house_road_area": {
+      "bn": "বাড়ি নং, রোড নং, থানা",
+      "en": "House, Road, Area",
+      "group": "CheckoutPage"
+    },
+    "checkoutPage.inspect_on_delivery": {
+      "bn": "হাতে পেয়ে চেক করার সুবিধা",
+      "en": "Inspect on delivery",
+      "group": "CheckoutPage"
+    },
+    "checkoutPage.invalid_voucher_code_try_gorom10_goromde": {
+      "bn": "অকার্যকর কুপন কোড!",
+      "en": "Invalid voucher code!",
+      "group": "CheckoutPage"
+    },
+    "checkoutPage.minimum_order_required_for": {
+      "bn": "{0} ব্যবহারের জন্য ন্যূনতম ৳{1} টাকার পণ্য থাকতে হবে",
+      "en": "Minimum order ৳{1} required for {0}",
+      "group": "CheckoutPage"
+    },
+    "checkoutPage.mobile_number": {
+      "bn": "সচল মোবাইল নম্বর *",
+      "en": "Mobile Number *",
+      "group": "CheckoutPage"
+    },
+    "checkoutPage.offer": {
+      "bn": "অফার ছাড়:",
+      "en": "Offer:",
+      "group": "CheckoutPage"
+    },
+    "checkoutPage.offer_markdown_savings": {
+      "bn": "গরম ডিল অফার ছাড়",
+      "en": "Offer Markdown Savings",
+      "group": "CheckoutPage"
+    },
+    "checkoutPage.offer_subtotal": {
+      "bn": "অফার সাবটোটাল",
+      "en": "Offer Subtotal",
+      "group": "CheckoutPage"
+    },
+    "checkoutPage.open_verify_your_parcel_in_front": {
+      "bn": "ডেলিভারি ম্যানের সামনে পণ্য খুলে দেখে নেওয়ার সুবিধা",
+      "en": "Open & verify your parcel in front of delivery rider",
+      "group": "CheckoutPage"
+    },
+    "checkoutPage.order_items": {
+      "bn": "অর্ডারকৃত পণ্য ({0} টি)",
+      "en": "Order Items ({0})",
+      "group": "CheckoutPage"
+    },
+    "checkoutPage.order_savings_summary": {
+      "bn": "আপনার অর্ডার ও সাশ্রয়ের হিসাব",
+      "en": "Order & Savings Summary",
+      "group": "CheckoutPage"
+    },
+    "checkoutPage.order_tracking_number": {
+      "bn": "অর্ডার ট্র্যাকিং নম্বর:",
+      "en": "Order Tracking Number:",
+      "group": "CheckoutPage"
+    },
+    "checkoutPage.ordered_items": {
+      "bn": "অর্ডারকৃত পণ্যসমূহ",
+      "en": "Ordered Items",
+      "group": "CheckoutPage"
+    },
+    "checkoutPage.payable_on_delivery": {
+      "bn": "ডেলিভারির সময় প্রদেয়",
+      "en": "Payable on Delivery",
+      "group": "CheckoutPage"
+    },
+    "checkoutPage.payment_account_hint": {
+      "bn": "{0} নম্বরে পেমেন্ট পাঠান (Send Money) এবং নিচে ট্রানজেকশন আইডি দিন।",
+      "en": "Send payment to {0} and enter the transaction ID below.",
+      "group": "CheckoutPage"
+    },
+    "checkoutPage.payment_method": {
+      "bn": "পেমেন্ট মাধ্যম নির্বাচন করুন",
+      "en": "Payment Method",
+      "group": "CheckoutPage"
+    },
+    "checkoutPage.qty": {
+      "bn": "পরিমাণ: {0} টি",
+      "en": "Qty: {0}",
+      "group": "CheckoutPage"
+    },
+    "checkoutPage.regular_retail_price": {
+      "bn": "নিয়মিত বাজারমূল্য",
+      "en": "Regular Retail Price",
+      "group": "CheckoutPage"
+    },
+    "checkoutPage.remove": {
+      "bn": "সরান",
+      "en": "Remove",
+      "group": "CheckoutPage"
+    },
+    "checkoutPage.save": {
+      "bn": "বাঁচছে",
+      "en": "Save",
+      "group": "CheckoutPage"
+    },
+    "checkoutPage.step_address_payment": {
+      "bn": "১. ঠিকানা ও পেমেন্ট",
+      "en": "1. Address & Payment",
+      "group": "CheckoutPage"
+    },
+    "checkoutPage.step_confirmation": {
+      "bn": "২. অর্ডার নিশ্চিতকরণ",
+      "en": "2. Confirmation",
+      "group": "CheckoutPage"
+    },
+    "checkoutPage.subtotal": {
+      "bn": "পণ্যের মূল্য",
+      "en": "Subtotal",
+      "group": "CheckoutPage"
+    },
+    "checkoutPage.total_amount": {
+      "bn": "সর্বমোট বিল",
+      "en": "Total Amount",
+      "group": "CheckoutPage"
+    },
+    "checkoutPage.total_payable": {
+      "bn": "সর্বমোট প্রদেয়",
+      "en": "Total Payable",
+      "group": "CheckoutPage"
+    },
+    "checkoutPage.total_savings_on_this_order": {
+      "bn": "এই অর্ডারে আপনার মোট সাশ্রয়",
+      "en": "Total Savings on This Order",
+      "group": "CheckoutPage"
+    },
+    "checkoutPage.track_this_order": {
+      "bn": "অর্ডার ট্র্যাক করুন",
+      "en": "Track This Order",
+      "group": "CheckoutPage"
+    },
+    "checkoutPage.transaction_id": {
+      "bn": "ট্রানজেকশন আইডি (TrxID)",
+      "en": "Transaction ID (TrxID)",
+      "group": "CheckoutPage"
+    },
+    "checkoutPage.voucher": {
+      "bn": "ভাউচার:",
+      "en": "Voucher:",
+      "group": "CheckoutPage"
+    },
+    "checkoutPage.voucher_2": {
+      "bn": "ভাউচার ছাড় ({0})",
+      "en": "Voucher ({0})",
+      "group": "CheckoutPage"
+    },
+    "checkoutPage.voucher_applied_extra_off": {
+      "bn": "{0} কোডে অতিরিক্ত ৳{1} সাশ্রয় যোগ হয়েছে",
+      "en": "Voucher {0} applied: Extra ৳{1} off",
+      "group": "CheckoutPage"
+    },
+    "checkoutPage.voucher_discount": {
+      "bn": "ভাউচার ছাড়",
+      "en": "Voucher Discount",
+      "group": "CheckoutPage"
+    },
+    "checkoutPage.you_re_getting_off_standard_retail": {
+      "bn": "নিয়মিত বাজারমূল্য থেকে মোট {0}% কম দামে আসল পণ্যটি পাচ্ছেন — কোনো অগ্রিম টাকা ছাড়াই।",
+      "en": "You're getting {0}% off standard retail value with official warranty and cash on delivery.",
+      "group": "CheckoutPage"
+    },
+    "checkoutPage.you_saved_a_total_of": {
+      "bn": "এই অর্ডারে আপনার মোট সাশ্রয় হয়েছে",
+      "en": "You saved a total of",
+      "group": "CheckoutPage"
+    },
+    "checkoutPage.your_checkout_cart_is_empty": {
+      "bn": "চেকআউট করার জন্য কোনো পণ্য নেই",
+      "en": "Your checkout cart is empty",
+      "group": "CheckoutPage"
+    },
+    "checkoutPage.your_order_is_confirmed": {
+      "bn": "আপনার অর্ডার সফলভাবে কনফার্ম হয়েছে",
+      "en": "Your Order is Confirmed",
+      "group": "CheckoutPage"
+    },
+    "checkoutPage.zone_with_time": {
+      "bn": "{0} ({1}-এ ডেলিভারি)",
+      "en": "{0} ({1})",
+      "group": "CheckoutPage"
+    },
+    "common.error_try_again": {
+      "bn": "দুঃখিত, কিছু একটা সমস্যা হয়েছে। আবার চেষ্টা করুন।",
+      "en": "Something went wrong. Please try again.",
+      "group": "Common"
+    },
+    "common.loading": {
+      "bn": "লোড হচ্ছে...",
+      "en": "Loading...",
+      "group": "Common"
+    },
+    "common.out_of_stock": {
+      "bn": "স্টক শেষ",
+      "en": "Out of stock",
+      "group": "Common"
+    },
+    "common.remove": {
+      "bn": "মুছে ফেলুন",
+      "en": "Remove",
+      "group": "Common"
+    },
+    "common.wishlist_add": {
+      "bn": "উইশলিস্টে যোগ করুন",
+      "en": "Add to wishlist",
+      "group": "Common"
+    },
+    "common.wishlist_remove": {
+      "bn": "উইশলিস্ট থেকে মুছুন",
+      "en": "Remove from wishlist",
+      "group": "Common"
+    },
+    "flashDealsSection.ends_in": {
+      "bn": "অফার শেষ হতে বাকি:",
+      "en": "Ends in:",
+      "group": "FlashDealsSection"
+    },
+    "flashDealsSection.view_all_deals": {
+      "bn": "সব ডিল দেখুন",
+      "en": "View All Deals",
+      "group": "FlashDealsSection"
+    },
+    "footer.email": {
+      "bn": "ইমেইল: {0}",
+      "en": "Email: {0}",
+      "group": "Footer"
+    },
+    "footer.email_placeholder": {
+      "bn": "আপনার ইমেইল দিন...",
+      "en": "Enter your email...",
+      "group": "Footer"
+    },
+    "footer.hotline": {
+      "bn": "হটলাইন: {0} ({1})",
+      "en": "Hotline: {0} ({1})",
+      "group": "Footer"
+    },
+    "footer.subscribed_successfully": {
+      "bn": "ধন্যবাদ! সাবস্ক্রিপশন সম্পন্ন হয়েছে।",
+      "en": "Subscribed successfully!",
+      "group": "Footer"
+    },
+    "header.all_categories": {
+      "bn": "সকল ক্যাটাগরি",
+      "en": "All Categories",
+      "group": "Header"
+    },
+    "header.categories": {
+      "bn": "কিচেন ও গ্যাজেট ক্যাটাগরি",
+      "en": "Categories",
+      "group": "Header"
+    },
+    "header.electronics_kitchen_store": {
+      "bn": "ইলেকট্রনিক্স ও কিচেন স্টোর",
+      "en": "Electronics & Kitchen Store",
+      "group": "Header"
+    },
+    "header.hello_sign_in": {
+      "bn": "হ্যালো, সাইন ইন",
+      "en": "Hello, Sign In",
+      "group": "Header"
+    },
+    "header.home": {
+      "bn": "গরম ডিল হোম",
+      "en": "Gorom Deal Home",
+      "group": "Header"
+    },
+    "header.my_account": {
+      "bn": "আমার একাউন্ট",
+      "en": "My Account",
+      "group": "Header"
+    },
+    "header.search": {
+      "bn": "খুঁজুন",
+      "en": "Search",
+      "group": "Header"
+    },
+    "header.search_air_fryers_blenders_gadgets": {
+      "bn": "এয়ার ফ্রায়ার, ব্লেন্ডার বা গ্যাজেটস খুঁজুন...",
+      "en": "Search air fryers, blenders, gadgets...",
+      "group": "Header"
+    },
+    "header.shopping_bag": {
+      "bn": "শপিং ব্যাগ",
+      "en": "Shopping Bag",
+      "group": "Header"
+    },
+    "header.subtotal": {
+      "bn": "মোট মূল্য",
+      "en": "Subtotal",
+      "group": "Header"
+    },
+    "header.text": {
+      "bn": "EN",
+      "en": "বাং",
+      "group": "Header"
+    },
+    "header.text_2": {
+      "bn": "Switch to English",
+      "en": "বাংলায় দেখুন",
+      "group": "Header"
+    },
+    "header.track_order": {
+      "bn": "অর্ডার ট্র্যাক করুন",
+      "en": "Track Order",
+      "group": "Header"
+    },
+    "heroBanner.featured_deals_carousel": {
+      "bn": "ফিচার্ড অফার স্লাইডার",
+      "en": "Featured Deals Carousel",
+      "group": "HeroBanner"
+    },
+    "heroBanner.next_slide": {
+      "bn": "পরবর্তী স্লাইড",
+      "en": "Next slide",
+      "group": "HeroBanner"
+    },
+    "heroBanner.previous_slide": {
+      "bn": "আগের স্লাইড",
+      "en": "Previous slide",
+      "group": "HeroBanner"
+    },
+    "heroBanner.view_hot_deals": {
+      "bn": "সকল গরম ডিল",
+      "en": "View Hot Deals",
+      "group": "HeroBanner"
+    },
+    "orderTrackModal.completed": {
+      "bn": "সম্পন্ন",
+      "en": "Completed",
+      "group": "OrderTrackModal"
+    },
+    "orderTrackModal.courier_gorom_deal_express": {
+      "bn": "কুরিয়ার: {0}",
+      "en": "Courier: {0}",
+      "group": "OrderTrackModal"
+    },
+    "orderTrackModal.enter_order_id_or_mobile_number": {
+      "bn": "আপনার অর্ডার ট্র্যাকিং আইডি বা মোবাইল নম্বর দিন",
+      "en": "Enter Order ID or Mobile Number",
+      "group": "OrderTrackModal"
+    },
+    "orderTrackModal.order_id": {
+      "bn": "অর্ডার নং:",
+      "en": "Order ID:",
+      "group": "OrderTrackModal"
+    },
+    "orderTrackModal.order_not_found_please_check_your": {
+      "bn": "কোনো অর্ডার পাওয়া যায়নি। অনুগ্রহ করে সঠিক আইডি দিন।",
+      "en": "Order not found. Please check your ID.",
+      "group": "OrderTrackModal"
+    },
+    "orderTrackModal.order_tracking": {
+      "bn": "অর্ডার ট্র্যাকিং",
+      "en": "Order Tracking",
+      "group": "OrderTrackModal"
+    },
+    "orderTrackModal.pending": {
+      "bn": "প্রক্রিয়াধীন",
+      "en": "Pending",
+      "group": "OrderTrackModal"
+    },
+    "orderTrackModal.placeholder": {
+      "bn": "যেমন: GD-849201",
+      "en": "e.g. GD-849201",
+      "group": "OrderTrackModal"
+    },
+    "orderTrackModal.status_in_transit": {
+      "bn": "স্ট্যাটাস: {0}",
+      "en": "Status: {0}",
+      "group": "OrderTrackModal"
+    },
+    "orderTrackModal.track": {
+      "bn": "ট্র্যাক",
+      "en": "Track",
+      "group": "OrderTrackModal"
+    },
+    "productCard.view_details": {
+      "bn": "বিস্তারিত দেখুন",
+      "en": "View Details",
+      "group": "ProductCard"
+    },
+    "productDetailPage.100_verified_buyer_reviews": {
+      "bn": "১০০% ভেরিফাইড ক্রেতার রিভিউ",
+      "en": "100% Verified Buyer Reviews",
+      "group": "ProductDetailPage"
+    },
+    "productDetailPage.add_to_cart": {
+      "bn": "কার্টে যোগ করুন",
+      "en": "Add to Cart",
+      "group": "ProductDetailPage"
+    },
+    "productDetailPage.added": {
+      "bn": "যুক্ত হয়েছে!",
+      "en": "Added!",
+      "group": "ProductDetailPage"
+    },
+    "productDetailPage.added_to_cart": {
+      "bn": "কার্টে যুক্ত হয়েছে!",
+      "en": "Added to Cart!",
+      "group": "ProductDetailPage"
+    },
+    "productDetailPage.all_collected": {
+      "bn": "✓ সব সংগৃহীত",
+      "en": "✓ All Collected",
+      "group": "ProductDetailPage"
+    },
+    "productDetailPage.all_reviews_are_submitted_by_authentic": {
+      "bn": "সকল রিভিউ আসল গ্রাহকদের দ্বারা পণ্য ডেলিভারি নেওয়ার পর প্রদত্ত।",
+      "en": "All reviews are submitted by authentic buyers following verified delivery.",
+      "group": "ProductDetailPage"
+    },
+    "productDetailPage.back_to_catalog": {
+      "bn": "সকল পণ্যে ফিরুন",
+      "en": "Back to Catalog",
+      "group": "ProductDetailPage"
+    },
+    "productDetailPage.buy_now": {
+      "bn": "এখনই অর্ডার করুন",
+      "en": "Buy Now",
+      "group": "ProductDetailPage"
+    },
+    "productDetailPage.check_parcel_at_doorstep_upon_delivery": {
+      "bn": "পণ্য হাতে পেয়ে চেক করে নেওয়ার সুবিধা।",
+      "en": "Check parcel at doorstep upon delivery.",
+      "group": "ProductDetailPage"
+    },
+    "productDetailPage.collect": {
+      "bn": "সংগ্রহ করুন",
+      "en": "Collect",
+      "group": "ProductDetailPage"
+    },
+    "productDetailPage.collect_all": {
+      "bn": "সব সংগ্রহ করুন",
+      "en": "Collect All",
+      "group": "ProductDetailPage"
+    },
+    "productDetailPage.collected": {
+      "bn": "সংগৃহীত",
+      "en": "Collected",
+      "group": "ProductDetailPage"
+    },
+    "productDetailPage.delivery_info": {
+      "bn": "{insideName}: {insideTime} (৳{insideCharge}), {outsideName}: {outsideTime} (৳{outsideCharge})। ৳{threshold}+ টাকার অর্ডারে ফ্রি ডেলিভারি!",
+      "en": "{insideName}: {insideTime} (৳{insideCharge}), {outsideName}: {outsideTime} (৳{outsideCharge}). Free delivery over ৳{threshold}!",
+      "group": "ProductDetailPage"
+    },
+    "productDetailPage.delivery_information": {
+      "bn": "ডেলিভারি সংক্রান্ত তথ্য",
+      "en": "Delivery Information",
+      "group": "ProductDetailPage"
+    },
+    "productDetailPage.description": {
+      "bn": "বিস্তারিত বিবরণ",
+      "en": "Description",
+      "group": "ProductDetailPage"
+    },
+    "productDetailPage.in_stock_units": {
+      "bn": "স্টকে আছে ({0} টি)",
+      "en": "In Stock ({0} units)",
+      "group": "ProductDetailPage"
+    },
+    "productDetailPage.key_features_benefits": {
+      "bn": "মূল সুবিধাসমূহ ও বৈশিষ্ট্য:",
+      "en": "Key Features & Benefits:",
+      "group": "ProductDetailPage"
+    },
+    "productDetailPage.link_copied": {
+      "bn": "লিংক কপি হয়েছে!",
+      "en": "Link copied!",
+      "group": "ProductDetailPage"
+    },
+    "productDetailPage.max_discount": {
+      "bn": " · সর্বোচ্চ ছাড় ৳{0}",
+      "en": " · Max. Discount ৳{0}",
+      "group": "ProductDetailPage"
+    },
+    "productDetailPage.min_spend": {
+      "bn": "সর্বনিম্ন অর্ডার ৳{0}",
+      "en": "Min. Spend ৳{0}",
+      "group": "ProductDetailPage"
+    },
+    "productDetailPage.official_warranty_cod": {
+      "bn": "অফিসিয়াল ওয়ারেন্টি ও ক্যাশ অন ডেলিভারি",
+      "en": "Official Warranty & COD",
+      "group": "ProductDetailPage"
+    },
+    "productDetailPage.only_left_in_stock": {
+      "bn": "স্টকে বাকি মাত্র {0} টি",
+      "en": "Only {0} left in stock",
+      "group": "ProductDetailPage"
+    },
+    "productDetailPage.opening": {
+      "bn": "প্রস্তুত হচ্ছে...",
+      "en": "Opening...",
+      "group": "ProductDetailPage"
+    },
+    "productDetailPage.opening_checkout": {
+      "bn": "অর্ডার প্রস্তুত হচ্ছে...",
+      "en": "Opening Checkout...",
+      "group": "ProductDetailPage"
+    },
+    "productDetailPage.order_by_phone": {
+      "bn": "সরাসরি ফোনে অর্ডার করতে কল করুন:",
+      "en": "Order by phone:",
+      "group": "ProductDetailPage"
+    },
+    "productDetailPage.quantity": {
+      "bn": "পরিমাণ:",
+      "en": "Quantity:",
+      "group": "ProductDetailPage"
+    },
+    "productDetailPage.ratings": {
+      "bn": "টি মূল্যায়ন",
+      "en": "ratings",
+      "group": "ProductDetailPage"
+    },
+    "productDetailPage.related_products": {
+      "bn": "আপনার আরও পছন্দ হতে পারে",
+      "en": "Related Products",
+      "group": "ProductDetailPage"
+    },
+    "productDetailPage.return_terms": {
+      "bn": "রিটার্ন পলিসির শর্তাবলী:",
+      "en": "Return Terms:",
+      "group": "ProductDetailPage"
+    },
+    "productDetailPage.review_city": {
+      "bn": "এলাকা / শহর",
+      "en": "Area / City",
+      "group": "ProductDetailPage"
+    },
+    "productDetailPage.review_comment": {
+      "bn": "আপনার অভিজ্ঞতা লিখুন...",
+      "en": "Share your experience...",
+      "group": "ProductDetailPage"
+    },
+    "productDetailPage.review_name": {
+      "bn": "আপনার নাম",
+      "en": "Your name",
+      "group": "ProductDetailPage"
+    },
+    "productDetailPage.review_submit": {
+      "bn": "রিভিউ জমা দিন",
+      "en": "Submit review",
+      "group": "ProductDetailPage"
+    },
+    "productDetailPage.review_thanks": {
+      "bn": "ধন্যবাদ! আপনার রিভিউ যাচাইয়ের পর প্রকাশ করা হবে।",
+      "en": "Thanks! Your review will appear after moderation.",
+      "group": "ProductDetailPage"
+    },
+    "productDetailPage.reviews": {
+      "bn": "টি রিভিউ",
+      "en": "Reviews",
+      "group": "ProductDetailPage"
+    },
+    "productDetailPage.reviews_2": {
+      "bn": "কাস্টমার রিভিউ",
+      "en": "Reviews",
+      "group": "ProductDetailPage"
+    },
+    "productDetailPage.save": {
+      "bn": "সাশ্রয় ৳",
+      "en": "Save ৳",
+      "group": "ProductDetailPage"
+    },
+    "productDetailPage.share": {
+      "bn": "শেয়ার করুন",
+      "en": "Share",
+      "group": "ProductDetailPage"
+    },
+    "productDetailPage.ships_within_24_hours": {
+      "bn": "আজ অর্ডার করলে আগামীকালের মধ্যে শিপিং",
+      "en": "Ships within 24 hours",
+      "group": "ProductDetailPage"
+    },
+    "productDetailPage.sold": {
+      "bn": "বিক্রিত",
+      "en": "sold",
+      "group": "ProductDetailPage"
+    },
+    "productDetailPage.special_price": {
+      "bn": "অফার মূল্য",
+      "en": "Special Price",
+      "group": "ProductDetailPage"
+    },
+    "productDetailPage.specifications": {
+      "bn": "স্পেসিফিকেশন",
+      "en": "Specifications",
+      "group": "ProductDetailPage"
+    },
+    "productDetailPage.verified_purchase": {
+      "bn": "✓ ভেরিফাইড পারচেজ",
+      "en": "✓ Verified Purchase",
+      "group": "ProductDetailPage"
+    },
+    "productDetailPage.vouchers": {
+      "bn": "ডিসকাউন্ট ভাউচার",
+      "en": "Vouchers",
+      "group": "ProductDetailPage"
+    },
+    "productDetailPage.warranty_guarantee": {
+      "bn": "ওয়ারেন্টি ও গ্যারান্টি",
+      "en": "Warranty & Guarantee",
+      "group": "ProductDetailPage"
+    },
+    "productDetailPage.warranty_returns": {
+      "bn": "ওয়ারেন্টি ও পলিসি",
+      "en": "Warranty & Returns",
+      "group": "ProductDetailPage"
+    },
+    "productDetailPage.write_review": {
+      "bn": "রিভিউ লিখুন",
+      "en": "Write a review",
+      "group": "ProductDetailPage"
+    },
+    "userAccountModal.change_phone_number": {
+      "bn": "নম্বর পরিবর্তন করুন",
+      "en": "Change Phone Number",
+      "group": "UserAccountModal"
+    },
+    "userAccountModal.default_name": {
+      "bn": "সম্মানিত গ্রাহক",
+      "en": "Valued Customer",
+      "group": "UserAccountModal"
+    },
+    "userAccountModal.demo_otp": {
+      "bn": "ডেমো মোড: আপনার ওটিপি {0}",
+      "en": "Demo mode: your OTP is {0}",
+      "group": "UserAccountModal"
+    },
+    "userAccountModal.enter_4_digit_otp_e_g": {
+      "bn": "{0} নম্বরে পাঠানো ৪ ডিজিটের ওটিপি দিন",
+      "en": "Enter the 4-digit OTP sent to {0}",
+      "group": "UserAccountModal"
+    },
+    "userAccountModal.enter_any_phone_number_for_demo": {
+      "bn": "আপনার নম্বরে একটি ওটিপি কোড পাঠানো হবে",
+      "en": "We will send a one-time code to your number",
+      "group": "UserAccountModal"
+    },
+    "userAccountModal.login_or_register_quickly_using_your": {
+      "bn": "আপনার মোবাইল নম্বর দিয়ে দ্রুত লগইন বা একাউন্ট তৈরি করুন",
+      "en": "Login or register quickly using your phone number",
+      "group": "UserAccountModal"
+    },
+    "userAccountModal.logout": {
+      "bn": "লগ আউট",
+      "en": "Log out",
+      "group": "UserAccountModal"
+    },
+    "userAccountModal.mobile_number": {
+      "bn": "মোবাইল নাম্বার",
+      "en": "Mobile Number",
+      "group": "UserAccountModal"
+    },
+    "userAccountModal.my_account_dashboard": {
+      "bn": "আমার একাউন্ট ড্যাশবোর্ড",
+      "en": "My Account Dashboard",
+      "group": "UserAccountModal"
+    },
+    "userAccountModal.my_recent_orders": {
+      "bn": "আমার সাম্প্রতিক অর্ডারসমূহ",
+      "en": "My Recent Orders",
+      "group": "UserAccountModal"
+    },
+    "userAccountModal.no_orders_yet": {
+      "bn": "এখনো কোনো অর্ডার সম্পন্ন হয়নি।",
+      "en": "No orders yet.",
+      "group": "UserAccountModal"
+    },
+    "userAccountModal.send_otp_code": {
+      "bn": "ওটিপি (OTP) কোড পাঠান",
+      "en": "Send OTP Code",
+      "group": "UserAccountModal"
+    },
+    "userAccountModal.sign_in_register": {
+      "bn": "সাইন ইন / রেজিস্ট্রেশন",
+      "en": "Sign In / Register",
+      "group": "UserAccountModal"
+    },
+    "userAccountModal.track": {
+      "bn": "অর্ডার ট্র্যাক",
+      "en": "Track",
+      "group": "UserAccountModal"
+    },
+    "userAccountModal.verified_member": {
+      "bn": "ভেরিফাইড মেম্বার",
+      "en": "Verified Member",
+      "group": "UserAccountModal"
+    },
+    "userAccountModal.verify_sign_in": {
+      "bn": "ভেরিফাই ও লগইন",
+      "en": "Verify & Sign In",
+      "group": "UserAccountModal"
+    },
+    "userAccountModal.welcome_to_gorom_deal": {
+      "bn": "গরম ডিলে স্বাগতম!",
+      "en": "Welcome to Gorom Deal!",
+      "group": "UserAccountModal"
+    },
+    "wishlistDrawer.add_to_cart": {
+      "bn": "কার্টে নিন",
+      "en": "Add to Cart",
+      "group": "WishlistDrawer"
+    },
+    "wishlistDrawer.click_the_heart_icon_on_any": {
+      "bn": "পণ্যের ওপর হার্ট আইকন ক্লিক করে আপনার পছন্দের পণ্য সংরক্ষণ করুন।",
+      "en": "Click the heart icon on any product to save it for later.",
+      "group": "WishlistDrawer"
+    },
+    "wishlistDrawer.move_all_to_cart": {
+      "bn": "সব পণ্য একসাথে কার্টে যোগ করুন",
+      "en": "Move All to Cart",
+      "group": "WishlistDrawer"
+    },
+    "wishlistDrawer.my_wishlist": {
+      "bn": "পছন্দের পণ্য তালিকা",
+      "en": "My Wishlist",
+      "group": "WishlistDrawer"
+    },
+    "wishlistDrawer.your_wishlist_is_empty": {
+      "bn": "কোনো পণ্য পছন্দের তালিকায় নেই",
+      "en": "Your wishlist is empty",
+      "group": "WishlistDrawer"
+    }
+  },
+  "categories": [
+    {
+      "id": "kitchen-appliances",
+      "name": "কিচেন অ্যাপ্লায়েন্স",
+      "nameEn": "Kitchen Appliances",
+      "iconName": "UtensilsCrossed",
+      "image": "product_smart_airfryer_1793335872086.jpg",
+      "order": 1,
+      "description": {
+        "bn": "",
+        "en": ""
+      }
+    },
+    {
+      "id": "cookware",
+      "name": "কুকওয়্যার ও প্যান",
+      "nameEn": "Cookware Sets",
+      "iconName": "CookingPot",
+      "image": "kitchen_granite_cookware_1793337110405.jpg",
+      "order": 2,
+      "description": {
+        "bn": "",
+        "en": ""
+      }
+    },
+    {
+      "id": "gadgets",
+      "name": "স্মার্ট গ্যাজেটস",
+      "nameEn": "Smart Gadgets",
+      "iconName": "Cpu",
+      "image": "hero_ecommerce_showcase_1793335872034.jpg",
+      "order": 3,
+      "description": {
+        "bn": "",
+        "en": ""
+      }
+    },
+    {
+      "id": "audio",
+      "name": "অডিও ও হেডফোন",
+      "nameEn": "Audio & Earbuds",
+      "iconName": "Headphones",
+      "image": "hero_ecommerce_showcase_1793335872034.jpg",
+      "order": 4,
+      "description": {
+        "bn": "",
+        "en": ""
+      }
+    },
+    {
+      "id": "smartwatch",
+      "name": "স্মার্টওয়াচ",
+      "nameEn": "Smartwatches",
+      "iconName": "Watch",
+      "image": "gadget_smartwatch_tws_1793337109838.jpg",
+      "order": 5,
+      "description": {
+        "bn": "",
+        "en": ""
+      }
+    },
+    {
+      "id": "power-charging",
+      "name": "পাওয়ার ও চার্জিং",
+      "nameEn": "Power & Charging",
+      "iconName": "Zap",
+      "image": "gadget_fast_powerbank_1793337111858.jpg",
+      "order": 6,
+      "description": {
+        "bn": "",
+        "en": ""
+      }
+    }
+  ],
+  "products": [
+    {
+      "id": "gd-kitchen-01",
+      "name": "ভিশন ডিজিটাল টাচ এয়ার ফ্রায়ার ও ওভেন (৫.৫ লিটার)",
+      "nameEn": "Vision Digital Touch Rapid Air Fryer & Roaster (5.5L)",
+      "brand": "Vision Electronics",
+      "category": "kitchen-appliances",
+      "price": 4950,
+      "originalPrice": 7200,
+      "rating": 4.8,
+      "reviewCount": 142,
+      "images": [
+        "product_smart_airfryer_1793335872086.jpg",
+        "promo_kitchen_home_1793335872493.jpg"
+      ],
+      "inStock": true,
+      "stockCount": 18,
+      "isFlashDeal": true,
+      "isFeatured": true,
+      "soldPercent": 84,
+      "badge": "সেরা বিক্রীত",
+      "badgeEn": "Best Seller",
+      "description": "৮৫% কম তেলে মুচমুচে ও স্বাস্থ্যকর রান্নার আধুনিক সমাধান। ৩৬০ ডিগ্রি হাই-স্পিড হট এয়ার সার্কুলেশন প্রযুক্তি ও ৮টি স্মার্ট ওয়ান-টাচ প্রিসেট মেনু সম্বলিত ভিশন এয়ার ফ্রায়ার। চিকেন ফ্রাই, ফ্র্যাঞ্চ ফ্রাই, বেকিং কিংবা কাবাব তৈরি করুন মাত্র ১০-১৫ মিনিটে।",
+      "descriptionEn": "Cook crispy, delicious meals with up to 85% less oil. Powered by 360-degree rapid heat air circulation technology, smart digital touch screen with 8 pre-programmed presets, non-stick dishwasher-safe basket, and auto shut-off memory function.",
+      "features": [
+        "৫.৫ লিটার ফ্যামিলি সাইজ বাস্কেট",
+        "৮টি অটোমেটিক টাচ প্রিসেট মেনু",
+        "৮৫% পর্যন্ত তেল সাশ্রয়ী স্বাস্থ্যকর রান্না",
+        "অটো-কাট ও ওভারহিট সেফটি প্রোটেকশন",
+        "ফুড-গ্রেড নন-স্টিক কোটিং এবং সহজ পরিষ্কার",
+        "১ বছরের সরাসরি ব্র্যান্ড রিপ্লেসমেন্ট ওয়ারেন্টি"
+      ],
+      "featuresEn": [],
+      "specifications": [
+        {
+          "label": "মডেল",
+          "value": "VIS-AF-550 PRO"
+        },
+        {
+          "label": "পাওয়ার",
+          "value": "১৫০০ ওয়াট (1500W)"
+        },
+        {
+          "label": "ভোল্টেজ",
+          "value": "220V - 240V / 50Hz"
+        },
+        {
+          "label": "ধারণক্ষমতা",
+          "value": "৫.৫ লিটার (5.5 Liters)"
+        },
+        {
+          "label": "তাপমাত্রা নিয়ন্ত্রণ",
+          "value": "৮০°C থেকে ২০০°C"
+        },
+        {
+          "label": "টাইমার",
+          "value": "১ থেকে ৬০ মিনিট অটো শাট-অফ"
+        },
+        {
+          "label": "মেটেরিয়াল",
+          "value": "বিপিএ-ফ্রি প্রিমিয়াম হিট রেজিস্ট্যান্ট পলিমার ও স্টিল"
+        }
+      ],
+      "warranty": "১ বছরের অফিসিয়াল সার্ভিস ওয়ারেন্টি",
+      "warrantyEn": "",
+      "sku": "VIS-AF-550",
+      "variants": [
+        {
+          "name": "কালার (Color)",
+          "options": [
+            "ম্যাট ব্ল্যাক (Matte Black)",
+            "রোজ গোল্ড একসেন্ট (Rose Gold)"
+          ]
+        },
+        {
+          "name": "ক্যাপাসিটি (Capacity)",
+          "options": [
+            "৫.৫ লিটার (স্ট্যান্ডার্ড)",
+            "৭.০ লিটার (লার্জ)"
+          ]
+        }
+      ],
+      "order": 1,
+      "reviews": [
+        {
+          "author": "তানভীর আহমেদ",
+          "rating": 5,
+          "date": "2026-10-24",
+          "comment": "পণ্যটি এক কথায় অসাধারণ! চিকেন ফ্রাই এবং আলু ভাজি মাত্র ১২ মিনিটে চমৎকার ক্রিস্পি হয়েছে। তেল ছাড়াই একদম মুচমুচে। ডেলিভারিও মাত্র ২৪ ঘণ্টায় পেয়েছি।",
+          "verifiedPurchase": true,
+          "city": "ধানমন্ডি, ঢাকা"
+        },
+        {
+          "author": "নুসরাত জাহান",
+          "rating": 5,
+          "date": "2026-10-18",
+          "comment": "Vision এর পণ্য সবসময়ই নির্ভরযোগ্য। বাস্কেটটা অনেক বড়, একসাথে পুরো মুরগি রোস্ট করা যায়। ডিজিটাল টাচ ডিসপ্লে খুব স্মুথ কাজ করে।",
+          "verifiedPurchase": true,
+          "city": "জিইসি, চট্টগ্রাম"
+        },
+        {
+          "author": "মাহবুবুল আলম",
+          "rating": 4,
+          "date": "2026-10-12",
+          "comment": "প্যাকেজিং খুব ভালো ছিল। বিল্ড কোয়ালিটি শক্তপোক্ত। পরিবারের সবার জন্য স্বাস্থ্যকর রান্নার সেরা জিনিস।",
+          "verifiedPurchase": true,
+          "city": "উপশহর, সিলেট"
+        }
+      ]
+    },
+    {
+      "id": "gd-kitchen-02",
+      "name": "স্মার্ট হেভি-ডিউটি কপার ব্লেন্ডার ও গ্রাইন্ডার (১০০০ ওয়াট)",
+      "nameEn": "Vision Smart Heavy-Duty Copper Motor Blender & Grinder (1000W)",
+      "brand": "Vision Electronics",
+      "category": "kitchen-appliances",
+      "price": 3650,
+      "originalPrice": 5200,
+      "rating": 4.7,
+      "reviewCount": 96,
+      "images": [
+        "promo_kitchen_home_1793335872493.jpg",
+        "product_smart_airfryer_1793335872086.jpg"
+      ],
+      "inStock": true,
+      "stockCount": 22,
+      "isFlashDeal": true,
+      "isFeatured": true,
+      "soldPercent": 78,
+      "badge": "হট ডিল",
+      "badgeEn": "Hot Deal",
+      "description": "মসলা গুঁড়ো করা, ডাল বাটা, বাদাম পেস্ট বা ফলের স্মুদি তৈরি—সবকিছুতেই দ্রুত ও নিখুঁত ব্লেন্ডিংয়ের জন্য ১০০০ ওয়াটের পিওর কপার মোটর ব্লেন্ডার। ৩টি ফুড-গ্রেড স্টেইনলেস স্টিল জার ও সেলফ-কুলিং ভেন্টিলেশন সিস্টেম।",
+      "descriptionEn": "Heavy duty 100% pure copper wound motor delivers relentless grinding performance for turmeric, spices, lentils, and smoothies. Includes 3 heavy-gauge stainless steel jars with flow breakers and leak-proof silicone gaskets.",
+      "features": [
+        "১০০০ ওয়াট ১০০% পিওর কপার মোটর",
+        "৩টি হেভি-গেজ স্টেইনলেস স্টিল জার",
+        "লেজার-শার্প টাইটেনিয়াম কোটিং ব্লেড",
+        "মোটর ওভারলোড অটো ট্রিপ প্রটেকশন",
+        "৩ স্পিড কন্ট্রোল প্লাস পালস ফাংশন",
+        "২ বছরের অফিসিয়াল মোটর রিপ্লেসমেন্ট ওয়ারেন্টি"
+      ],
+      "featuresEn": [],
+      "specifications": [
+        {
+          "label": "মডেল",
+          "value": "VIS-BL-1000 MAX"
+        },
+        {
+          "label": "পাওয়ার",
+          "value": "১০০০ ওয়াট পিওর কপার"
+        },
+        {
+          "label": "ভোল্টেজ",
+          "value": "220V / 50Hz"
+        },
+        {
+          "label": "জার সংখ্যা",
+          "value": "৩টি (লিকুইডাইজিং ১.৫ লিটার, ড্রাই গ্রাইন্ডিং ১ লিটার, চাটনি ৫০০ মি.লি.)"
+        },
+        {
+          "label": "ব্লেড মেটেরিয়াল",
+          "value": "৩০৪ গ্রেড স্টেইনলেস স্টিল"
+        },
+        {
+          "label": "ওভারলোড প্রটেক্টর",
+          "value": "রিসেটেবল পুশ বাটন টাইপ"
+        }
+      ],
+      "warranty": "২ বছরের মোটর ওয়ারেন্টি",
+      "warrantyEn": "",
+      "sku": "VIS-BL-1000",
+      "variants": [
+        {
+          "name": "কালার (Color)",
+          "options": [
+            "ব্রাশড মেটালিক স্টিল (Silver)",
+            "মিডনাইট ব্ল্যাক (Black)"
+          ]
+        }
+      ],
+      "order": 2,
+      "reviews": [
+        {
+          "author": "ফারহানা ইসলাম",
+          "rating": 5,
+          "date": "2026-10-20",
+          "comment": "শুকনো হলুদ এবং শক্ত মসলা মাত্র ৩০ সেকেন্ডে একদম গুঁড়ো হয়ে গেছে! মোটরটা সত্যি অনেক পাওয়ারফুল।",
+          "verifiedPurchase": true,
+          "city": "মিরপুর, ঢাকা"
+        }
+      ]
+    },
+    {
+      "id": "gd-cookware-01",
+      "name": "আরএফএল প্রিমিয়াম গ্রানাইট মার্বেল নন-স্টিক কুকওয়্যার সেট (৭ পিস)",
+      "nameEn": "RFL Luxury Granite Marble Coating Non-Stick Cookware Set (7 Pcs)",
+      "brand": "RFL Houseware",
+      "category": "cookware",
+      "price": 4350,
+      "originalPrice": 5900,
+      "rating": 4.8,
+      "reviewCount": 84,
+      "images": [
+        "kitchen_granite_cookware_1793337110405.jpg",
+        "promo_kitchen_home_1793335872493.jpg"
+      ],
+      "inStock": true,
+      "stockCount": 15,
+      "isFlashDeal": true,
+      "isFeatured": true,
+      "soldPercent": 67,
+      "badge": "প্রিমিয়াম",
+      "badgeEn": "Premium",
+      "description": "আধুনিক রান্নাঘরের সৌন্দর্য ও স্বাস্থ্যকর রান্নার প্রতীক। ৫-লেয়ার স্ক্র্যাচ-প্রুফ গ্রানাইট মার্বেল কোটিং, ইনডাকশন ফ্রেন্ডলি ম্যাগনেটিক বেস এবং সফট-টাচ ব্যাকলাইট কাঠের টেক্সচার হ্যান্ডেল। একদম তেল ছাড়া রান্নার আদর্শ কুকওয়্যার সেট।",
+      "descriptionEn": "Engineered with 5-layer ultra-durable granite marble nonstick coating free of PFOA, lead, and cadmium. Designed for induction and gas cooktops with ergonomic heat-resistant wood-grain bakelite handles.",
+      "features": [
+        "৫-লেয়ার পিএফওএ-ফ্রি মার্বেল কোটিং",
+        "ইন্ডাকশন ও গ্যাস উভয় স্টোভেই ব্যবহারযোগ্য",
+        "টেম্পারড গ্লাস লিড স্টিম ভেন্ট সহ",
+        "কুল-টাচ অ্যান্টি-স্লিপ কাঠের হ্যান্ডেল",
+        "কম তেলে পোড়া না লাগার নিশ্চয়তা",
+        "১ বছরের নন-স্টিক কোটিং ওয়ারেন্টি"
+      ],
+      "featuresEn": [],
+      "specifications": [
+        {
+          "label": "মডেল",
+          "value": "RFL-MRB-7P"
+        },
+        {
+          "label": "সেটে যা আছে",
+          "value": "কড়াই (২৮ সেমি), ফ্রাইপ্যান (২৪ সেমি), সসপ্যান (১৮ সেমি), মিল্ক প্যান + ৩টি গ্লাস ঢাকনা"
+        },
+        {
+          "label": "বেস",
+          "value": "ইন্ডাকশন থার্মো-ডিফিউজার বটম"
+        },
+        {
+          "label": "কোটিং",
+          "value": "জার্মান সার্টিফাইড মার্বেল গ্রানাইট"
+        },
+        {
+          "label": "হ্যান্ডেল",
+          "value": "হিট-রেজিস্ট্যান্ট উডেন ফিনিশ ব্যাকলাইট"
+        }
+      ],
+      "warranty": "১ বছরের কোটিং ওয়ারেন্টি",
+      "warrantyEn": "",
+      "sku": "RFL-COOK-7P",
+      "variants": [
+        {
+          "name": "কালার শেড (Shade)",
+          "options": [
+            "স্যান্ড বেইজ (Beige)",
+            "গ্রানাইট গ্রে (Slate Grey)"
+          ]
+        }
+      ],
+      "order": 3,
+      "reviews": [
+        {
+          "author": "সাদিয়া আক্তার",
+          "rating": 5,
+          "date": "2026-10-15",
+          "comment": "হাতে পেয়ে খুব ভালো লাগলো। কাঠের হ্যান্ডেলটা দেখতে অনেক প্রিমিয়াম লাগে। তেল একদম কম লাগে, মাছ ভাজলে একটুও লেগে থাকে না।",
+          "verifiedPurchase": true,
+          "city": "উত্তরা, ঢাকা"
+        }
+      ]
+    },
+    {
+      "id": "gd-gadget-01",
+      "name": "টাইটানিয়াম অ্যামোলেড ব্লুটুথ কলিং স্মার্টওয়াচ প্রো",
+      "nameEn": "Titanium AMOLED Waterproof Bluetooth Calling Fitness Smartwatch Pro",
+      "brand": "Vision Tech",
+      "category": "smartwatch",
+      "price": 2850,
+      "originalPrice": 4200,
+      "rating": 4.9,
+      "reviewCount": 178,
+      "images": [
+        "gadget_smartwatch_tws_1793337109838.jpg",
+        "hero_ecommerce_showcase_1793335872034.jpg"
+      ],
+      "inStock": true,
+      "stockCount": 26,
+      "isFlashDeal": true,
+      "isFeatured": true,
+      "soldPercent": 72,
+      "badge": "সেরা অফার",
+      "badgeEn": "Best Offer",
+      "description": "১.৯৬ ইঞ্চি আল্ট্রা-ব্রাইট অ্যামোলেড ডিসপ্লে সমৃদ্ধ ফ্ল্যাগশিপ স্মার্টওয়াচ। হাই-ফাই ব্লুটুথ ফোন কলিং, সার্বক্ষণিক হার্ট রেট ও ব্লাড অক্সিজেন (SpO2) ট্র্যাকিং, ১০০+ স্পোর্টস মোড এবং ওয়াটারপ্রুফ আইপি৬৮ সুরক্ষা। একটানা ৭ দিনের শক্তিশালী ব্যাটারি ব্যাকআপ।",
+      "descriptionEn": "Premium titanium alloy frame with vibrant 1.96-inch Always-On AMOLED screen (60Hz refresh rate, 1000 nits brightness). Features Bluetooth calling with HD noise-cancelling microphone, 24/7 biometric tracking, IP68 waterproofing, and up to 10 days battery endurance.",
+      "features": [
+        "১.৯৬ ইঞ্চি আল্ট্রা এইচডি অ্যামোলেড ডিসপ্লে (Always-On Display)",
+        "বিল্ট-ইন স্পিকার ও মাইক দিয়ে সরাসরি ফোন কলিং",
+        "আইপি৬৮ ডাস্ট ও ওয়াটারপ্রুফ রেটিং",
+        "হার্ট রেট, SpO2 ও স্লিপ মনিটরিং সেন্সর",
+        "১০০+ কাস্টম ওয়াচ ফেস ও বাংলা নোটিফিকেশন সাপোর্ট",
+        "১ বছরের সরাসরি রিপ্লেসমেন্ট গ্যারান্টি"
+      ],
+      "featuresEn": [],
+      "specifications": [
+        {
+          "label": "মডেল",
+          "value": "VT-AMOLE-PRO"
+        },
+        {
+          "label": "ডিসপ্লে সাইজ",
+          "value": "১.৯৬ ইঞ্চি (410x502 পিক্সেল, ১০০০ নিটস)"
+        },
+        {
+          "label": "বডি ফ্রেম",
+          "value": "অ্যালুমিনিয়াম ও টাইটানিয়াম অ্যালয়"
+        },
+        {
+          "label": "কানেক্টিভিটি",
+          "value": "ব্লুটুথ ৫.৩ এলই"
+        },
+        {
+          "label": "ব্যাটারি",
+          "value": "৩৮০ এমএএইচ (নরমাল ব্যবহারে ৭-১০ দিন)"
+        },
+        {
+          "label": "চার্জিং",
+          "value": "ম্যাগনেটিক ফাস্ট পিন চার্জার (২ ঘণ্টায় ফুল চার্জ)"
+        },
+        {
+          "label": "সাপোর্ট",
+          "value": "Android & iOS উভয় অপারেটিং সিস্টেমে"
+        }
+      ],
+      "warranty": "১ বছরের অফিসিয়াল রিপ্লেসমেন্ট গ্যারান্টি",
+      "warrantyEn": "",
+      "sku": "VT-SW-PRO",
+      "variants": [
+        {
+          "name": "স্ট্র্যাপ ও কালার",
+          "options": [
+            "টাইটানিয়াম সিলভার (Metallic)",
+            "ম্যাট ব্ল্যাক সিলিকন (Black)"
+          ]
+        }
+      ],
+      "order": 4,
+      "reviews": [
+        {
+          "author": "আরিফুল ইসলাম",
+          "rating": 5,
+          "date": "2026-10-22",
+          "comment": "ডিসপ্লের ব্রাইটনেস রোদ্রেও একদম ক্রিস্টাল ক্লিয়ার দেখা যায়! কল দিয়ে কথা বলেছি, সাউন্ড অনেক পরিষ্কার। এই বাজেটে এর চেয়ে ভালো ঘড়ি পাওয়া অসম্ভব।",
+          "verifiedPurchase": true,
+          "city": "রাজশাহী সদর"
+        }
+      ]
+    },
+    {
+      "id": "gd-gadget-02",
+      "name": "৬৫ ওয়াট গ্যান আল্ট্রা-ফাস্ট চার্জিং ২০,০০০ এমএএইচ পাওয়ার ব্যাংক",
+      "nameEn": "65W GaN PD Ultra-Fast Charging 20000mAh Laptop & Phone Power Bank",
+      "brand": "Nexus Tech",
+      "category": "power-charging",
+      "price": 2950,
+      "originalPrice": 4100,
+      "rating": 4.8,
+      "reviewCount": 112,
+      "images": [
+        "gadget_fast_powerbank_1793337111858.jpg",
+        "hero_ecommerce_showcase_1793335872034.jpg"
+      ],
+      "inStock": true,
+      "stockCount": 34,
+      "isFlashDeal": false,
+      "isFeatured": true,
+      "soldPercent": 55,
+      "badge": "ল্যাপটপ চার্জিং",
+      "badgeEn": "Laptop Charging",
+      "description": "৬৫ ওয়াট পাওয়ার ডেলিভারি (PD 3.0) সমৃদ্ধ শক্তিশালী ২০,০০০ এমএএইচ পাওয়ার ব্যাংক। স্মার্টফোন ও ট্যাবলেটের পাশাপাশি ম্যাকবুক কিংবা টাইপ-সি ল্যাপটপ সুপারফাস্ট চার্জ করতে সক্ষম। স্মার্ট এলইডি ডিজিটাল ডিসপ্লেতে রিয়েল-টাইম চার্জ পারসেন্টেজ দেখা যায়।",
+      "descriptionEn": "High capacity 20,000mAh lithium-polymer power bank delivering genuine 65W GaN output to fast charge MacBooks, Windows USB-C laptops, iPhones, and Android flagships. Features smart numeric LED battery percentage display and multi-device simultaneous charging.",
+      "features": [
+        "৬৫ ওয়াট সর্বোচ্চ পাওয়ার ডেলিভারি (ল্যাপটপ চার্জিং উপযুক্ত)",
+        "২০,০০০ এমএএইচ ট্রু ক্যাপাসিটি লিথিয়াম পলিমার ব্যাটারি",
+        "স্মার্ট এলইডি নিউমেরিক ডিসপ্লে (রিয়েল টাইম %)",
+        "একসাথে ৩টি ডিভাইস ফাস্ট চার্জ করার সুবিধা",
+        "মাল্টি-লেয়ার সার্কিট ওভার-ভোল্টেজ প্রটেকশন",
+        "১ বছরের অফিশিয়াল ওয়ারেন্টি"
+      ],
+      "featuresEn": [],
+      "specifications": [
+        {
+          "label": "মডেল",
+          "value": "NX-PB-65W"
+        },
+        {
+          "label": "ব্যাটারি ক্ষমতা",
+          "value": "২০,০০০ এমএএইচ (74Wh)"
+        },
+        {
+          "label": "ইনপুট",
+          "value": "Type-C: 65W Max"
+        },
+        {
+          "label": "আউটপুট",
+          "value": "Type-C: 65W Max | USB-A: 22.5W QC 3.0"
+        },
+        {
+          "label": "ওজন",
+          "value": "৩৯৫ গ্রাম"
+        },
+        {
+          "label": "বডি মেটেরিয়াল",
+          "value": "অ্যালুমিনিয়াম অ্যালয় এনোডাইজড ফিনিশ"
+        }
+      ],
+      "warranty": "১ বছরের ব্র্যান্ড ওয়ারেন্টি",
+      "warrantyEn": "",
+      "sku": "NX-PB-65W",
+      "variants": [
+        {
+          "name": "কালার",
+          "options": [
+            "স্পেস গ্রে (Space Grey)",
+            "ম্যাট ব্ল্যাক (Black)"
+          ]
+        }
+      ],
+      "order": 5,
+      "reviews": [
+        {
+          "author": "ইমরান চৌধুরী",
+          "rating": 5,
+          "date": "2026-10-25",
+          "comment": "আমার Dell XPS ল্যাপটপ এবং ফোন একসাথে ফাস্ট চার্জ হচ্ছে। সাইজে বেশ কমপ্যাক্ট এবং ডিজিটাল মিটারটা খুব কাজে দেয়।",
+          "verifiedPurchase": true,
+          "city": "গুলশান, ঢাকা"
+        }
+      ]
+    },
+    {
+      "id": "gd-gadget-03",
+      "name": "ওয়্যারলেস এক্টিভ নয়েজ ক্যানসেলিং স্টুডিও হেডফোন প্রো ম্যাক্স",
+      "nameEn": "Wireless Active Noise Cancelling (ANC) Studio Over-Ear Headphones",
+      "brand": "Acoustic Sound",
+      "category": "audio",
+      "price": 3450,
+      "originalPrice": 4900,
+      "rating": 4.9,
+      "reviewCount": 215,
+      "images": [
+        "hero_ecommerce_showcase_1793335872034.jpg",
+        "gadget_smartwatch_tws_1793337109838.jpg"
+      ],
+      "inStock": true,
+      "stockCount": 30,
+      "isFlashDeal": false,
+      "isFeatured": true,
+      "soldPercent": 60,
+      "badge": "হাই-ফাই অডিও",
+      "badgeEn": "Hi-Fi Audio",
+      "description": "হাইব্রিড এক্টিভ নয়েজ ক্যানসেলেশন (ANC) প্রযুক্তির সাহায্যে বাইরের অপ্রয়োজনীয় শব্দকে ৩৫ ডেসিবেল পর্যন্ত ফিল্টার করে বিশুদ্ধ স্টুডিও মিউজিক উপভোগ করুন। ৪০ ঘণ্টার বিশাল ব্যাটারি ব্যাকআপ, ৪০ মি.মি. টাইটানিয়াম ডায়াফ্রাম ড্রাইভার ও প্রিমিয়াম মেমোরি ফোম কুশন।",
+      "descriptionEn": "Hybrid active noise cancellation reduces ambient noise by up to 35dB. Engineered with custom 40mm dynamic acoustic drivers delivering rich bass and crystal clear highs. Cloud-soft protein leather earcups provide all-day ergonomic comfort with 40 hours playtime.",
+      "features": [
+        "৩৫ ডেসিবেল হাইব্রিড এক্টিভ নয়েজ ক্যানসেলেশন",
+        "৪০ ঘণ্টা নিরবচ্ছিন্ন প্লে-টাইম ব্যাটারি ব্যাকআপ",
+        "৪০ মি.মি. ডিপ-বাস টাইটেনিয়াম ড্রাইভার",
+        "ক্লিয়ার ভয়েস কলিংয়ের জন্য ডুয়াল এনভায়রনমেন্টাল মাইক",
+        "টাইপ-সি কুইক চার্জিং (১০ মিনিট চার্জে ৫ ঘণ্টা প্লে)",
+        "৬ মাসের অফিসিয়াল রিপ্লেসমেন্ট গ্যারান্টি"
+      ],
+      "featuresEn": [],
+      "specifications": [
+        {
+          "label": "মডেল",
+          "value": "ACT-HP-PRO ANC"
+        },
+        {
+          "label": "ব্লুটুথ ভার্সন",
+          "value": "৫.৩ আল্ট্রা-লো লেটেন্সি"
+        },
+        {
+          "label": "ড্রাইভার সাইজ",
+          "value": "৪০ মি.মি. ডাইনামিক নিওডিমিয়াম"
+        },
+        {
+          "label": "ফ্রিকোয়েন্সি রেসপন্স",
+          "value": "20Hz - 20,000Hz"
+        },
+        {
+          "label": "ব্যাটারি লাইফ",
+          "value": "৪০ ঘণ্টা (ANC বন্ধ) / ৩০ ঘণ্টা (ANC চালু)"
+        },
+        {
+          "label": "ওজন",
+          "value": "২৫৫ গ্রাম"
+        }
+      ],
+      "warranty": "৬ মাসের রিপ্লেসমেন্ট গ্যারান্টি",
+      "warrantyEn": "",
+      "sku": "ACT-HP-PRO",
+      "variants": [
+        {
+          "name": "কালার",
+          "options": [
+            "স্পেস সিলভার (Silver)",
+            "মিডনাইট ব্ল্যাক (Black)"
+          ]
+        }
+      ],
+      "order": 6,
+      "reviews": [
+        {
+          "author": "রাকিব হাসান",
+          "rating": 5,
+          "date": "2026-10-19",
+          "comment": "সাউন্ড কোয়ালিটি দুর্দান্ত, বেস খুব ডিপ এবং এএনসি চালু করলে বাইরের ফ্যানের শব্দ বা গাড়ির হর্ন প্রায় শোনাই যায় না। অফিসে কাজের জন্য বেস্ট।",
+          "verifiedPurchase": true,
+          "city": "বনানী, ঢাকা"
+        }
+      ]
+    },
+    {
+      "id": "gd-kitchen-03",
+      "name": "ভিশন কর্ডলেস স্টেইনলেস স্টিল র‍্যাপিড ইলেকট্রিক কেটলি (১.৮ লিটার)",
+      "nameEn": "Vision Cordless Stainless Steel Rapid Boil Electric Kettle (1.8L)",
+      "brand": "Vision Electronics",
+      "category": "kitchen-appliances",
+      "price": 1390,
+      "originalPrice": 1850,
+      "rating": 4.6,
+      "reviewCount": 89,
+      "images": [
+        "promo_kitchen_home_1793335872493.jpg",
+        "product_smart_airfryer_1793335872086.jpg"
+      ],
+      "inStock": true,
+      "stockCount": 40,
+      "isFlashDeal": false,
+      "isFeatured": true,
+      "soldPercent": 52,
+      "badge": "সেরা ভ্যালু",
+      "badgeEn": "Best Value",
+      "description": "মাত্র ২ মিনিটে পানি ফুটানোর আধুনিক ফুড-গ্রেড স্টেইনলেস স্টিল ইলেকট্রিক কেটলি। পানি ফুটে উঠলে স্বয়ংক্রিয়ভাবে বিদ্যুৎ সংযোগ বন্ধ হয়ে যাওয়ার নিরাপদ অটো-কাট সুরক্ষা প্রযুক্তি। চা, কফি বা গরম পানির দ্রুততম সমাধান।",
+      "descriptionEn": "Boils 1.8 liters of water rapidly in under 3 minutes with 1500W heating element. Constructed with food-grade 304 seamless stainless steel inner tank, cool-touch outer body, and boil-dry auto shutoff mechanism.",
+      "features": [
+        "১.৮ লিটার দ্রুত ফুটন্ত ক্যাপাসিটি",
+        "১০০% ফুড-গ্রেড ৩০৪ স্টেইনলেস স্টিল বডি",
+        "স্বয়ংক্রিয় অটো শাট-অফ ও ড্রাইভ বয়েল সুরক্ষা",
+        "৩৬০ ডিগ্রি রোটেটিং কর্ডলেস বেস",
+        "কুল-টাচ নিরাপদ হ্যান্ডেল ও ওয়াইড স্পাউট",
+        "১ বছরের ব্র্যান্ড সার্ভিস ওয়ারেন্টি"
+      ],
+      "featuresEn": [],
+      "specifications": [
+        {
+          "label": "মডেল",
+          "value": "VIS-EK-180 PRO"
+        },
+        {
+          "label": "পাওয়ার",
+          "value": "১৫০০ ওয়াট (1500W)"
+        },
+        {
+          "label": "ভোল্টেজ",
+          "value": "220V - 240V"
+        },
+        {
+          "label": "ধারণক্ষমতা",
+          "value": "১.৮ লিটার"
+        },
+        {
+          "label": "মেটেরিয়াল",
+          "value": "৩০৪ গ্রেড স্টেইনলেস স্টিল ও পিপি পলিমার"
+        },
+        {
+          "label": "সেফটি",
+          "value": "থার্মোস্ট্যাট অটো কাট-অফ"
+        }
+      ],
+      "warranty": "১ বছরের সার্ভিস ওয়ারেন্টি",
+      "warrantyEn": "",
+      "sku": "VIS-EK-180",
+      "variants": [
+        {
+          "name": "কালার",
+          "options": [
+            "ম্যাট হোয়াইট (Matte White)",
+            "সিলভার স্টেইনলেস (Silver)"
+          ]
+        }
+      ],
+      "order": 7,
+      "reviews": [
+        {
+          "author": "সোহেল রানা",
+          "rating": 5,
+          "date": "2026-10-12",
+          "comment": "অফিসের টেবিলে ব্যবহারের জন্য নিয়েছিলাম। খুবই দ্রুত পানি গরম হয় এবং বডি গরম হয় না। চমৎকার জিনিস।",
+          "verifiedPurchase": true,
+          "city": "মতিঝিল, ঢাকা"
+        }
+      ]
+    },
+    {
+      "id": "gd-gadget-04",
+      "name": "প্রো ট্রু ওয়্যারলেস স্টেরিও (TWS) ডিপ-বাস ইয়ারবাডস উইথ এএনসি",
+      "nameEn": "Pro True Wireless Stereo (TWS) Deep Bass Earbuds with ANC Case",
+      "brand": "Acoustic Sound",
+      "category": "audio",
+      "price": 1950,
+      "originalPrice": 2800,
+      "rating": 4.8,
+      "reviewCount": 164,
+      "images": [
+        "gadget_smartwatch_tws_1793337109838.jpg",
+        "hero_ecommerce_showcase_1793335872034.jpg"
+      ],
+      "inStock": true,
+      "stockCount": 45,
+      "isFlashDeal": true,
+      "isFeatured": true,
+      "soldPercent": 88,
+      "badge": "টপ রেটেড",
+      "badgeEn": "Top Rated",
+      "description": "১৩ মি.মি. বায়ো-ডায়াফ্রাম ড্রাইভার ও ডিপ বাস প্রযুক্তি সম্বলিত ট্রু ওয়্যারলেস ইয়ারবাডস। এনভায়রনমেন্টাল নয়েজ ক্যানসেলেশন (ENC) মাইক্রোফোনে ক্রিস্টাল ক্লিয়ার কলিং এবং গেমিংয়ের জন্য ৬০ মি.সে. আল্ট্রা-লো লেটেন্সি মোড। সর্বমোট ৩০ ঘণ্টার ব্যাটারি ব্যাকআপ।",
+      "descriptionEn": "Engineered with 13mm bio-cellulose drivers tuned for punchy deep bass and pristine highs. Quad-mic ENC isolates your voice on calls even in noisy surroundings. Delivers 6 hours playback per charge and 30 hours total with pocket-friendly charging case.",
+      "features": [
+        "১৩ মি.মি. বায়ো-ডায়াফ্রাম হাই-রেজ অডিও ড্রাইভার",
+        "কোয়াড-মাইক এনভায়রনমেন্টাল নয়েজ ক্যানসেলেশন (ENC)",
+        "গেমিংয়ের জন্য ৬০ মি.সে. লো লেটেন্সি মোড",
+        "সর্বমোট ৩০ ঘণ্টার ব্যাটারি ব্যাকআপ কেস সহ",
+        "স্মার্ট টাচ কন্ট্রোল (ভলিউম, কল ও গান পরিবর্তন)",
+        "৬ মাসের রিপ্লেসমেন্ট গ্যারান্টি"
+      ],
+      "featuresEn": [],
+      "specifications": [
+        {
+          "label": "মডেল",
+          "value": "ACT-TWS-PRO"
+        },
+        {
+          "label": "ব্লুটুথ",
+          "value": "ভার্সন ৫.৩ ফাস্ট পেয়ারিং"
+        },
+        {
+          "label": "ওয়াটারপ্রুফ রেটিং",
+          "value": "আইপিএক্স৫ সোয়েটপ্রুফ"
+        },
+        {
+          "label": "প্লে-টাইম",
+          "value": "৬ ঘণ্টা (ইয়ারবাড) + ২৪ ঘণ্টা (কেস)"
+        },
+        {
+          "label": "চার্জিং পোর্ট",
+          "value": "টাইপ-সি ফাস্ট চার্জিং"
+        }
+      ],
+      "warranty": "৬ মাসের ব্র্যান্ড রিপ্লেসমেন্ট ওয়ারেন্টি",
+      "warrantyEn": "",
+      "sku": "ACT-TWS-PRO",
+      "variants": [
+        {
+          "name": "কালার",
+          "options": [
+            "ম্যাট ব্ল্যাক (Matte Black)",
+            "ক্লাসিক হোয়াইট (White)"
+          ]
+        }
+      ],
+      "order": 8,
+      "reviews": [
+        {
+          "author": "তানজিমুল হাসান",
+          "rating": 5,
+          "date": "2026-10-16",
+          "comment": "গেম খেলার সময় কোনো সাউন্ড ডিলে নেই! মাইকের কোয়ালিটিও অনেক ভালো, রাস্তায় কথা বললে স্পষ্ট শোনা যায়।",
+          "verifiedPurchase": true,
+          "city": "খুলনা সদর"
+        }
+      ]
+    },
+    {
+      "id": "gd-kitchen-04",
+      "name": "স্মার্ট ডিজিটাল ইনডাকশন কুকার (২২০০ ওয়াট)",
+      "nameEn": "Vision Smart Touch Digital Induction Cooker (2200W)",
+      "brand": "Vision Electronics",
+      "category": "kitchen-appliances",
+      "price": 3450,
+      "originalPrice": 4600,
+      "rating": 4.7,
+      "reviewCount": 73,
+      "images": [
+        "promo_kitchen_home_1793335872493.jpg",
+        "product_smart_airfryer_1793335872086.jpg"
+      ],
+      "inStock": true,
+      "stockCount": 19,
+      "isFlashDeal": false,
+      "isFeatured": true,
+      "soldPercent": 49,
+      "badge": "বিদ্যুৎ সাশ্রয়ী",
+      "badgeEn": "Energy Saver",
+      "description": "গ্যাসের ঝামেলা ছাড়াই বিদ্যুৎ সাশ্রয়ী দ্রুত রান্নার আধুনিক ২২০০ ওয়াটের স্মার্ট টাচ ইনডাকশন কুকার। ৮টি রান্নার প্রিসেট মোড, নিখুঁত তাপমাত্রা নিয়ন্ত্রণ এবং প্রিমিয়াম ক্রিস্টাল গ্লাস টপ প্লেট।",
+      "descriptionEn": "High efficiency 2200W electromagnetic induction cooker. Heats iron and induction cookware directly with 90% thermal efficiency, saving up to 40% energy compared to LPG gas stoves.",
+      "features": [
+        "২২০০ ওয়াট সুপার ফাস্ট হিটিং টেকনোলজি",
+        "প্রিমিয়াম এ-গ্রেড স্ক্র্যাচ রেজিস্ট্যান্ট ক্রিস্টাল গ্লাস প্লেট",
+        "৮টি স্বয়ংক্রিয় বাংলাদেশি রান্নার মোড (ভাত, ভাজি, তরকারি, দুধ)",
+        "ডিজিটাল টাইমার ও চাইল্ড লক সেফটি সিস্টেম",
+        "১ বছরের সরাসরি সার্ভিস ওয়ারেন্টি"
+      ],
+      "featuresEn": [],
+      "specifications": [
+        {
+          "label": "মডেল",
+          "value": "VIS-IND-2200"
+        },
+        {
+          "label": "পাওয়ার",
+          "value": "২২০০ ওয়াট এডজাস্টেবল (200W - 2200W)"
+        },
+        {
+          "label": "ভোল্টেজ",
+          "value": "220V - 50Hz"
+        },
+        {
+          "label": "প্লেট সাইজ",
+          "value": "২৮০ x ৩৫০ মি.মি. মাইক্রোক্রিস্টালিন গ্লাস"
+        },
+        {
+          "label": "ডিসপ্লে",
+          "value": "৪ ডিজিট এলইডি ডিসপ্লে"
+        }
+      ],
+      "warranty": "১ বছরের অফিসিয়াল সার্ভিস ওয়ারেন্টি",
+      "warrantyEn": "",
+      "sku": "VIS-IND-2200",
+      "variants": [
+        {
+          "name": "কালার",
+          "options": [
+            "ব্ল্যাক ক্রিস্টাল (Black)"
+          ]
+        }
+      ],
+      "order": 9,
+      "reviews": [
+        {
+          "author": "মনোয়ারা বেগম",
+          "rating": 5,
+          "date": "2026-10-08",
+          "comment": "গ্যাস না থাকলেও এখন কোনো টেনশন নেই। ভাত বা তরকারি খুব দ্রুত রান্না হয়। গ্লাসটা পরিষ্কার করাও খুব সহজ।",
+          "verifiedPurchase": true,
+          "city": "মিরপুর-১০, ঢাকা"
+        }
+      ]
+    },
+    {
+      "id": "gd-cookware-02",
+      "name": "আরএফএল ডাবল-ওয়াল ভ্যাকুয়াম ইনসুলেটেড থার্মাস ফ্লাস্ক (১ লিটার)",
+      "nameEn": "RFL Double Wall Vacuum Insulated Stainless Steel Thermos (1L)",
+      "brand": "RFL Houseware",
+      "category": "cookware",
+      "price": 950,
+      "originalPrice": 1350,
+      "rating": 4.7,
+      "reviewCount": 65,
+      "images": [
+        "kitchen_granite_cookware_1793337110405.jpg",
+        "promo_kitchen_home_1793335872493.jpg"
+      ],
+      "inStock": true,
+      "stockCount": 38,
+      "isFlashDeal": false,
+      "isFeatured": true,
+      "soldPercent": 62,
+      "badge": "২৪ ঘণ্টা গরম/ঠান্ডা",
+      "badgeEn": "24h Hot/Cold",
+      "description": "২৪ ঘণ্টা চা বা গরম পানি ফুটন্ত গরম এবং শরবত বা বরফপানি ঠান্ডা রাখার বিশেষ ডাবল-ওয়াল ভ্যাকুয়াম ইনসুলেশন টেকনোলজি। ভ্রমণ, অফিস কিংবা শিশুদের গরম পানির জন্য ১০০% লিক-প্রুফ সেরা ফ্লাস্ক।",
+      "descriptionEn": "Double-wall stainless steel vacuum insulation preserves temperature for up to 24 hours. Features one-touch push-button pouring stopper and food-grade insulated cup cap.",
+      "features": [
+        "২৪ ঘণ্টা তাপমাত্রা সুরক্ষা (হট ও কোল্ড)",
+        "ফুড-গ্রেড ৩০৪ স্টেইনলেস স্টিল লাইনার",
+        "১০০% লিক-প্রুফ পুশ বাটন ও ক্যাপ-কাপ",
+        "সহজে বহনযোগ্য হ্যান্ডি স্ট্র্যাপ",
+        "৬ মাসের ভ্যাকুয়াম ইনসুলেশন গ্যারান্টি"
+      ],
+      "featuresEn": [],
+      "specifications": [
+        {
+          "label": "মডেল",
+          "value": "RFL-VAC-1000"
+        },
+        {
+          "label": "ধারণক্ষমতা",
+          "value": "১ লিটার (1000ml)"
+        },
+        {
+          "label": "মেটেরিয়াল",
+          "value": "ডাবল ওয়াল ৩০৪ স্টেইনলেস স্টিল"
+        },
+        {
+          "label": "ইনসুলেশন পারফরম্যান্স",
+          "value": "২৪ ঘণ্টা ≥৬০°C"
+        }
+      ],
+      "warranty": "৬ মাসের ভ্যাকুয়াম গ্যারান্টি",
+      "warrantyEn": "",
+      "sku": "RFL-VAC-1000",
+      "variants": [
+        {
+          "name": "কালার",
+          "options": [
+            "মেটালিক ব্ল্যাক (Black)",
+            "রয়্যাল সিলভার (Silver)",
+            "নেভি ব্লু (Blue)"
+          ]
+        }
+      ],
+      "order": 10,
+      "reviews": [
+        {
+          "author": "জাভেদ করিম",
+          "rating": 5,
+          "date": "2026-10-05",
+          "comment": "সকালে রাখা গরম চা রাত ১০টাতেও ধোঁয়া ওঠা গরম ছিল! কোয়ালিটি অনেক প্রিমিয়াম।",
+          "verifiedPurchase": true,
+          "city": "কুমিল্লা সদর"
+        }
+      ]
+    }
+  ],
+  "slides": [
+    {
+      "target": "",
+      "image": "hero_ecommerce_showcase_1793335872034.jpg",
+      "tab": {
+        "bn": "০১. গরম ডিল অফার",
+        "en": "01. Hot Deals"
+      },
+      "kicker": {
+        "bn": "গরম ডিল বিশেষ · ৫০% পর্যন্ত ছাড়",
+        "en": "Hot Deal Event · Up to 50% OFF"
+      },
+      "title": {
+        "bn": "সেরা কিচেন অ্যাপ্লায়েন্স ও হাই-টেক গ্যাজেটস",
+        "en": "Premium Kitchen Appliances & Smart Gadgets"
+      },
+      "subtitle": {
+        "bn": "অফিসিয়াল ব্র্যান্ড ওয়ারেন্টিসহ এয়ার ফ্রায়ার, পাওয়ার ব্লেন্ডার, স্মার্টওয়াচ ও এএনসি অডিও।",
+        "en": "Official warranty air fryers, 1000W blenders, AMOLED smartwatches, and ANC headphones."
+      },
+      "cta": {
+        "bn": "অফারগুলো দেখুন",
+        "en": "Explore Deals"
+      },
+      "order": 1
+    },
+    {
+      "target": "cookware",
+      "image": "kitchen_granite_cookware_1793337110405.jpg",
+      "tab": {
+        "bn": "০২. নন-স্টিক কুকওয়্যার",
+        "en": "02. Granite Cookware"
+      },
+      "kicker": {
+        "bn": "নতুন কালেকশন · ইনডাকশন ফ্রেন্ডলি",
+        "en": "New Collection · Induction Ready"
+      },
+      "title": {
+        "bn": "আধুনিক রান্নাঘরের জন্য মার্বেল কুকওয়্যার সেট",
+        "en": "Non-Stick Granite Cookware & Kettles"
+      },
+      "subtitle": {
+        "bn": "৫-লেয়ার স্ক্র্যাচ-প্রুফ মার্বেল কোটিং ও হেভি ডিউটি রান্নাঘরের নিত্যপ্রয়োজনীয় সেট।",
+        "en": "PFOA-free 5-layer marble coating cookware built for everyday modern kitchens."
+      },
+      "cta": {
+        "bn": "কুকওয়্যার দেখুন",
+        "en": "Shop Cookware"
+      },
+      "order": 2
+    },
+    {
+      "target": "smartwatch",
+      "image": "gadget_smartwatch_tws_1793337109838.jpg",
+      "tab": {
+        "bn": "০৩. স্মার্টওয়াচ ও অডিও",
+        "en": "03. Watch & Audio"
+      },
+      "kicker": {
+        "bn": "অফিশিয়াল গ্যাজেট · ফাস্ট ডেলিভারি",
+        "en": "Official Tech · Express Dispatch"
+      },
+      "title": {
+        "bn": "টাইটানিয়াম স্মার্টওয়াচ ও প্রিমিয়াম টিডব্লিউএস",
+        "en": "Titanium Smartwatches & ANC Earbuds"
+      },
+      "subtitle": {
+        "bn": "অ্যামোলেড ডিসপ্লে, ব্লুটুথ কলিং ও ক্রিস্টাল ক্লিয়ার সাউন্ডের অরিজিনাল কালেকশন।",
+        "en": "Bright AMOLED displays, Bluetooth calling, and active noise cancellation audio."
+      },
+      "cta": {
+        "bn": "গ্যাজেটস দেখুন",
+        "en": "Shop Gadgets"
+      },
+      "order": 3
+    },
+    {
+      "target": "kitchen-appliances",
+      "image": "product_smart_airfryer_1793335872086.jpg",
+      "tab": {
+        "bn": "০৪. স্মার্ট এয়ার ফ্রায়ার",
+        "en": "04. Air Fryers"
+      },
+      "kicker": {
+        "bn": "অয়েল-ফ্রি কুকিং · ফ্রি ডেলিভারি সুবিধা",
+        "en": "Oil-Free Cooking · Free Delivery Eligible"
+      },
+      "title": {
+        "bn": "ডিজিটাল টাচ এয়ার ফ্রায়ার ও স্মার্ট ব্লেন্ডার",
+        "en": "Digital Touch Air Fryers & Blenders"
+      },
+      "subtitle": {
+        "bn": "৮৫% কম তেলে স্বাস্থ্যকর ও ক্রিস্পি রান্নার জন্য হাই-পাওয়ার স্মার্ট কিচেন অ্যাপ্লায়েন্স।",
+        "en": "Crisp, healthy meals with 85% less oil and high-torque kitchen appliances."
+      },
+      "cta": {
+        "bn": "কিচেন স্টোর দেখুন",
+        "en": "Shop Kitchen"
+      },
+      "order": 4
+    }
+  ],
+  "vouchers": [
+    {
+      "code": "GOROM10",
+      "title": {
+        "bn": "গরম ডিল স্পেশাল ভাউচার ১০%",
+        "en": "Gorom Deal Special Voucher 10%"
+      },
+      "label": {
+        "bn": "১০% ছাড়",
+        "en": "10% off"
+      },
+      "type": "percent",
+      "amount": 10,
+      "minSpend": 500,
+      "maxDiscount": 1500,
+      "validFrom": "2026-11-10",
+      "validTo": "2026-11-30",
+      "order": 1
+    },
+    {
+      "code": "GOROMDEAL",
+      "title": {
+        "bn": "মেগা ফ্ল্যাট ৳২০০ ইনস্ট্যান্ট ভাউচার",
+        "en": "Mega Flat ৳200 Instant Voucher"
+      },
+      "label": {
+        "bn": "৳২০০ ছাড়",
+        "en": "৳200 off"
+      },
+      "type": "fixed",
+      "amount": 200,
+      "minSpend": 1500,
+      "maxDiscount": 200,
+      "validFrom": "2026-11-12",
+      "validTo": "2026-11-30",
+      "order": 2
+    },
+    {
+      "code": "SAVE5",
+      "title": {
+        "bn": "গ্যাজেট ও কিচেন ৫% সেভার ভাউচার",
+        "en": "Gadget & Kitchen 5% Saver Voucher"
+      },
+      "label": {
+        "bn": "৫% ছাড়",
+        "en": "5% off"
+      },
+      "type": "percent",
+      "amount": 5,
+      "minSpend": 300,
+      "maxDiscount": 750,
+      "validFrom": "2026-11-12",
+      "validTo": "2026-11-25",
+      "order": 3
+    }
+  ],
+  "faqs": [
+    {
+      "q": {
+        "bn": "পণ্য হাতে পেয়ে কি দেখে নেওয়া যাবে?",
+        "en": "Can I check the product on delivery?"
+      },
+      "a": {
+        "bn": "হ্যাঁ, আমাদের ক্যাশ অন ডেলিভারি সার্ভিসে ডেলিভারি পার্সনের সামনে পার্সেলটি খুলে মূল পণ্য সঠিক আছে কিনা যাচাই করে নিতে পারবেন।",
+        "en": "Yes. With cash on delivery you can open the parcel in front of the rider and verify the product before paying."
+      },
+      "order": 1
+    },
+    {
+      "q": {
+        "bn": "ডেলিভারি চার্জ কত এবং কতদিন সময় লাগে?",
+        "en": "What is the delivery charge and how long does it take?"
+      },
+      "a": {
+        "bn": "ঢাকা সিটির ভেতরে ডেলিভারি চার্জ মাত্র ৬০ টাকা (২৪-৪৮ ঘণ্টা)। ঢাকার বাইরে সারা বাংলাদেশে ডেলিভারি চার্জ ১২০ টাকা (২-৩ কার্যদিবস)।",
+        "en": "Inside Dhaka city the charge is only ৳60 (24-48 hours). Anywhere outside Dhaka it is ৳120 (2-3 working days)."
+      },
+      "order": 2
+    },
+    {
+      "q": {
+        "bn": "ওয়ারেন্টি দাবি করতে হলে কি করতে হবে?",
+        "en": "How do I claim warranty?"
+      },
+      "a": {
+        "bn": "পণ্যের সাথে থাকা অফিশিয়াল ওয়ারেন্টি কার্ড এবং চালানের কপি সংরক্ষণ করুন। প্রয়োজনে আমাদের হটলাইন (09613-737726) এ কল দিলে প্রতিনিধি সমাধান করে দেবেন।",
+        "en": "Keep the official warranty card and invoice. Call our hotline (09613-737726) and a representative will help you."
+      },
+      "order": 3
+    },
+    {
+      "q": {
+        "bn": "পণ্য ত্রুটিপূর্ণ হলে পরিবর্তন (Replacement) করার নিয়ম কি?",
+        "en": "What is the replacement policy for defective products?"
+      },
+      "a": {
+        "bn": "পণ্য পাওয়ার পর কোনো প্রকার টেকনিক্যাল বা ম্যানুফ্যাকচারিং ত্রুটি থাকলে ৭ দিনের মধ্যে আমাদের জানালে সম্পূর্ণ ফ্রিতে পরিবর্তন করে দেওয়া হবে।",
+        "en": "If there is any technical or manufacturing defect, tell us within 7 days of delivery and we will replace it free of charge."
+      },
+      "order": 4
+    }
+  ]
+}
